@@ -32,21 +32,27 @@ env/
 *.swo
 *~
 
-# Logs
-logs/
-*.log
+# Logs - 忽略日志文件但保留目录
+logs/*.log
+api/logs/*.log
+!logs/.gitkeep
+!api/logs/.gitkeep
 
-# Data (keep structure, ignore content)
-data/*.json
+# Data - 忽略大型数据文件和图片
+data/crawl_progress.json
+data/api_requests.json
 data/images/
+!data/images/.gitkeep
 *.csv
 *.db
 
-# Images
+# Images - 忽略爬取的图片
 *.jpg
 *.jpeg
 *.png
 *.gif
+!web/*.png
+!web/*.gif
 
 # ML Models
 ml/models/*.pkl

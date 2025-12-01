@@ -1,0 +1,34 @@
+{
+  "success": true,
+  "data": {
+    "name": "大盘",
+    "type": "BROAD",
+    "level": 0,
+    "typeVal": null,
+    "index": 1304.58,
+    "yesterdayIndex": 1285.97,
+    "highIndex": 1306.12,
+    "lowIndex": 1286.25,
+    "riseFallDiff": 18.61,
+    "riseFallRate": 1.45,
+    "upNum": 1187,
+    "flatNum": 561,
+    "downNum": 547,
+    "platforms": [],
+    "blockLevel": [
+      {
+        "type": "BROAD",
+        "name": "大盘",
+        "typeVal": null,
+        "level": 0,
+        "disable": false
+      }
+    ],
+    "hasNext": true,
+    "updateTime": "1764426910"
+  },
+  "errorCode": 0,
+  "errorMsg": null,
+  "errorData": null,
+  "errorCodeStr": null
+}

@@ -1,0 +1,1121 @@
+{
+  "success": true,
+  "data": {
+    "pageNum": "1",
+    "pageSize": "5",
+    "total": "38223",
+    "list": [
+      {
+        "id": "914640692729462784",
+        "name": "M4A4 | 合纵 (久经沙场)",
+        "shortName": "M4A4 | 合纵",
+        "marketHashName": "M4A4 | The Coalition (Field-Tested)",
+        "marketShortName": "M4A4 | The Coalition",
+        "imageUrl": "https://img.zbt.com/e/steam/item/730/TTRBNCB8IFRoZSBDb2FsaXRpb24gKEZpZWxkLVRlc3RlZCk=.png",
+        "qualityName": "普通",
+        "qualityColor": "#888888",
+        "rarityName": "隐秘",
+        "rarityColor": "#EB4B4B",
+        "exteriorName": "久经沙场",
+        "exteriorColor": "#EFAD4D",
+        "sellingPriceList": [
+          {
+            "platform": "c5",
+            "platformName": "C5GAME",
+            "price": 5475.73,
+            "lastUpdate": 1764064898,
+            "link": "https://www.c5game.com/csgo/914640692729462784/M4A4%20%7C%20The%20Coalition%20(Field-Tested)/sell"
+          },
+          {
+            "platform": "buff",
+            "platformName": "BUFF",
+            "price": 5400.0,
+            "lastUpdate": 1764064958,
+            "link": "https://buff.163.com/goods/871107?from=market#tab=selling"
+          },
+          {
+            "platform": "youpin",
+            "platformName": "悠悠",
+            "price": 5499.0,
+            "lastUpdate": 1764064959,
+            "link": "https://www.youpin898.com/market/goods-list?listType=10&templateId=61688&gameId=730"
+          },
+          {
+            "platform": "steam",
+            "platformName": "Steam",
+            "price": 6930.07,
+            "lastUpdate": 1764058259,
+            "link": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20The%20Coalition%20(Field-Tested)"
+          },
+          {
+            "platform": "dmarket",
+            "platformName": "DMarket",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://dmarket.com/zh/ingame-items/item-list/csgo-skins?sort-type=5&title=M4A4%20%7C%20The%20Coalition%20(Field-Tested)"
+          },
+          {
+            "platform": "csmoney",
+            "platformName": "CSMoney",
+            "price": 0,
+            "lastUpdate": 1751385600,
+            "link": "https://cs.money/market/buy/?search=M4A4%20%7C%20The%20Coalition%20(Field-Tested)&isStatTrak=false&sort=price&order=asc"
+          },
+          {
+            "platform": "skinport",
+            "platformName": "SkinPort",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://skinport.com/zh/market?search=M4A4%20%7C%20The%20Coalition%20(Field-Tested)&sort=price&order=asc"
+          },
+          {
+            "platform": "waxpeer",
+            "platformName": "WaxPeer",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://waxpeer.com/M4A4%20%7C%20The%20Coalition%20(Field-Tested)/item/"
+          },
+          {
+            "platform": "haloskins",
+            "platformName": "HaloSkins",
+            "price": 5832.5,
+            "lastUpdate": 1764059983,
+            "link": "https://haloskins.com/zh-CN/market/914640692729462784"
+          }
+        ],
+        "suspension": {
+          "consignmentBest": 0.9,
+          "purchaseBest": 0.95,
+          "purchaseStable": 0.96
+        },
+        "increasePrice": 1.89,
+        "trendList": [
+          [
+            "1761320388",
+            1787.87
+          ],
+          [
+            "1761406855",
+            2799.5
+          ],
+          [
+            "1761494160",
+            2588.0
+          ],
+          [
+            "1761580369",
+            2888.0
+          ],
+          [
+            "1761666351",
+            2558.38
+          ],
+          [
+            "1761753600",
+            2350.0
+          ],
+          [
+            "1761839789",
+            2620.9
+          ],
+          [
+            "1761926392",
+            2988.0
+          ],
+          [
+            "1762012793",
+            3033.33
+          ],
+          [
+            "1762099183",
+            2948.0
+          ],
+          [
+            "1762184933",
+            2800.0
+          ],
+          [
+            "1762271717",
+            2719.0
+          ],
+          [
+            "1762358387",
+            2899.0
+          ],
+          [
+            "1762444312",
+            2769.5
+          ],
+          [
+            "1762531134",
+            2895.0
+          ],
+          [
+            "1762617364",
+            3580.0
+          ],
+          [
+            "1762703781",
+            3349.5
+          ],
+          [
+            "1762790263",
+            3300.0
+          ],
+          [
+            "1762876559",
+            3298.99
+          ],
+          [
+            "1762962833",
+            3290.0
+          ],
+          [
+            "1763049271",
+            3338.5
+          ],
+          [
+            "1763135988",
+            3080.0
+          ],
+          [
+            "1763221870",
+            3179.5
+          ],
+          [
+            "1763308493",
+            3439.0
+          ],
+          [
+            "1763395197",
+            3669.0
+          ],
+          [
+            "1763481481",
+            3697.8
+          ],
+          [
+            "1763567999",
+            3778.0
+          ],
+          [
+            "1763654343",
+            3728.0
+          ],
+          [
+            "1763740745",
+            4048.0
+          ],
+          [
+            "1763826950",
+            4750.0
+          ],
+          [
+            "1763913581",
+            5240.0
+          ],
+          [
+            "1763999955",
+            5300.0
+          ],
+          [
+            "1764065578",
+            5489.5
+          ]
+        ],
+        "isCollect": false,
+        "sellNum": 577
+      },
+      {
+        "id": "914678743873433600",
+        "name": "AK-47 | 抽象派 1337 (久经沙场)",
+        "shortName": "AK-47 | 抽象派 1337",
+        "marketHashName": "AK-47 | Leet Museo (Field-Tested)",
+        "marketShortName": "AK-47 | Leet Museo",
+        "imageUrl": "https://img.zbt.com/e/steam/item/730/QUstNDcgfCBMZWV0IE11c2VvIChGaWVsZC1UZXN0ZWQp.png",
+        "qualityName": "普通",
+        "qualityColor": "#888888",
+        "rarityName": "隐秘",
+        "rarityColor": "#EB4B4B",
+        "exteriorName": "久经沙场",
+        "exteriorColor": "#EFAD4D",
+        "sellingPriceList": [
+          {
+            "platform": "c5",
+            "platformName": "C5GAME",
+            "price": 2838.5,
+            "lastUpdate": 1764064881,
+            "link": "https://www.c5game.com/csgo/914678743873433600/AK-47%20%7C%20Leet%20Museo%20(Field-Tested)/sell"
+          },
+          {
+            "platform": "buff",
+            "platformName": "BUFF",
+            "price": 2860.0,
+            "lastUpdate": 1764064913,
+            "link": "https://buff.163.com/goods/871478?from=market#tab=selling"
+          },
+          {
+            "platform": "youpin",
+            "platformName": "悠悠",
+            "price": 2858.0,
+            "lastUpdate": 1764064917,
+            "link": "https://www.youpin898.com/market/goods-list?listType=10&templateId=61401&gameId=730"
+          },
+          {
+            "platform": "steam",
+            "platformName": "Steam",
+            "price": 3595.14,
+            "lastUpdate": 1764064894,
+            "link": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Leet%20Museo%20(Field-Tested)"
+          },
+          {
+            "platform": "dmarket",
+            "platformName": "DMarket",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://dmarket.com/zh/ingame-items/item-list/csgo-skins?sort-type=5&title=AK-47%20%7C%20Leet%20Museo%20(Field-Tested)"
+          },
+          {
+            "platform": "csmoney",
+            "platformName": "CSMoney",
+            "price": 0,
+            "lastUpdate": 1751385600,
+            "link": "https://cs.money/market/buy/?search=AK-47%20%7C%20Leet%20Museo%20(Field-Tested)&isStatTrak=false&sort=price&order=asc"
+          },
+          {
+            "platform": "skinport",
+            "platformName": "SkinPort",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://skinport.com/zh/market?search=AK-47%20%7C%20Leet%20Museo%20(Field-Tested)&sort=price&order=asc"
+          },
+          {
+            "platform": "waxpeer",
+            "platformName": "WaxPeer",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://waxpeer.com/AK-47%20%7C%20Leet%20Museo%20(Field-Tested)/item/"
+          },
+          {
+            "platform": "haloskins",
+            "platformName": "HaloSkins",
+            "price": 2931.84,
+            "lastUpdate": 1764064882,
+            "link": "https://haloskins.com/zh-CN/market/914678743873433600"
+          }
+        ],
+        "suspension": {
+          "consignmentBest": 0.91,
+          "purchaseBest": 0.94,
+          "purchaseStable": 0.95
+        },
+        "increasePrice": -1.78,
+        "trendList": [
+          [
+            "1761317525",
+            599.0
+          ],
+          [
+            "1761407524",
+            912.88
+          ],
+          [
+            "1761490932",
+            808.0
+          ],
+          [
+            "1761579176",
+            960.0
+          ],
+          [
+            "1761666750",
+            879.0
+          ],
+          [
+            "1761753123",
+            827.0
+          ],
+          [
+            "1761838935",
+            880.0
+          ],
+          [
+            "1761925933",
+            1024.9
+          ],
+          [
+            "1762012339",
+            1090.0
+          ],
+          [
+            "1762098121",
+            1076.5
+          ],
+          [
+            "1762183951",
+            1033.0
+          ],
+          [
+            "1762271553",
+            987.9
+          ],
+          [
+            "1762357930",
+            1043.0
+          ],
+          [
+            "1762444330",
+            1034.0
+          ],
+          [
+            "1762530756",
+            1237.0
+          ],
+          [
+            "1762617135",
+            1513.99
+          ],
+          [
+            "1762702930",
+            1448.0
+          ],
+          [
+            "1762786908",
+            1449.5
+          ],
+          [
+            "1762876332",
+            1465.0
+          ],
+          [
+            "1762961559",
+            1442.0
+          ],
+          [
+            "1763049166",
+            1478.5
+          ],
+          [
+            "1763135534",
+            1536.5
+          ],
+          [
+            "1763221933",
+            1800.0
+          ],
+          [
+            "1763308329",
+            2077.5
+          ],
+          [
+            "1763392380",
+            2070.0
+          ],
+          [
+            "1763478778",
+            2049.49
+          ],
+          [
+            "1763567522",
+            2108.0
+          ],
+          [
+            "1763650945",
+            2120.0
+          ],
+          [
+            "1763740330",
+            2369.0
+          ],
+          [
+            "1763826742",
+            2604.5
+          ],
+          [
+            "1763913127",
+            2755.0
+          ],
+          [
+            "1763999520",
+            2890.0
+          ],
+          [
+            "1764066186",
+            2858.9
+          ]
+        ],
+        "isCollect": false,
+        "sellNum": 1426
+      },
+      {
+        "id": "26976",
+        "name": "M4A4 | 战场之星 (崭新出厂)",
+        "shortName": "M4A4 | 战场之星",
+        "marketHashName": "M4A4 | The Battlestar (Factory New)",
+        "marketShortName": "M4A4 | The Battlestar",
+        "imageUrl": "https://img.zbt.com/e/steam/item/730/TTRBNCB8IFRoZSBCYXR0bGVzdGFyIChGYWN0b3J5IE5ldyk=.png",
+        "qualityName": "普通",
+        "qualityColor": "#888888",
+        "rarityName": "隐秘",
+        "rarityColor": "#EB4B4B",
+        "exteriorName": "崭新出厂",
+        "exteriorColor": "#228149",
+        "sellingPriceList": [
+          {
+            "platform": "c5",
+            "platformName": "C5GAME",
+            "price": 1925.0,
+            "lastUpdate": 1764064863,
+            "link": "https://www.c5game.com/csgo/26976/M4A4%20%7C%20The%20Battlestar%20(Factory%20New)/sell"
+          },
+          {
+            "platform": "buff",
+            "platformName": "BUFF",
+            "price": 1966.0,
+            "lastUpdate": 1764064936,
+            "link": "https://buff.163.com/goods/35331?from=market#tab=selling"
+          },
+          {
+            "platform": "youpin",
+            "platformName": "悠悠",
+            "price": 1928.0,
+            "lastUpdate": 1764064942,
+            "link": "https://www.youpin898.com/market/goods-list?listType=10&templateId=44621&gameId=730"
+          },
+          {
+            "platform": "steam",
+            "platformName": "Steam",
+            "price": 2454.16,
+            "lastUpdate": 1764058269,
+            "link": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20The%20Battlestar%20(Factory%20New)"
+          },
+          {
+            "platform": "dmarket",
+            "platformName": "DMarket",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://dmarket.com/zh/ingame-items/item-list/csgo-skins?sort-type=5&title=M4A4%20%7C%20The%20Battlestar%20(Factory%20New)"
+          },
+          {
+            "platform": "csmoney",
+            "platformName": "CSMoney",
+            "price": 0,
+            "lastUpdate": 1751385600,
+            "link": "https://cs.money/market/buy/?search=M4A4%20%7C%20The%20Battlestar%20(Factory%20New)&isStatTrak=false&sort=price&order=asc"
+          },
+          {
+            "platform": "skinport",
+            "platformName": "SkinPort",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://skinport.com/zh/market?search=M4A4%20%7C%20The%20Battlestar%20(Factory%20New)&sort=price&order=asc"
+          },
+          {
+            "platform": "waxpeer",
+            "platformName": "WaxPeer",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://waxpeer.com/M4A4%20%7C%20The%20Battlestar%20(Factory%20New)/item/"
+          },
+          {
+            "platform": "haloskins",
+            "platformName": "HaloSkins",
+            "price": 2039.22,
+            "lastUpdate": 1764059623,
+            "link": "https://haloskins.com/zh-CN/market/26976"
+          }
+        ],
+        "suspension": {
+          "consignmentBest": 0.9,
+          "purchaseBest": 0.95,
+          "purchaseStable": 1.04
+        },
+        "increasePrice": 32.77,
+        "trendList": [
+          [
+            "1761320553",
+            797.5
+          ],
+          [
+            "1761406355",
+            1280.0
+          ],
+          [
+            "1761493347",
+            1089.0
+          ],
+          [
+            "1761579745",
+            1286.0
+          ],
+          [
+            "1761666750",
+            1170.0
+          ],
+          [
+            "1761751413",
+            1050.0
+          ],
+          [
+            "1761838350",
+            1169.0
+          ],
+          [
+            "1761925981",
+            1490.0
+          ],
+          [
+            "1762012359",
+            1659.0
+          ],
+          [
+            "1762098769",
+            1539.0
+          ],
+          [
+            "1762184556",
+            1539.0
+          ],
+          [
+            "1762271553",
+            1473.88
+          ],
+          [
+            "1762357347",
+            1528.5
+          ],
+          [
+            "1762441994",
+            1480.0
+          ],
+          [
+            "1762530757",
+            1458.5
+          ],
+          [
+            "1762617156",
+            1485.0
+          ],
+          [
+            "1762700555",
+            1408.0
+          ],
+          [
+            "1762789951",
+            1394.5
+          ],
+          [
+            "1762869797",
+            1399.0
+          ],
+          [
+            "1762962750",
+            1389.0
+          ],
+          [
+            "1763047370",
+            1380.0
+          ],
+          [
+            "1763134951",
+            1265.0
+          ],
+          [
+            "1763220747",
+            1321.38
+          ],
+          [
+            "1763308349",
+            1358.0
+          ],
+          [
+            "1763394784",
+            1315.0
+          ],
+          [
+            "1763481192",
+            1290.0
+          ],
+          [
+            "1763567543",
+            1259.0
+          ],
+          [
+            "1763652155",
+            1237.5
+          ],
+          [
+            "1763734987",
+            1220.0
+          ],
+          [
+            "1763826158",
+            1200.0
+          ],
+          [
+            "1763908451",
+            1356.0
+          ],
+          [
+            "1763994157",
+            1449.9
+          ],
+          [
+            "1764067959",
+            1965.0
+          ]
+        ],
+        "isCollect": false,
+        "sellNum": 553
+      },
+      {
+        "id": "299968322",
+        "name": "M4A4 | 喧嚣杀戮 (久经沙场)",
+        "shortName": "M4A4 | 喧嚣杀戮",
+        "marketHashName": "M4A4 | Buzz Kill (Field-Tested)",
+        "marketShortName": "M4A4 | Buzz Kill",
+        "imageUrl": "https://img.zbt.com/e/steam/item/730/TTRBNCB8IEJ1enogS2lsbCAoRmllbGQtVGVzdGVkKQ==.png",
+        "qualityName": "普通",
+        "qualityColor": "#888888",
+        "rarityName": "隐秘",
+        "rarityColor": "#EB4B4B",
+        "exteriorName": "久经沙场",
+        "exteriorColor": "#EFAD4D",
+        "sellingPriceList": [
+          {
+            "platform": "c5",
+            "platformName": "C5GAME",
+            "price": 4317.0,
+            "lastUpdate": 1764064863,
+            "link": "https://www.c5game.com/csgo/299968322/M4A4%20%7C%20Buzz%20Kill%20(Field-Tested)/sell"
+          },
+          {
+            "platform": "buff",
+            "platformName": "BUFF",
+            "price": 4375.0,
+            "lastUpdate": 1764064489,
+            "link": "https://buff.163.com/goods/35262?from=market#tab=selling"
+          },
+          {
+            "platform": "youpin",
+            "platformName": "悠悠",
+            "price": 4349.0,
+            "lastUpdate": 1764064489,
+            "link": "https://www.youpin898.com/market/goods-list?listType=10&templateId=220&gameId=730"
+          },
+          {
+            "platform": "steam",
+            "platformName": "Steam",
+            "price": 5392.75,
+            "lastUpdate": 1764058267,
+            "link": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20Buzz%20Kill%20(Field-Tested)"
+          },
+          {
+            "platform": "dmarket",
+            "platformName": "DMarket",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://dmarket.com/zh/ingame-items/item-list/csgo-skins?sort-type=5&title=M4A4%20%7C%20Buzz%20Kill%20(Field-Tested)"
+          },
+          {
+            "platform": "csmoney",
+            "platformName": "CSMoney",
+            "price": 0,
+            "lastUpdate": 1751385600,
+            "link": "https://cs.money/market/buy/?search=M4A4%20%7C%20Buzz%20Kill%20(Field-Tested)&isStatTrak=false&sort=price&order=asc"
+          },
+          {
+            "platform": "skinport",
+            "platformName": "SkinPort",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://skinport.com/zh/market?search=M4A4%20%7C%20Buzz%20Kill%20(Field-Tested)&sort=price&order=asc"
+          },
+          {
+            "platform": "waxpeer",
+            "platformName": "WaxPeer",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://waxpeer.com/M4A4%20%7C%20Buzz%20Kill%20(Field-Tested)/item/"
+          },
+          {
+            "platform": "haloskins",
+            "platformName": "HaloSkins",
+            "price": 4477.62,
+            "lastUpdate": 1764058483,
+            "link": "https://haloskins.com/zh-CN/market/299968322"
+          }
+        ],
+        "suspension": {
+          "consignmentBest": 0.92,
+          "purchaseBest": 0.93,
+          "purchaseStable": 0.93
+        },
+        "increasePrice": 1.17,
+        "trendList": [
+          [
+            "1761320112",
+            600.0
+          ],
+          [
+            "1761405899",
+            1000.0
+          ],
+          [
+            "1761492306",
+            1294.0
+          ],
+          [
+            "1761578700",
+            1880.0
+          ],
+          [
+            "1761664497",
+            1660.0
+          ],
+          [
+            "1761751499",
+            1699.0
+          ],
+          [
+            "1761836709",
+            1760.0
+          ],
+          [
+            "1761923100",
+            1940.0
+          ],
+          [
+            "1762012504",
+            2348.0
+          ],
+          [
+            "1762098895",
+            2300.0
+          ],
+          [
+            "1762185307",
+            2309.5
+          ],
+          [
+            "1762271696",
+            2350.0
+          ],
+          [
+            "1762358157",
+            2790.0
+          ],
+          [
+            "1762442102",
+            2876.0
+          ],
+          [
+            "1762530969",
+            3319.5
+          ],
+          [
+            "1762616097",
+            3578.5
+          ],
+          [
+            "1762700705",
+            3452.0
+          ],
+          [
+            "1762788907",
+            3636.0
+          ],
+          [
+            "1762876602",
+            3750.0
+          ],
+          [
+            "1762961707",
+            3799.5
+          ],
+          [
+            "1763047498",
+            3940.0
+          ],
+          [
+            "1763133305",
+            3900.0
+          ],
+          [
+            "1763219705",
+            3763.0
+          ],
+          [
+            "1763305498",
+            3810.0
+          ],
+          [
+            "1763391897",
+            3790.0
+          ],
+          [
+            "1763480756",
+            3823.0
+          ],
+          [
+            "1763564101",
+            3770.0
+          ],
+          [
+            "1763654157",
+            3747.0
+          ],
+          [
+            "1763740536",
+            3819.0
+          ],
+          [
+            "1763826990",
+            3975.0
+          ],
+          [
+            "1763913313",
+            4240.0
+          ],
+          [
+            "1763997910",
+            4267.0
+          ],
+          [
+            "1764068106",
+            4369.99
+          ]
+        ],
+        "isCollect": false,
+        "sellNum": 2553
+      },
+      {
+        "id": "914739772862726144",
+        "name": "M4A4 | 合纵 (崭新出厂)",
+        "shortName": "M4A4 | 合纵",
+        "marketHashName": "M4A4 | The Coalition (Factory New)",
+        "marketShortName": "M4A4 | The Coalition",
+        "imageUrl": "https://img.zbt.com/e/steam/item/730/TTRBNCB8IFRoZSBDb2FsaXRpb24gKEZhY3RvcnkgTmV3KQ==.png",
+        "qualityName": "普通",
+        "qualityColor": "#888888",
+        "rarityName": "隐秘",
+        "rarityColor": "#EB4B4B",
+        "exteriorName": "崭新出厂",
+        "exteriorColor": "#228149",
+        "sellingPriceList": [
+          {
+            "platform": "c5",
+            "platformName": "C5GAME",
+            "price": 17970.0,
+            "lastUpdate": 1764064864,
+            "link": "https://www.c5game.com/csgo/914739772862726144/M4A4%20%7C%20The%20Coalition%20(Factory%20New)/sell"
+          },
+          {
+            "platform": "buff",
+            "platformName": "BUFF",
+            "price": 18239.5,
+            "lastUpdate": 1764064476,
+            "link": "https://buff.163.com/goods/871115?from=market#tab=selling"
+          },
+          {
+            "platform": "youpin",
+            "platformName": "悠悠",
+            "price": 18110.0,
+            "lastUpdate": 1764064473,
+            "link": "https://www.youpin898.com/market/goods-list?listType=10&templateId=61689&gameId=730"
+          },
+          {
+            "platform": "steam",
+            "platformName": "Steam",
+            "price": 0,
+            "lastUpdate": 1761494400,
+            "link": "https://steamcommunity.com/market/listings/730/M4A4%20%7C%20The%20Coalition%20(Factory%20New)"
+          },
+          {
+            "platform": "dmarket",
+            "platformName": "DMarket",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://dmarket.com/zh/ingame-items/item-list/csgo-skins?sort-type=5&title=M4A4%20%7C%20The%20Coalition%20(Factory%20New)"
+          },
+          {
+            "platform": "csmoney",
+            "platformName": "CSMoney",
+            "price": 0,
+            "lastUpdate": 1751385600,
+            "link": "https://cs.money/market/buy/?search=M4A4%20%7C%20The%20Coalition%20(Factory%20New)&isStatTrak=false&sort=price&order=asc"
+          },
+          {
+            "platform": "skinport",
+            "platformName": "SkinPort",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://skinport.com/zh/market?search=M4A4%20%7C%20The%20Coalition%20(Factory%20New)&sort=price&order=asc"
+          },
+          {
+            "platform": "waxpeer",
+            "platformName": "WaxPeer",
+            "price": 0,
+            "lastUpdate": 1756742400,
+            "link": "https://waxpeer.com/M4A4%20%7C%20The%20Coalition%20(Factory%20New)/item/"
+          },
+          {
+            "platform": "haloskins",
+            "platformName": "HaloSkins",
+            "price": 18535.63,
+            "lastUpdate": 1764058883,
+            "link": "https://haloskins.com/zh-CN/market/914739772862726144"
+          }
+        ],
+        "suspension": {
+          "consignmentBest": 1.43,
+          "purchaseBest": 1.46,
+          "purchaseStable": 1.46
+        },
+        "increasePrice": -1.2,
+        "trendList": [
+          [
+            "1761317690",
+            9962.67
+          ],
+          [
+            "1761405291",
+            14534.06
+          ],
+          [
+            "1761437476",
+            14549.37
+          ],
+          [
+            "1761580490",
+            15700.0
+          ],
+          [
+            "1761666889",
+            14600.0
+          ],
+          [
+            "1761752686",
+            13700.0
+          ],
+          [
+            "1761839680",
+            14987.0
+          ],
+          [
+            "1761926144",
+            15988.0
+          ],
+          [
+            "1762012483",
+            15900.0
+          ],
+          [
+            "1762098288",
+            15788.0
+          ],
+          [
+            "1762185286",
+            15439.5
+          ],
+          [
+            "1762271095",
+            15000.0
+          ],
+          [
+            "1762358096",
+            15050.0
+          ],
+          [
+            "1762443892",
+            14700.0
+          ],
+          [
+            "1762530885",
+            14988.0
+          ],
+          [
+            "1762617344",
+            16196.0
+          ],
+          [
+            "1762699490",
+            15499.0
+          ],
+          [
+            "1762789493",
+            15300.0
+          ],
+          [
+            "1762876495",
+            15488.0
+          ],
+          [
+            "1762962895",
+            15250.0
+          ],
+          [
+            "1763048687",
+            15000.0
+          ],
+          [
+            "1763135096",
+            14600.0
+          ],
+          [
+            "1763219118",
+            14498.5
+          ],
+          [
+            "1763304305",
+            14999.5
+          ],
+          [
+            "1763393152",
+            14945.01
+          ],
+          [
+            "1763480755",
+            15195.0
+          ],
+          [
+            "1763565291",
+            15350.0
+          ],
+          [
+            "1763654094",
+            14899.0
+          ],
+          [
+            "1763740496",
+            15320.0
+          ],
+          [
+            "1763826907",
+            15988.0
+          ],
+          [
+            "1763913292",
+            17169.0
+          ],
+          [
+            "1763999082",
+            18188.0
+          ],
+          [
+            "1764067503",
+            18128.0
+          ]
+        ],
+        "isCollect": false,
+        "sellNum": 329
+      }
+    ],
+    "nextId": "10129,914739772862726144",
+    "systemTime": "1764068198979"
+  },
+  "errorCode": 0,
+  "errorMsg": null,
+  "errorData": null,
+  "errorCodeStr": null
+}

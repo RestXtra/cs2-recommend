@@ -1,0 +1,4605 @@
+{
+  "success": true,
+  "data": {
+    "specialStyleMap": {
+      "blackpearl": {
+        "code": "34",
+        "key": "blackpearl",
+        "color": "#000000",
+        "name": "blackpearl",
+        "alias": "黑珍珠",
+        "group": "phase",
+        "style": [
+          "background: #000000;"
+        ]
+      },
+      "tier4": {
+        "code": "24",
+        "key": "tier4",
+        "color": "#AFB0B2",
+        "name": "t4",
+        "alias": "T4",
+        "group": "tier",
+        "style": [
+          "background: #0252D9;"
+        ]
+      },
+      "tier3": {
+        "code": "23",
+        "key": "tier3",
+        "color": "#AFB0B2",
+        "name": "t3",
+        "alias": "T3",
+        "group": "tier",
+        "style": [
+          "background: #0252D9;"
+        ]
+      },
+      "tenth": {
+        "code": "10",
+        "key": "tenth",
+        "color": "#5c617a",
+        "name": "10th",
+        "alias": "十档",
+        "group": "rank",
+        "style": [
+          "background: #5c617a;"
+        ]
+      },
+      "tier2": {
+        "code": "22",
+        "key": "tier2",
+        "color": "#AFB0B2",
+        "name": "t2",
+        "alias": "T2",
+        "group": "tier",
+        "style": [
+          "background: #0252D9;"
+        ]
+      },
+      "eighth": {
+        "code": "8",
+        "key": "eighth",
+        "color": "#5c617a",
+        "name": "8th",
+        "alias": "八档",
+        "group": "rank",
+        "style": [
+          "background: #5c617a;"
+        ]
+      },
+      "sun": {
+        "code": "30",
+        "key": "sun",
+        "color": "#5c617a",
+        "name": "sun",
+        "alias": "官图太阳",
+        "group": "sun",
+        "style": [
+          "background: #5c617a;"
+        ]
+      },
+      "second": {
+        "code": "2",
+        "key": "second",
+        "color": "#5c617a",
+        "name": "2nd",
+        "alias": "二档",
+        "group": "rank",
+        "style": [
+          "background: #5c617a;"
+        ]
+      },
+      "ruby": {
+        "code": "31",
+        "key": "ruby",
+        "color": "#d85653",
+        "name": "ruby",
+        "alias": "红宝石",
+        "group": "phase",
+        "style": [
+          "background: #993A38;"
+        ]
+      },
+      "sixth": {
+        "code": "6",
+        "key": "sixth",
+        "color": "#5c617a",
+        "name": "6th",
+        "alias": "六档",
+        "group": "rank",
+        "style": [
+          "background: #5c617a;"
+        ]
+      },
+      "phase1": {
+        "code": "11",
+        "key": "phase1",
+        "color": "#5c617a",
+        "name": "p1",
+        "alias": "P1",
+        "group": "phase",
+        "style": [
+          "background: linear-gradient( 139deg, #6E4782 0%, #93476C 25%, #484C7F 59%, #82447A 100%);",
+          "background: linear-gradient( 319deg, #6078B5 0%, #8579AD 25%, #44C699 59%, #5798B9 100%);"
+        ]
+      },
+      "phase2": {
+        "code": "12",
+        "key": "phase2",
+        "color": "#5c617a",
+        "name": "p2",
+        "alias": "P2",
+        "group": "phase",
+        "style": [
+          "background: linear-gradient( 139deg, #873064 0%, #9B4470 26%, #A4375A 60%, #82447A 100%);",
+          "background: linear-gradient( 128deg, #5F8470 0%, #38C484 34%, #4A907B 100%);"
+        ]
+      },
+      "third": {
+        "code": "3",
+        "key": "third",
+        "color": "#5c617a",
+        "name": "3rd",
+        "alias": "三档",
+        "group": "rank",
+        "style": [
+          "background: #5c617a;"
+        ]
+      },
+      "seventh": {
+        "code": "7",
+        "key": "seventh",
+        "color": "#5c617a",
+        "name": "7th",
+        "alias": "七档",
+        "group": "rank",
+        "style": [
+          "background: #5c617a;"
+        ]
+      },
+      "ninth": {
+        "code": "9",
+        "key": "ninth",
+        "color": "#5c617a",
+        "name": "9th",
+        "alias": "九档",
+        "group": "rank",
+        "style": [
+          "background: #5c617a;"
+        ]
+      },
+      "fifth": {
+        "code": "5",
+        "key": "fifth",
+        "color": "#5c617a",
+        "name": "5th",
+        "alias": "五档",
+        "group": "rank",
+        "style": [
+          "background: #5c617a;"
+        ]
+      },
+      "fourth": {
+        "code": "4",
+        "key": "fourth",
+        "color": "#5c617a",
+        "name": "4th",
+        "alias": "四档",
+        "group": "rank",
+        "style": [
+          "background: #5c617a;"
+        ]
+      },
+      "tier1": {
+        "code": "21",
+        "key": "tier1",
+        "color": "#AFB0B2",
+        "name": "t1",
+        "alias": "T1",
+        "group": "tier",
+        "style": [
+          "background: #0252D9;"
+        ]
+      },
+      "first": {
+        "code": "1",
+        "key": "first",
+        "color": "#5c617a",
+        "name": "1st",
+        "alias": "一档",
+        "group": "rank",
+        "style": [
+          "background: #5c617a;"
+        ]
+      },
+      "phase3": {
+        "code": "13",
+        "key": "phase3",
+        "color": "#5c617a",
+        "name": "p3",
+        "alias": "P3",
+        "group": "phase",
+        "style": [
+          "background: linear-gradient( 141deg, #272F57 0%, #2A3472 26%, #3F2F91 60%, #262940 100%);",
+          "background: linear-gradient( 130deg, #59BBA0 0%, #47CF81 38%, #5794A5 73%, #4F8E6B 100%);"
+        ]
+      },
+      "emerald": {
+        "code": "32",
+        "key": "emerald",
+        "color": "#5eb75f",
+        "name": "emerald",
+        "alias": "绿宝石",
+        "group": "phase",
+        "style": [
+          "background: #5FB85F;"
+        ]
+      },
+      "phase4": {
+        "code": "14",
+        "key": "phase4",
+        "color": "#5c617a",
+        "name": "p4",
+        "alias": "P4",
+        "group": "phase",
+        "style": [
+          "background: linear-gradient( 141deg, #2F3C87 0%, #313E90 26%, #3F2F91 60%, #262940 100%);",
+          "background: linear-gradient( 130deg, #69A695 0%, #44C0B4 36%, #5F877E 75%, #6FA656 100%);"
+        ]
+      },
+      "sapphire": {
+        "code": "33",
+        "key": "sapphire",
+        "color": "#6F9FFB",
+        "name": "sapphire",
+        "alias": "蓝宝石",
+        "group": "phase",
+        "style": [
+          "background: #6F9FFC;"
+        ]
+      },
+      "singleblue": {
+        "code": "35",
+        "key": "singleblue",
+        "color": "#6F9FFB",
+        "name": "singleblue",
+        "alias": "单面全蓝",
+        "group": "singleblue",
+        "style": [
+          "background: #6F9FFC;"
+        ]
+      }
+    },
+    "rates": [
+      {
+        "name": "人民币",
+        "icon": "¥",
+        "currency": "CNY",
+        "rate": 1.0
+      },
+      {
+        "name": "美元",
+        "icon": "$",
+        "currency": "USD",
+        "rate": 0.1408
+      },
+      {
+        "name": "卢布",
+        "icon": "₽",
+        "currency": "RUB",
+        "rate": 11.1235
+      },
+      {
+        "name": "欧元",
+        "icon": "€",
+        "currency": "EUR",
+        "rate": 0.1222
+      }
+    ],
+    "csgoItemAttrMap": {
+      "StickerCategory": {
+        "nameZh": "印花类型",
+        "nameEn": "Sticker Type",
+        "values": {
+          "Tournament": {
+            "nameZh": "锦标赛",
+            "nameEn": "Tournament"
+          },
+          "PlayerSignature": {
+            "nameZh": "选手亲笔签名",
+            "nameEn": "Player Autograph"
+          },
+          "TeamLogo": {
+            "nameZh": "战队队标",
+            "nameEn": "Team Logo"
+          }
+        }
+      },
+      "StickerCapsule": {
+        "nameZh": "印花收藏品",
+        "nameEn": "Sticker Collection",
+        "values": {
+          "crate_signature_pack_eslcologne2015_group_players_collection": {
+            "nameZh": "2015年 ESL One 科隆锦标赛选手亲笔签名",
+            "nameEn": "ESL One Cologne 2015 Player Autographs"
+          },
+          "sticker_pack_sugarface2_lootlist": {
+            "nameZh": "糖果脸谱 2 号印花收藏品",
+            "nameEn": "Sugarface 2 Sticker Collection"
+          },
+          "crate_signature_pack_cph2024_group_players_collection": {
+            "nameZh": "2024年哥本哈根锦标赛选手亲笔签名",
+            "nameEn": "Copenhagen 2024 Player Autographs"
+          },
+          "crate_signature_pack_aus2025_group_players_collection": {
+            "nameZh": "2025年奥斯汀锦标赛选手亲笔签名",
+            "nameEn": "Austin 2025 Player Autographs"
+          },
+          "crate_sticker_pack_skillgroup_capsule_lootlist": {
+            "nameZh": "段位印花胶囊",
+            "nameEn": "Skill Groups Capsule"
+          },
+          "crate_sticker_pack_atlanta2017_challengers_collection": {
+            "nameZh": "2017年亚特兰大锦标赛挑战组",
+            "nameEn": "Atlanta 2017 Challengers"
+          },
+          "crate_signature_pack_london2018_group_players_collection": {
+            "nameZh": "2018年伦敦锦标赛选手亲笔签名",
+            "nameEn": "London 2018 Player Autographs"
+          },
+          "crate_signature_pack_krakow2017_group_players_collection": {
+            "nameZh": "2017年克拉科夫锦标赛选手亲笔签名",
+            "nameEn": "Krakow 2017 Player Autographs"
+          },
+          "crate_sticker_pack_cologne2016_legends_collection": {
+            "nameZh": "2016年科隆锦标赛传奇",
+            "nameEn": "Cologne 2016 Legends"
+          },
+          "crate_sticker_pack01": {
+            "nameZh": "1 号印花胶囊",
+            "nameEn": "Sticker Capsule"
+          },
+          "crate_sticker_pack_eslkatowice2015_02_collection": {
+            "nameZh": "2015年 ESL One 卡托维兹锦标赛挑战组",
+            "nameEn": "ESL One Katowice 2015 Challengers"
+          },
+          "crate_sticker_pack02": {
+            "nameZh": "2 号印花胶囊",
+            "nameEn": "Sticker Capsule 2"
+          },
+          "crate_signature_pack_katowice2019_group_players_collection": {
+            "nameZh": "2019年卡托维兹锦标赛选手亲笔签名",
+            "nameEn": "Katowice 2019 Player Autographs"
+          },
+          "crate_sticker_pack_comm2018_01_capsule_lootlist": {
+            "nameZh": "2018年社区印花胶囊",
+            "nameEn": "Community Capsule 2018"
+          },
+          "crate_sticker_pack_bestiary_capsule_lootlist": {
+            "nameZh": "动物寓言胶囊",
+            "nameEn": "Bestiary Capsule"
+          },
+          "crate_sticker_pack_london2018_challengers_collection": {
+            "nameZh": "2018年伦敦锦标赛挑战组",
+            "nameEn": "London 2018 Returning Challengers"
+          },
+          "crate_sticker_pack_antwerp2022_challengers_collection": {
+            "nameZh": "2022年安特卫普锦标赛挑战组印花",
+            "nameEn": "Antwerp 2022 Challengers Stickers"
+          },
+          "crate_sticker_pack_community2022_capsule_lootlist": {
+            "nameZh": "间谍印花胶囊",
+            "nameEn": "Espionage Sticker Capsule"
+          },
+          "crate_sticker_pack_op_riptide_capsule_lootlist": {
+            "nameZh": "“激流大行动”印花收藏品",
+            "nameEn": "Operation Riptide Sticker Collection"
+          },
+          "crate_sticker_pack_columbus2016_challengers_collection": {
+            "nameZh": "2016年 MLG 哥伦布锦标赛挑战组",
+            "nameEn": "MLG Columbus 2016 Challengers"
+          },
+          "crate_sticker_pack_warhammer_xenos_capsule_lootlist": {
+            "nameZh": "战锤40K异形印花胶囊",
+            "nameEn": "Warhammer 40,000 Xenos Sticker Capsule"
+          },
+          "crate_sticker_pack_eslcologne2015_legends_collection": {
+            "nameZh": "2015年 ESL One 科隆锦标赛传奇",
+            "nameEn": "ESL One Cologne 2015 Legends"
+          },
+          "crate_sticker_pack_bf2042_capsule_lootlist": {
+            "nameZh": "战地风云 2042 印花胶囊",
+            "nameEn": "Battlefield 2042 Sticker Capsule"
+          },
+          "crate_sticker_pack_antwerp2022_legends_collection": {
+            "nameZh": "2022年安特卫普锦标赛传奇组印花",
+            "nameEn": "Antwerp 2022 Legends Stickers"
+          },
+          "crate_sticker_pack_dhw2014_01_collection": {
+            "nameZh": "2014年 DreamHack 锦标赛传奇",
+            "nameEn": "DreamHack 2014 Legends"
+          },
+          "crate_sticker_pack_london2018_legends_collection": {
+            "nameZh": "2018年伦敦锦标赛传奇",
+            "nameEn": "London 2018 Legends"
+          },
+          "crate_sticker_pack_rmr2020_legends_collection": {
+            "nameZh": "2020 RMR 传奇组战队胶囊",
+            "nameEn": "2020 RMR Legends"
+          },
+          "crate_signature_pack_berlin2019_group_players_collection": {
+            "nameZh": "2019年柏林锦标赛选手签名",
+            "nameEn": "Berlin 2019 Player Autographs"
+          },
+          "crate_sticker_pack_broken_fang_lootlist": {
+            "nameZh": "“狂牙大行动”印花收藏品",
+            "nameEn": "Broken Fang Sticker Collection"
+          },
+          "crate_sticker_pack_team_roles_capsule_lootlist": {
+            "nameZh": "团队定位胶囊",
+            "nameEn": "Team Roles Capsule"
+          },
+          "crate_sticker_pack_rmr2020_challengers_collection": {
+            "nameZh": "2020 RMR 挑战组战队胶囊",
+            "nameEn": "2020 RMR Challengers"
+          },
+          "crate_sticker_pack_aus2025_contenders_collection": {
+            "nameZh": "2025年奥斯汀锦标赛竞争组印花",
+            "nameEn": "Austin 2025 Contenders Stickers"
+          },
+          "crate_sticker_pack_sugarface_capsule_lootlist": {
+            "nameZh": "糖果脸谱胶囊",
+            "nameEn": "Sugarface Capsule"
+          },
+          "crate_sticker_pack_antwerp2022_contenders_collection": {
+            "nameZh": "2022年安特卫普锦标赛竞争组印花",
+            "nameEn": "Antwerp 2022 Contenders Stickers"
+          },
+          "crate_sticker_pack_paris2023_legends_collection": {
+            "nameZh": "2023年巴黎锦标赛传奇组印花",
+            "nameEn": "Paris 2023 Legends Stickers"
+          },
+          "crate_sticker_pack_sha2024_legends_collection": {
+            "nameZh": "2024年上海锦标赛传奇组印花",
+            "nameEn": "Shanghai 2024 Legends Stickers"
+          },
+          "crate_sticker_pack_kat2014_02": {
+            "nameZh": "2014年 EMS 卡托维兹锦标赛传奇",
+            "nameEn": "EMS Katowice 2014 Legends"
+          },
+          "crate_sticker_pack_kat2014_01": {
+            "nameZh": "2014年 EMS 卡托维兹锦标赛挑战组",
+            "nameEn": "EMS Katowice 2014 Challengers"
+          },
+          "crate_sticker_pack_enfu_capsule_lootlist": {
+            "nameZh": "Enfu 印花胶囊",
+            "nameEn": "Enfu Sticker Capsule"
+          },
+          "crate_signature_pack_atlanta2017_group_players_collection": {
+            "nameZh": "2017年亚特兰大锦标赛选手亲笔签名",
+            "nameEn": "Atlanta 2017 Player Autographs"
+          },
+          "crate_sticker_pack_paris2023_challengers_collection": {
+            "nameZh": "2023年巴黎锦标赛挑战组印花",
+            "nameEn": "Paris 2023 Challengers Stickers"
+          },
+          "crate_sticker_pack_feral_predators_capsule_lootlist": {
+            "nameZh": "猛兽胶囊",
+            "nameEn": "Feral Predators Capsule"
+          },
+          "crate_signature_pack_rio2022_group_players_collection": {
+            "nameZh": "2022年里约热内卢锦标赛选手亲笔签名",
+            "nameEn": "Rio 2022 Player Autographs"
+          },
+          "crate_sticker_pack_katowice2019_contenders_collection": {
+            "nameZh": "2019年卡托维兹锦标赛竞争组",
+            "nameEn": "Katowice 2019 Minor Challengers"
+          },
+          "crate_sticker_pack_shattered_web_lootlist": {
+            "nameZh": "“裂网大行动”印花收藏品",
+            "nameEn": "Shattered Web Sticker Collection"
+          },
+          "crate_sticker_pack_rio2022_contenders_collection": {
+            "nameZh": "2022年里约热内卢锦标赛竞争组印花",
+            "nameEn": "Rio 2022 Contenders Stickers"
+          },
+          "crate_sticker_pack_katowice2019_challengers_collection": {
+            "nameZh": "2019年卡托维兹锦标赛挑战组",
+            "nameEn": "Katowice 2019 Returning Challengers"
+          },
+          "crate_sticker_pack_chicken_capsule_lootlist": {
+            "nameZh": "小鸡胶囊",
+            "nameEn": "Chicken Capsule"
+          },
+          "crate_sticker_pack_rio2022_challengers_collection": {
+            "nameZh": "2022年里约热内卢锦标赛挑战组印花",
+            "nameEn": "Rio 2022 Challengers Stickers"
+          },
+          "crate_sticker_pack_rmr2020_contenders_collection": {
+            "nameZh": "2020 RMR 竞争组战队胶囊",
+            "nameEn": "2020 RMR Contenders"
+          },
+          "crate_signature_pack_columbus2016_group_players_collection": {
+            "nameZh": "2016年 MLG 哥伦布锦标赛选手亲笔签名",
+            "nameEn": "MLG Columbus 2016 Player Autographs"
+          },
+          "crate_sticker_pack_cph2024_legends_collection": {
+            "nameZh": "2024年哥本哈根锦标赛传奇组印花",
+            "nameEn": "Copenhagen 2024 Legends Stickers"
+          },
+          "crate_sticker_pack_atlanta2017_legends_collection": {
+            "nameZh": "2017年亚特兰大锦标赛传奇",
+            "nameEn": "Atlanta 2017 Legends"
+          },
+          "crate_sticker_pack_illuminate_capsule_02_lootlist": {
+            "nameZh": "点亮中国 2 号印花胶囊",
+            "nameEn": "Perfect World Sticker Capsule 2"
+          },
+          "crate_sticker_pack_stockh2021_contenders_collection": {
+            "nameZh": "2021年斯德哥尔摩锦标赛竞争组印花",
+            "nameEn": "Stockholm 2021 Contenders Stickers"
+          },
+          "crate_sticker_pack_cph2024_contenders_collection": {
+            "nameZh": "2024年哥本哈根锦标赛竞争组印花",
+            "nameEn": "Copenhagen 2024 Contenders Stickers"
+          },
+          "crate_sticker_pack_hlalyx_capsule_lootlist": {
+            "nameZh": "《半衰期：爱莉克斯》印花胶囊",
+            "nameEn": "Half-Life: Alyx Sticker Capsule"
+          },
+          "crate_sticker_pack_csgo10_capsule_lootlist": {
+            "nameZh": "CS:GO 10周年印花胶囊",
+            "nameEn": "10 Year Birthday Sticker Capsule"
+          },
+          "crate_sticker_pack_rio2022_legends_collection": {
+            "nameZh": "2022年里约热内卢锦标赛传奇组印花",
+            "nameEn": "Rio 2022 Legends Stickers"
+          },
+          "crate_sticker_pack_dhw2014_02": {
+            "nameZh": "2014年 DreamHack 锦标赛挑战组",
+            "nameEn": "DreamHack 2014 Challengers"
+          },
+          "crate_sticker_pack_katowice2019_legends_collection": {
+            "nameZh": "2019年卡托维兹锦标赛传奇",
+            "nameEn": "Katowice 2019 Legends"
+          },
+          "crate_sticker_pack_illuminate_capsule_01_lootlist": {
+            "nameZh": "点亮中国 1 号印花胶囊",
+            "nameEn": "Perfect World Sticker Capsule 1"
+          },
+          "crate_sticker_pack_boston2018_legends_collection": {
+            "nameZh": "2018年波士顿锦标赛传奇",
+            "nameEn": "Boston 2018 Legends"
+          },
+          "crate_sticker_pack_community2021_capsule_lootlist": {
+            "nameZh": "2021社区印花胶囊",
+            "nameEn": "2021 Community Sticker Capsule"
+          },
+          "crate_signature_pack_bud2025_group_players_collection": {
+            "nameZh": "2025年布达佩斯锦标赛选手亲笔签名",
+            "nameEn": "Budapest 2025 Player Autographs"
+          },
+          "crate_sticker_pack_eslcologne2015_challengers_collection": {
+            "nameZh": "2015年 ESL One 科隆锦标赛挑战组",
+            "nameEn": "ESL One Cologne 2015 Challengers"
+          },
+          "crate_sticker_pack_recoil_lootlist": {
+            "nameZh": "压枪印花收藏品",
+            "nameEn": "Recoil Sticker Collection"
+          },
+          "sticker_pack_community_2025_lootlist": {
+            "nameZh": "sticker_pack_community_2025_lootlist",
+            "nameEn": "sticker_pack_community_2025_lootlist"
+          },
+          "crate_sticker_pack_riptide_surfshop_lootlist": {
+            "nameZh": "“激流冲浪店”印花收藏品",
+            "nameEn": "Riptide Surf Shop Sticker Collection"
+          },
+          "crate_sticker_pack_community_2024_capsule_lootlist": {
+            "nameZh": "伏击印花胶囊",
+            "nameEn": "Ambush Sticker Capsule"
+          },
+          "crate_sticker_pack_stockh2021_challengers_collection": {
+            "nameZh": "2021年斯德哥尔摩锦标赛挑战组印花",
+            "nameEn": "Stockholm 2021 Challengers Stickers"
+          },
+          "crate_sticker_pack_aus2025_challengers_collection": {
+            "nameZh": "2025年奥斯汀锦标赛挑战组印花",
+            "nameEn": "Austin 2025 Challengers Stickers"
+          },
+          "crate_sticker_pack_london2018_contenders_collection": {
+            "nameZh": "2018年伦敦特锦赛竞争组",
+            "nameEn": "London 2018 Minor Challengers"
+          },
+          "crate_sticker_pack_cph2024_challengers_collection": {
+            "nameZh": "2024年哥本哈根锦标赛挑战组印花",
+            "nameEn": "Copenhagen 2024 Challengers Stickers"
+          },
+          "crate_sticker_pack_eslkatowice2015_01_collection": {
+            "nameZh": "2015年 ESL One 卡托维兹锦标赛传奇",
+            "nameEn": "ESL One Katowice 2015 Legends"
+          },
+          "crate_sticker_pack_bud2025_contenders_collection": {
+            "nameZh": "2025年布达佩斯锦标赛竞争组印花",
+            "nameEn": "Budapest 2025 Contenders Stickers"
+          },
+          "crate_signature_pack_paris2023_group_players_collection": {
+            "nameZh": "2023年巴黎锦标赛选手亲笔签名",
+            "nameEn": "Paris 2023 Player Autographs"
+          },
+          "crate_sticker_pack_paris2023_contenders_collection": {
+            "nameZh": "2023年巴黎锦标赛竞争组印花",
+            "nameEn": "Paris 2023 Contenders Stickers"
+          },
+          "crate_sticker_pack_warhammer_adeptus_capsule_lootlist": {
+            "nameZh": "战锤40K星际战士印花胶囊",
+            "nameEn": "Warhammer 40,000 Adeptus Astartes Sticker Capsule"
+          },
+          "crate_signature_pack_cologne2016_group_players_collection": {
+            "nameZh": "2016年科隆锦标赛选手亲笔签名",
+            "nameEn": "Cologne 2016 Player Autographs"
+          },
+          "crate_sticker_pack_pinups_capsule_lootlist": {
+            "nameZh": "海报女郎胶囊",
+            "nameEn": "Pinups Capsule"
+          },
+          "sticker_pack_stkr_craft_01_lootlist": {
+            "nameZh": "元素手作印花包",
+            "nameEn": "Elemental Craft Sticker Pack"
+          },
+          "crate_sticker_pack_cs20_capsule_lootlist": {
+            "nameZh": "反恐精英20周年印花胶囊",
+            "nameEn": "CS20 Sticker Capsule"
+          },
+          "crate_signature_pack_sha2024_group_players_collection": {
+            "nameZh": "2024年上海锦标赛选手亲笔签名",
+            "nameEn": "Shanghai 2024 Player Autographs"
+          },
+          "crate_sticker_pack_spring2022_capsule_lootlist": {
+            "nameZh": "作战室印花胶囊",
+            "nameEn": "The Boardroom Sticker Capsule"
+          },
+          "crate_sticker_pack_cologne2016_challengers_collection": {
+            "nameZh": "2016年科隆锦标赛挑战组",
+            "nameEn": "Cologne 2016 Challengers"
+          },
+          "crate_signature_pack_boston2018_group_players_collection": {
+            "nameZh": "2018年波士顿锦标赛选手亲笔签名",
+            "nameEn": "Boston 2018 Player Autographs"
+          },
+          "crate_sticker_pack_krakow2017_legends_collection": {
+            "nameZh": "2017年克拉科夫锦标赛传奇",
+            "nameEn": "Krakow 2017 Legends"
+          },
+          "sticker_pack_stkr_craft_02_lootlist": {
+            "nameZh": "角色手作印花包",
+            "nameEn": "Character Craft Sticker Pack"
+          },
+          "crate_sticker_pack_berlin2019_challengers_collection": {
+            "nameZh": "2019年柏林锦标赛挑战组胶囊",
+            "nameEn": "Berlin 2019 Returning Challengers"
+          },
+          "crate_sticker_pack_bud2025_challengers_collection": {
+            "nameZh": "2025年布达佩斯锦标赛挑战组印花",
+            "nameEn": "Budapest 2025 Challengers Stickers"
+          },
+          "crate_sticker_pack_warhammer_traitor_capsule_lootlist": {
+            "nameZh": "战锤40K混沌星际战士印花胶囊",
+            "nameEn": "Warhammer 40,000 Traitor Astartes Sticker Capsule"
+          },
+          "crate_sticker_pack_boston2018_challengers_collection": {
+            "nameZh": "2018年波士顿锦标赛挑战组",
+            "nameEn": "Boston 2018 Returning Challengers"
+          },
+          "crate_sticker_pack_aus2025_legends_collection": {
+            "nameZh": "2025年奥斯汀锦标赛传奇组印花",
+            "nameEn": "Austin 2025 Legends Stickers"
+          },
+          "crate_signature_pack_stockh2021_group_players_collection": {
+            "nameZh": "2021年斯德哥尔摩锦标赛选手亲笔签名",
+            "nameEn": "Stockholm 2021 Player Autographs"
+          },
+          "crate_sticker_pack_warhammer_imperium_capsule_lootlist": {
+            "nameZh": "战锤40K人类帝国印花胶囊",
+            "nameEn": "Warhammer 40,000 Imperium Sticker Capsule"
+          },
+          "crate_signature_pack_antwerp2022_group_players_collection": {
+            "nameZh": "2022年安特卫普锦标赛选手亲笔签名",
+            "nameEn": "Antwerp 2022 Player Autographs"
+          },
+          "crate_sticker_pack_berlin2019_legends_collection": {
+            "nameZh": "2019年柏林锦标赛传奇组胶囊",
+            "nameEn": "Berlin 2019 Legends"
+          },
+          "crate_sticker_pack_sha2024_challengers_collection": {
+            "nameZh": "2024年上海锦标赛挑战组印花",
+            "nameEn": "Shanghai 2024 Challengers Stickers"
+          },
+          "crate_sticker_pack_warhammer_lootlist": {
+            "nameZh": "战锤40k印花胶囊",
+            "nameEn": "Warhammer 40,000 Sticker Capsule"
+          },
+          "crate_sticker_pack_halo_capsule_lootlist": {
+            "nameZh": "光环胶囊",
+            "nameEn": "Halo Capsule"
+          },
+          "crate_sticker_pack_community01": {
+            "nameZh": "1 号社区印花胶囊",
+            "nameEn": "Community Sticker Capsule 1"
+          },
+          "crate_sticker_pack_boston2018_contenders_collection": {
+            "nameZh": "2018年波士顿锦标赛竞争组",
+            "nameEn": "Boston 2018 Minor Challengers"
+          },
+          "crate_sticker_pack_cologne2014_02": {
+            "nameZh": "2014年 ESL One 科隆锦标赛挑战组",
+            "nameEn": "ESL One Cologne 2014 Challengers"
+          },
+          "crate_sticker_pack_cologne2014_01": {
+            "nameZh": "2014年 ESL One 科隆锦标赛传奇",
+            "nameEn": "ESL One Cologne 2014 Legends"
+          },
+          "crate_sticker_pack_columbus2016_legends_collection": {
+            "nameZh": "2016年 MLG 哥伦布锦标赛传奇",
+            "nameEn": "MLG Columbus 2016 Legends"
+          },
+          "crate_sticker_pack_slid3_capsule_lootlist": {
+            "nameZh": "Slid3 胶囊",
+            "nameEn": "Slid3 Capsule"
+          },
+          "crate_signature_pack_cluj2015_group_players_collection": {
+            "nameZh": "2015年 DreamHack 克卢日-纳波卡锦标赛选手亲笔签名",
+            "nameEn": "DreamHack Cluj-Napoca 2015 Player Autographs"
+          },
+          "crate_sticker_pack_berlin2019_contenders_collection": {
+            "nameZh": "2019年柏林锦标赛竞争组胶囊",
+            "nameEn": "Berlin 2019 Minor Challengers"
+          },
+          "crate_sticker_pack_cluj2015_legends_collection": {
+            "nameZh": "2015年 DreamHack 克卢日-纳波卡锦标赛传奇",
+            "nameEn": "DreamHack Cluj-Napoca 2015 Legends"
+          },
+          "crate_sticker_pack_stockh2021_legends_collection": {
+            "nameZh": "2021年斯德哥尔摩锦标赛传奇组印花",
+            "nameEn": "Stockholm 2021 Legends Stickers"
+          },
+          "crate_sticker_pack_krakow2017_challengers_collection": {
+            "nameZh": "2017年克拉科夫锦标赛挑战组",
+            "nameEn": "Krakow 2017 Challengers"
+          },
+          "crate_sticker_pack_sha2024_contenders_collection": {
+            "nameZh": "2024年上海锦标赛竞争组印花",
+            "nameEn": "Shanghai 2024 Contenders Stickers"
+          },
+          "crate_sticker_pack_cluj2015_challengers_collection": {
+            "nameZh": "2015年 DreamHack 克卢日-纳波卡锦标赛挑战组",
+            "nameEn": "DreamHack Cluj-Napoca 2015 Challengers"
+          },
+          "crate_sticker_pack_poorly_drawn_lootlist": {
+            "nameZh": "魔性探员胶囊",
+            "nameEn": "Poorly Drawn Capsule"
+          },
+          "crate_sticker_pack_bud2025_legends_collection": {
+            "nameZh": "2025年布达佩斯锦标赛传奇组印花",
+            "nameEn": "Budapest 2025 Legends Stickers"
+          }
+        }
+      },
+      "TournamentTeam": {
+        "nameZh": "战队",
+        "nameEn": "Team",
+        "values": {
+          "Team70": {
+            "nameZh": "Vega Squadron",
+            "nameEn": "Vega Squadron"
+          },
+          "Team71": {
+            "nameZh": "Immortals",
+            "nameEn": "Immortals"
+          },
+          "Team76": {
+            "nameZh": "Quantum Bellator Fire",
+            "nameEn": "Quantum Bellator Fire"
+          },
+          "Team77": {
+            "nameZh": "Misfits Gaming",
+            "nameEn": "Misfits Gaming"
+          },
+          "Team78": {
+            "nameZh": "100 Thieves",
+            "nameEn": "100 Thieves"
+          },
+          "Team79": {
+            "nameZh": "Flash Gaming",
+            "nameEn": "Flash Gaming"
+          },
+          "Team72": {
+            "nameZh": "Sprout Esports",
+            "nameEn": "Sprout Esports"
+          },
+          "Team73": {
+            "nameZh": "Space Soldiers",
+            "nameEn": "Space Soldiers"
+          },
+          "Team74": {
+            "nameZh": "TYLOO",
+            "nameEn": "Tyloo"
+          },
+          "Team75": {
+            "nameZh": "Avangar",
+            "nameEn": "Avangar"
+          },
+          "Team119": {
+            "nameZh": "Monte",
+            "nameEn": "Monte"
+          },
+          "Team117": {
+            "nameZh": "Apeks",
+            "nameEn": "Apeks"
+          },
+          "Team69": {
+            "nameZh": "BIG",
+            "nameEn": "BIG"
+          },
+          "Team118": {
+            "nameZh": "Into The Breach",
+            "nameEn": "Into The Breach"
+          },
+          "Team115": {
+            "nameZh": "GamerLegion",
+            "nameEn": "GamerLegion"
+          },
+          "Team116": {
+            "nameZh": "00 Nation",
+            "nameEn": "00 Nation"
+          },
+          "Team113": {
+            "nameZh": "Imperial Esports",
+            "nameEn": "Imperial Esports"
+          },
+          "Team114": {
+            "nameZh": "Bad News Eagles",
+            "nameEn": "Bad News Eagles"
+          },
+          "Team111": {
+            "nameZh": "Complexity Gaming",
+            "nameEn": "Complexity Gaming"
+          },
+          "Team112": {
+            "nameZh": "9z Team",
+            "nameEn": "9z Team"
+          },
+          "Team110": {
+            "nameZh": "Eternal Fire",
+            "nameEn": "Eternal Fire"
+          },
+          "Team80": {
+            "nameZh": "MIBR",
+            "nameEn": "MIBR"
+          },
+          "Team81": {
+            "nameZh": "Team Spirit",
+            "nameEn": "Team Spirit"
+          },
+          "Team82": {
+            "nameZh": "Rogue",
+            "nameEn": "Rogue"
+          },
+          "Team87": {
+            "nameZh": "NRG",
+            "nameEn": "NRG"
+          },
+          "Team88": {
+            "nameZh": "ViCi Gaming",
+            "nameEn": "ViCi Gaming"
+          },
+          "Team89": {
+            "nameZh": "Vitality",
+            "nameEn": "Vitality"
+          },
+          "Team83": {
+            "nameZh": "Winstrike Team",
+            "nameEn": "Winstrike Team"
+          },
+          "Team84": {
+            "nameZh": "ENCE",
+            "nameEn": "ENCE"
+          },
+          "Team85": {
+            "nameZh": "FURIA",
+            "nameEn": "FURIA"
+          },
+          "Team86": {
+            "nameZh": "Grayhound Gaming",
+            "nameEn": "Grayhound Gaming"
+          },
+          "Team108": {
+            "nameZh": "IHC Esports",
+            "nameEn": "IHC Esports"
+          },
+          "Team109": {
+            "nameZh": "Outsiders",
+            "nameEn": "Outsiders"
+          },
+          "Team106": {
+            "nameZh": "MOUZ",
+            "nameEn": "MOUZ"
+          },
+          "Team107": {
+            "nameZh": "Nemiga",
+            "nameEn": "Nemiga"
+          },
+          "Team104": {
+            "nameZh": "Sharks Esports",
+            "nameEn": "Sharks Esports"
+          },
+          "Team105": {
+            "nameZh": "Entropiq",
+            "nameEn": "Entropiq"
+          },
+          "Team102": {
+            "nameZh": "paiN Gaming",
+            "nameEn": "paiN Gaming"
+          },
+          "Team103": {
+            "nameZh": "Movistar Riders",
+            "nameEn": "Movistar Riders"
+          },
+          "Team100": {
+            "nameZh": "Boom Esports",
+            "nameEn": "Boom Esports"
+          },
+          "Team101": {
+            "nameZh": "Copenhagen Flames",
+            "nameEn": "Copenhagen Flames"
+          },
+          "Team90": {
+            "nameZh": "forZe eSports",
+            "nameEn": "forZe eSports"
+          },
+          "Team91": {
+            "nameZh": "CR4ZY",
+            "nameEn": "CR4ZY"
+          },
+          "Team92": {
+            "nameZh": "Syman Gaming",
+            "nameEn": "Syman Gaming"
+          },
+          "Team93": {
+            "nameZh": "DreamEaters",
+            "nameEn": "DreamEaters"
+          },
+          "Team98": {
+            "nameZh": "Evil Geniuses",
+            "nameEn": "Evil Geniuses"
+          },
+          "Team10": {
+            "nameZh": "Copenhagen Wolves",
+            "nameEn": "Copenhagen Wolves"
+          },
+          "Team99": {
+            "nameZh": "Gen.G Esports",
+            "nameEn": "Gen.G Esports"
+          },
+          "Team11": {
+            "nameZh": "Universal Soldiers",
+            "nameEn": "Universal Soldiers"
+          },
+          "Team12": {
+            "nameZh": "Natus Vincere",
+            "nameEn": "Natus Vincere"
+          },
+          "Team13": {
+            "nameZh": "n!faculty",
+            "nameEn": "n!faculty"
+          },
+          "Team94": {
+            "nameZh": "INTZ E-SPORTS CLUB",
+            "nameEn": "INTZ E-SPORTS CLUB"
+          },
+          "Team95": {
+            "nameZh": "HEROIC",
+            "nameEn": "HEROIC"
+          },
+          "Team96": {
+            "nameZh": "OG",
+            "nameEn": "OG"
+          },
+          "Team97": {
+            "nameZh": "ESPADA",
+            "nameEn": "ESPADA"
+          },
+          "Team21": {
+            "nameZh": "NiP B队",
+            "nameEn": "NiP Team B"
+          },
+          "Team22": {
+            "nameZh": "Tomi 战队",
+            "nameEn": "Team Tomi"
+          },
+          "Team23": {
+            "nameZh": "Duncan 战队",
+            "nameEn": "Team Duncan"
+          },
+          "Team24": {
+            "nameZh": "Team Dignitas",
+            "nameEn": "Team Dignitas"
+          },
+          "Team20": {
+            "nameZh": "NiP A队",
+            "nameEn": "NiP Team A"
+          },
+          "Team18": {
+            "nameZh": " Valve B队",
+            "nameEn": "Valve Squad Bravo"
+          },
+          "Team14": {
+            "nameZh": "SK Gaming",
+            "nameEn": "SK Gaming"
+          },
+          "Team15": {
+            "nameZh": "Xapso",
+            "nameEn": "Xapso"
+          },
+          "Team16": {
+            "nameZh": "[R]eason Gaming",
+            "nameEn": "[R]eason Gaming"
+          },
+          "Team17": {
+            "nameZh": " Valve A队",
+            "nameEn": "Valve Squad Alpha"
+          },
+          "Team32": {
+            "nameZh": "Vox Eminor",
+            "nameEn": "Vox Eminor"
+          },
+          "Team33": {
+            "nameZh": "Cloud9",
+            "nameEn": "Cloud9"
+          },
+          "Team34": {
+            "nameZh": "dAT team",
+            "nameEn": "dAT team"
+          },
+          "Team35": {
+            "nameZh": "Epsilon eSports",
+            "nameEn": "Epsilon eSports"
+          },
+          "Team30": {
+            "nameZh": "Reason Gaming",
+            "nameEn": "Reason Gaming"
+          },
+          "Team31": {
+            "nameZh": "Virtus.Pro",
+            "nameEn": "Virtus.Pro"
+          },
+          "Team29": {
+            "nameZh": "mousesports",
+            "nameEn": "mousesports"
+          },
+          "Team9": {
+            "nameZh": "LGB eSports",
+            "nameEn": "LGB eSports"
+          },
+          "Team25": {
+            "nameZh": "HellRaisers",
+            "nameEn": "HellRaisers"
+          },
+          "Team8": {
+            "nameZh": "We got game",
+            "nameEn": "We got game"
+          },
+          "Team26": {
+            "nameZh": "Team LDLC.com",
+            "nameEn": "Team LDLC.com"
+          },
+          "Team7": {
+            "nameZh": "Clan-Mystik",
+            "nameEn": "Clan-Mystik"
+          },
+          "Team6": {
+            "nameZh": "Fnatic",
+            "nameEn": "Fnatic"
+          },
+          "Team27": {
+            "nameZh": "Titan",
+            "nameEn": "Titan"
+          },
+          "Team5": {
+            "nameZh": "iBUYPOWER",
+            "nameEn": "iBUYPOWER"
+          },
+          "Team28": {
+            "nameZh": "3DMAX",
+            "nameEn": "3DMAX"
+          },
+          "Team4": {
+            "nameZh": "VeryGames",
+            "nameEn": "VeryGames"
+          },
+          "Team3": {
+            "nameZh": "compLexity Gaming",
+            "nameEn": "compLexity Gaming"
+          },
+          "Team2": {
+            "nameZh": "Astana Dragons",
+            "nameEn": "Astana Dragons"
+          },
+          "Team1": {
+            "nameZh": "Ninjas in Pyjamas",
+            "nameEn": "Ninjas in Pyjamas"
+          },
+          "Team43": {
+            "nameZh": "Flipsid3 Tactics",
+            "nameEn": "Flipsid3 Tactics"
+          },
+          "Team46": {
+            "nameZh": "Team EnVyUs",
+            "nameEn": "Team EnVyUs"
+          },
+          "Team40": {
+            "nameZh": "Bravado Gaming",
+            "nameEn": "Bravado Gaming"
+          },
+          "Team41": {
+            "nameZh": "Planetkey Dynamics",
+            "nameEn": "Planetkey Dynamics"
+          },
+          "Team42": {
+            "nameZh": "ESC Gaming",
+            "nameEn": "ESC Gaming"
+          },
+          "Team36": {
+            "nameZh": "London Conspiracy",
+            "nameEn": "London Conspiracy"
+          },
+          "Team37": {
+            "nameZh": "MTS GameGod Wolf",
+            "nameEn": "MTS GameGod Wolf"
+          },
+          "Team38": {
+            "nameZh": "myXMG",
+            "nameEn": "myXMG"
+          },
+          "Team39": {
+            "nameZh": "PENTA Sports",
+            "nameEn": "PENTA Sports"
+          },
+          "Team144": {
+            "nameZh": "RED Canids",
+            "nameEn": "RED Canids"
+          },
+          "Team142": {
+            "nameZh": "Parivision",
+            "nameEn": "Parivision"
+          },
+          "Team143": {
+            "nameZh": "The Huns",
+            "nameEn": "The Huns"
+          },
+          "Team140": {
+            "nameZh": "M80",
+            "nameEn": "M80"
+          },
+          "Team141": {
+            "nameZh": "Metizport",
+            "nameEn": "Metizport"
+          },
+          "Team54": {
+            "nameZh": "Team Immunity",
+            "nameEn": "Team Immunity"
+          },
+          "Team55": {
+            "nameZh": "Team Kinguin",
+            "nameEn": "Team Kinguin"
+          },
+          "Team56": {
+            "nameZh": "Team eBettle",
+            "nameEn": "Team eBettle"
+          },
+          "Team57": {
+            "nameZh": "Luminosity Gaming",
+            "nameEn": "Luminosity Gaming"
+          },
+          "Team50": {
+            "nameZh": "Keyd Stars",
+            "nameEn": "Keyd Stars"
+          },
+          "Team51": {
+            "nameZh": "TSM Kinguin",
+            "nameEn": "TSM Kinguin"
+          },
+          "Team52": {
+            "nameZh": "Cloud9 G2A",
+            "nameEn": "Cloud9 G2A"
+          },
+          "Team53": {
+            "nameZh": "Renegades",
+            "nameEn": "Renegades"
+          },
+          "Team47": {
+            "nameZh": "Vexed Gaming",
+            "nameEn": "Vexed Gaming"
+          },
+          "Team139": {
+            "nameZh": "Falcons",
+            "nameEn": "Falcons"
+          },
+          "Team48": {
+            "nameZh": "Team Liquid",
+            "nameEn": "Team Liquid"
+          },
+          "Team49": {
+            "nameZh": "Counter Logic Gaming",
+            "nameEn": "Counter Logic Gaming"
+          },
+          "Team137": {
+            "nameZh": "BetBoom",
+            "nameEn": "BetBoom"
+          },
+          "Team138": {
+            "nameZh": "Chinggis Warriors",
+            "nameEn": "Chinggis Warriors"
+          },
+          "Team135": {
+            "nameZh": "B8",
+            "nameEn": "B8"
+          },
+          "Team133": {
+            "nameZh": "Passion UA",
+            "nameEn": "Passion UA"
+          },
+          "Team134": {
+            "nameZh": "Aurora",
+            "nameEn": "Aurora"
+          },
+          "Team131": {
+            "nameZh": "Rare Atom",
+            "nameEn": "Rare Atom"
+          },
+          "Team132": {
+            "nameZh": "Flyquest",
+            "nameEn": "Flyquest"
+          },
+          "Team130": {
+            "nameZh": "Wildcard",
+            "nameEn": "Wildcard"
+          },
+          "Team60": {
+            "nameZh": "Astralis",
+            "nameEn": "Astralis"
+          },
+          "Team65": {
+            "nameZh": "欧洲全明星战队",
+            "nameEn": "All-Star Team Europe"
+          },
+          "Team66": {
+            "nameZh": "OpTic Gaming",
+            "nameEn": "OpTic Gaming"
+          },
+          "Team67": {
+            "nameZh": "GODSENT",
+            "nameEn": "GODSENT"
+          },
+          "Team68": {
+            "nameZh": "North",
+            "nameEn": "North"
+          },
+          "Team61": {
+            "nameZh": "FaZe Clan",
+            "nameEn": "FaZe Clan"
+          },
+          "Team62": {
+            "nameZh": "Splyce",
+            "nameEn": "Splyce"
+          },
+          "Team63": {
+            "nameZh": "Gambit Esports",
+            "nameEn": "Gambit Esports"
+          },
+          "Team64": {
+            "nameZh": "美洲全明星战队",
+            "nameEn": "All-Star Team America"
+          },
+          "Team58": {
+            "nameZh": "Team SoloMid",
+            "nameEn": "Team SoloMid"
+          },
+          "Team59": {
+            "nameZh": "G2 Esports",
+            "nameEn": "G2 Esports"
+          },
+          "Team129": {
+            "nameZh": "SAW",
+            "nameEn": "SAW"
+          },
+          "Team126": {
+            "nameZh": "Legacy",
+            "nameEn": "Legacy"
+          },
+          "Team127": {
+            "nameZh": "Lynn Vision",
+            "nameEn": "Lynn Vision"
+          },
+          "Team124": {
+            "nameZh": "ECSTATIC",
+            "nameEn": "ECSTATIC"
+          },
+          "Team125": {
+            "nameZh": "KOI",
+            "nameEn": "KOI"
+          },
+          "Team122": {
+            "nameZh": "The MongolZ",
+            "nameEn": "The MongolZ"
+          },
+          "Team123": {
+            "nameZh": "AMKAL ESPORTS",
+            "nameEn": "AMKAL ESPORTS"
+          },
+          "Team120": {
+            "nameZh": "9INE",
+            "nameEn": "9INE"
+          },
+          "Team121": {
+            "nameZh": "Fluxo",
+            "nameEn": "Fluxo"
+          }
+        }
+      },
+      "KeychainCapsule": {
+        "nameZh": "挂件收藏品",
+        "nameEn": "Charms Collection",
+        "values": {
+          "keychain_pack_kc_missinglink_lootlist": {
+            "nameZh": "迷链挂件收藏品",
+            "nameEn": "Missing Link Charm Collection"
+          },
+          "keychain_pack_kc_drboom_lootlist": {
+            "nameZh": "爆炸博士挂件收藏品",
+            "nameEn": "Dr Boom Charm Collection"
+          },
+          "keychain_pack_kc_ml_community_01_lootlist": {
+            "nameZh": "迷链社区挂件收藏品",
+            "nameEn": "Missing Link Community Charm Collection"
+          },
+          "keychain_pack_kc_weapon_01_lootlist": {
+            "nameZh": "袖珍武器挂件收藏品",
+            "nameEn": "Small Arms Charm Collection"
+          },
+          "keychain_pack_kc_sticker_display_case_lootlist": {
+            "nameZh": "印花板",
+            "nameEn": "Sticker Slab"
+          },
+          "keychain_pack_kc_aus2025_lootlist": {
+            "nameZh": "2025年奥斯汀锦标赛高光时刻",
+            "nameEn": "Austin 2025 Highlight"
+          }
+        }
+      },
+      "Exterior": {
+        "nameZh": "外观",
+        "nameEn": "Exterior",
+        "values": {
+          "WearCategoryNA": {
+            "nameZh": "无涂装",
+            "nameEn": "Not Painted"
+          },
+          "WearCategory0": {
+            "nameZh": "崭新出厂",
+            "nameEn": "Factory New"
+          },
+          "WearCategory1": {
+            "nameZh": "略有磨损",
+            "nameEn": "Minimal Wear"
+          },
+          "WearCategory2": {
+            "nameZh": "久经沙场",
+            "nameEn": "Field-Tested"
+          },
+          "WearCategory3": {
+            "nameZh": "破损不堪",
+            "nameEn": "Well-Worn"
+          },
+          "WearCategory4": {
+            "nameZh": "战痕累累",
+            "nameEn": "Battle-Scarred"
+          }
+        }
+      },
+      "PatchCapsule": {
+        "nameZh": "布章收藏品",
+        "nameEn": "Patch Collection",
+        "values": {
+          "crate_patch_pack01": {
+            "nameZh": "反恐精英布章包",
+            "nameEn": "CS:GO Patch Pack"
+          },
+          "crate_patch_pack_stockh2021_legends_collection": {
+            "nameZh": "2021年斯德哥尔摩锦标赛传奇组布章",
+            "nameEn": "Stockholm 2021 Legends Patches"
+          },
+          "crate_patch_pack03": {
+            "nameZh": "“激流大行动”布章收藏品",
+            "nameEn": "Operation Riptide Patch Collection"
+          },
+          "crate_patch_pack_stockh2021_contenders_collection": {
+            "nameZh": "2021年斯德哥尔摩锦标赛竞争组布章",
+            "nameEn": "Stockholm 2021 Contenders Patches"
+          },
+          "crate_patch_pack02": {
+            "nameZh": "金·段位布章收藏品",
+            "nameEn": "Metal Skill Group Patch Collection"
+          },
+          "crate_patch_pack_stockh2021_challengers_collection": {
+            "nameZh": "2021年斯德哥尔摩锦标赛挑战组布章",
+            "nameEn": "Stockholm 2021 Challengers Patches"
+          },
+          "crate_patch_pack_hlalyx": {
+            "nameZh": "《半衰期：爱莉克斯》布章包",
+            "nameEn": "Half-Life: Alyx Patch Pack"
+          }
+        }
+      },
+      "Weapon": {
+        "nameZh": "武器",
+        "nameEn": "Weapon",
+        "values": {
+          "weapon_scar20": {
+            "nameZh": "SCAR-20",
+            "nameEn": "SCAR-20"
+          },
+          "weapon_galilar": {
+            "nameZh": "加利尔AR",
+            "nameEn": "Galil AR"
+          },
+          "weapon_awp": {
+            "nameZh": "AWP",
+            "nameEn": "AWP"
+          },
+          "weapon_mp7": {
+            "nameZh": "MP7",
+            "nameEn": "MP7"
+          },
+          "weapon_mp9": {
+            "nameZh": "MP9",
+            "nameEn": "MP9"
+          },
+          "weapon_knife_kukri": {
+            "nameZh": "廓尔喀刀",
+            "nameEn": "Kukri Knife"
+          },
+          "weapon_p250": {
+            "nameZh": "P250",
+            "nameEn": "P250"
+          },
+          "weapon_mp5sd": {
+            "nameZh": "MP5-SD",
+            "nameEn": "MP5-SD"
+          },
+          "weapon_ump45": {
+            "nameZh": "UMP-45",
+            "nameEn": "UMP-45"
+          },
+          "weapon_knife_survival_bowie": {
+            "nameZh": "鲍伊猎刀",
+            "nameEn": "Bowie Knife"
+          },
+          "weapon_knife_gut": {
+            "nameZh": "穿肠刀",
+            "nameEn": "Gut Knife"
+          },
+          "weapon_knife_m9_bayonet": {
+            "nameZh": "M9 刺刀",
+            "nameEn": "M9 Bayonet"
+          },
+          "weapon_bizon": {
+            "nameZh": "PP-野牛",
+            "nameEn": "PP-Bizon"
+          },
+          "weapon_sg556": {
+            "nameZh": "SG 553",
+            "nameEn": "SG 553"
+          },
+          "weapon_knife_gypsy_jackknife": {
+            "nameZh": "折刀",
+            "nameEn": "Navaja Knife"
+          },
+          "weapon_tec9": {
+            "nameZh": "Tec-9",
+            "nameEn": "Tec-9"
+          },
+          "weapon_negev": {
+            "nameZh": "内格夫",
+            "nameEn": "Negev"
+          },
+          "weapon_ssg08": {
+            "nameZh": "SSG 08",
+            "nameEn": "SSG 08"
+          },
+          "weapon_deagle": {
+            "nameZh": "沙漠之鹰",
+            "nameEn": "Desert Eagle"
+          },
+          "weapon_mac10": {
+            "nameZh": "MAC-10",
+            "nameEn": "MAC-10"
+          },
+          "weapon_knife_widowmaker": {
+            "nameZh": "锯齿爪刀",
+            "nameEn": "Talon Knife"
+          },
+          "weapon_p90": {
+            "nameZh": "P90",
+            "nameEn": "P90"
+          },
+          "weapon_elite": {
+            "nameZh": "双持贝瑞塔",
+            "nameEn": "Dual Berettas"
+          },
+          "weapon_knife_stiletto": {
+            "nameZh": "短剑",
+            "nameEn": "Stiletto Knife"
+          },
+          "weapon_glock": {
+            "nameZh": "格洛克18型",
+            "nameEn": "Glock-18"
+          },
+          "weapon_mag7": {
+            "nameZh": "MAG-7",
+            "nameEn": "MAG-7"
+          },
+          "weapon_bayonet": {
+            "nameZh": "刺刀",
+            "nameEn": "Bayonet"
+          },
+          "weapon_knife_falchion": {
+            "nameZh": "弯刀",
+            "nameEn": "Falchion Knife"
+          },
+          "weapon_knife_karambit": {
+            "nameZh": "爪子刀",
+            "nameEn": "Karambit"
+          },
+          "weapon_hkp2000": {
+            "nameZh": "P2000",
+            "nameEn": "P2000"
+          },
+          "weapon_taser": {
+            "nameZh": "宙斯x27电击枪",
+            "nameEn": "Zeus x27"
+          },
+          "weapon_knife_canis": {
+            "nameZh": "求生匕首",
+            "nameEn": "Survival Knife"
+          },
+          "weapon_aug": {
+            "nameZh": "AUG",
+            "nameEn": "AUG"
+          },
+          "weapon_sawedoff": {
+            "nameZh": "截短霰弹枪",
+            "nameEn": "Sawed-Off"
+          },
+          "weapon_m4a1_silencer": {
+            "nameZh": "M4A1消音版",
+            "nameEn": "M4A1-S"
+          },
+          "weapon_g3sg1": {
+            "nameZh": "G3SG1",
+            "nameEn": "G3SG1"
+          },
+          "weapon_knife_ursus": {
+            "nameZh": "熊刀",
+            "nameEn": "Ursus Knife"
+          },
+          "weapon_usp_silencer": {
+            "nameZh": "USP消音版",
+            "nameEn": "USP-S"
+          },
+          "weapon_knife_css": {
+            "nameZh": "海豹短刀",
+            "nameEn": "Classic Knife"
+          },
+          "weapon_ak47": {
+            "nameZh": "AK-47",
+            "nameEn": "AK-47"
+          },
+          "weapon_knife_outdoor": {
+            "nameZh": "流浪者匕首",
+            "nameEn": "Nomad Knife"
+          },
+          "weapon_fiveseven": {
+            "nameZh": "FN57",
+            "nameEn": "Five-SeveN"
+          },
+          "weapon_knife_push": {
+            "nameZh": "暗影双匕",
+            "nameEn": "Shadow Daggers"
+          },
+          "weapon_m249": {
+            "nameZh": "M249",
+            "nameEn": "M249"
+          },
+          "weapon_nova": {
+            "nameZh": "新星",
+            "nameEn": "Nova"
+          },
+          "weapon_knife_cord": {
+            "nameZh": "系绳匕首",
+            "nameEn": "Paracord Knife"
+          },
+          "weapon_knife_butterfly": {
+            "nameZh": "蝴蝶刀",
+            "nameEn": "Butterfly Knife"
+          },
+          "weapon_cz75a": {
+            "nameZh": "CZ75自动型",
+            "nameEn": "CZ75-Auto"
+          },
+          "weapon_knife_skeleton": {
+            "nameZh": "骷髅匕首",
+            "nameEn": "Skeleton Knife"
+          },
+          "weapon_revolver": {
+            "nameZh": "R8左轮手枪",
+            "nameEn": "R8 Revolver"
+          },
+          "weapon_m4a1": {
+            "nameZh": "M4A4",
+            "nameEn": "M4A4"
+          },
+          "weapon_famas": {
+            "nameZh": "法玛斯",
+            "nameEn": "FAMAS"
+          },
+          "weapon_knife_flip": {
+            "nameZh": "折叠刀",
+            "nameEn": "Flip Knife"
+          },
+          "weapon_knife_tactical": {
+            "nameZh": "猎杀者匕首",
+            "nameEn": "Huntsman Knife"
+          },
+          "weapon_xm1014": {
+            "nameZh": "XM1014",
+            "nameEn": "XM1014"
+          }
+        }
+      },
+      "ProPlayer": {
+        "nameZh": "职业选手",
+        "nameEn": "Professional Player",
+        "values": {
+          "patti": {
+            "nameZh": "Patti（Patrick Larsen）",
+            "nameEn": "Patti (Patrick Larsen)"
+          },
+          "yekindar": {
+            "nameZh": "YEKINDAR（Mareks Galinskis）",
+            "nameEn": "YEKINDAR (Mareks Galinskis)"
+          },
+          "innocent": {
+            "nameZh": "innocent（Paweł Mocek）",
+            "nameEn": "innocent (Paweł Mocek)"
+          },
+          "susp": {
+            "nameZh": "susp（Tim Sebastian Aescngstrom）",
+            "nameEn": "susp (Tim Sebastian Ångström)"
+          },
+          "amanek": {
+            "nameZh": "AmaNEk（Francois Delaunay）",
+            "nameEn": "AmaNEk (Francois Delaunay)"
+          },
+          "lux": {
+            "nameZh": "lux（Lucas Meneghini）",
+            "nameEn": "lux (Lucas Meneghini)"
+          },
+          "emagine": {
+            "nameZh": "emagine（Chris Rowlands）",
+            "nameEn": "emagine (Chris Rowlands)"
+          },
+          "professorchaos": {
+            "nameZh": "Professor_Chaos（Andrew Heintz）",
+            "nameEn": "Professor_Chaos (Andrew Heintz)"
+          },
+          "910": {
+            "nameZh": "910（Usukhbayar Banzragch）",
+            "nameEn": "910 (Usukhbayar Banzragch)"
+          },
+          "l1hang": {
+            "nameZh": "L1haNg（Li Yihang）",
+            "nameEn": "L1haNg (Li Yihang)"
+          },
+          "salazar": {
+            "nameZh": "salazar（Jason Salazar）",
+            "nameEn": "salazar (Jason Salazar)"
+          },
+          "decenty": {
+            "nameZh": "decenty（Lucas Bacelar）",
+            "nameEn": "decenty (Lucas Bacelar)"
+          },
+          "adren": {
+            "nameZh": "adreN（Eric Hoag）",
+            "nameEn": "adreN (Eric Hoag)"
+          },
+          "xms": {
+            "nameZh": "xms（Alexandre Forté）",
+            "nameEn": "xms (Alexandre Forté)"
+          },
+          "wicadia": {
+            "nameZh": "Wicadia（Ali Haydar Yalcin）",
+            "nameEn": "Wicadia (Ali Haydar Yalcin)"
+          },
+          "flamie": {
+            "nameZh": "flamie（Egor Vasilyev）",
+            "nameEn": "flamie (Egor Vasilyev)"
+          },
+          "snatchie": {
+            "nameZh": "snatchie（Michał Rudzki）",
+            "nameEn": "snatchie (Michał Rudzki)"
+          },
+          "venomzera": {
+            "nameZh": "venomzera（Carlos Eduardo）",
+            "nameEn": "venomzera (Carlos Eduardo)"
+          },
+          "nitro": {
+            "nameZh": "nitr0（Nicholas Cannella）",
+            "nameEn": "nitr0 (Nicholas Cannella)"
+          },
+          "rubino": {
+            "nameZh": "RUBINO（Ruben Villarroel）",
+            "nameEn": "RUBINO (Ruben Villarroel)"
+          },
+          "smooya": {
+            "nameZh": "smooya（Owen Butterfield）",
+            "nameEn": "smooya (Owen Butterfield)"
+          },
+          "shalfey": {
+            "nameZh": "shalfey（Aleksandr Marenov）",
+            "nameEn": "shalfey (Aleksandr Marenov)"
+          },
+          "aw": {
+            "nameZh": "AW（Andrey Anisimov）",
+            "nameEn": "AW (Andrey Anisimov)"
+          },
+          "v4lde": {
+            "nameZh": "v4lde（Valdemar Bjørn Vangså）",
+            "nameEn": "v4lde (Valdemar Bjørn Vangså)"
+          },
+          "xkacpersky": {
+            "nameZh": "xKacpersky（Kacper Gabara）",
+            "nameEn": "xKacpersky (Kacper Gabara)"
+          },
+          "buda": {
+            "nameZh": "BUDA（Nicolás Kramer）",
+            "nameEn": "BUDA (Nicolás Kramer)"
+          },
+          "buster": {
+            "nameZh": "buster（Timur Tulepov）",
+            "nameEn": "buster (Timur Tulepov)"
+          },
+          "forest": {
+            "nameZh": "f0rest（Patrik Lindberg）",
+            "nameEn": "f0rest (Patrik Lindberg)"
+          },
+          "plopski": {
+            "nameZh": "Plopski（Nicolas Gonzalez Zamora）",
+            "nameEn": "Plopski (Nicolas Gonzalez Zamora)"
+          },
+          "jimpphat": {
+            "nameZh": "Jimpphat（Jimi Salo）",
+            "nameEn": "Jimpphat (Jimi Salo)"
+          },
+          "denis": {
+            "nameZh": "denis（Denis Howell）",
+            "nameEn": "denis (Denis Howell)"
+          },
+          "sdy": {
+            "nameZh": "sdy（Viktor Orudzhev）",
+            "nameEn": "sdy (Viktor Orudzhev)"
+          },
+          "blamef": {
+            "nameZh": "blameF（Benjamin Vang Bremer）",
+            "nameEn": "blameF (Benjamin Vang Bremer)"
+          },
+          "dgt": {
+            "nameZh": "dgt（Franco Cabrera）",
+            "nameEn": "dgt (Franco Cabrera)"
+          },
+          "aleksib": {
+            "nameZh": "Aleksib（Aleksi Virolainen）",
+            "nameEn": "Aleksib (Aleksi Virolainen)"
+          },
+          "chayjesus": {
+            "nameZh": "chayJESUS（Richard Seidy）",
+            "nameEn": "chayJESUS (Richard Seidy)"
+          },
+          "xfl0ud": {
+            "nameZh": "xfl0ud（Yasin Koc）",
+            "nameEn": "xfl0ud (Yasin Koc)"
+          },
+          "maj3r": {
+            "nameZh": "MAJ3R（Engin Kupeli）",
+            "nameEn": "MAJ3R (Engin Kupeli)"
+          },
+          "r3salt": {
+            "nameZh": "r3salt（Evgenii Frolov）",
+            "nameEn": "r3salt (Evgenii Frolov)"
+          },
+          "snyper": {
+            "nameZh": "SnypeR（Iain Turner）",
+            "nameEn": "SnypeR (Iain Turner)"
+          },
+          "ax1le": {
+            "nameZh": "Ax1Le（Sergei Rykhtorov）",
+            "nameEn": "Ax1Le (Sergei Rykhtorov)"
+          },
+          "syrson": {
+            "nameZh": "syrsoN（Florian Rische）",
+            "nameEn": "syrsoN (Florian Rische)"
+          },
+          "w0nderful": {
+            "nameZh": "w0nderful（Ihor Zhdanov）",
+            "nameEn": "w0nderful (Ihor Zhdanov)"
+          },
+          "patsi": {
+            "nameZh": "Patsi（Robert Isianov）",
+            "nameEn": "Patsi (Robert Isianov)"
+          },
+          "tizian": {
+            "nameZh": "tiziaN（Tizian Feldbusch）",
+            "nameEn": "tiziaN (Tizian Feldbusch)"
+          },
+          "brnz4n": {
+            "nameZh": "brnz4n（Breno Poletto）",
+            "nameEn": "brnz4n (Breno Poletto)"
+          },
+          "abe": {
+            "nameZh": "abE（Abraham Fazli）",
+            "nameEn": "abE (Abraham Fazli)"
+          },
+          "advent": {
+            "nameZh": "advent（Zhuo Liang）",
+            "nameEn": "advent (Zhuo Liang)"
+          },
+          "ustilo": {
+            "nameZh": "USTILO（Karlo Pivac）",
+            "nameEn": "USTILO (Karlo Pivac)"
+          },
+          "dimasick": {
+            "nameZh": "dimasick（Dmitriy Matviyenko）",
+            "nameEn": "dimasick (Dmitriy Matviyenko)"
+          },
+          "nodios": {
+            "nameZh": "Nodios（Magnus Olsen）",
+            "nameEn": "Nodios (Magnus Olsen)"
+          },
+          "niko": {
+            "nameZh": "NiKo（Nikola Kovač）",
+            "nameEn": "NiKo (Nikola Kovač)"
+          },
+          "kioshima": {
+            "nameZh": "kioShiMa（Fabien Fiey）",
+            "nameEn": "kioShiMa (Fabien Fiey)"
+          },
+          "friberg": {
+            "nameZh": "friberg（Adam Friberg）",
+            "nameEn": "friberg (Adam Friberg)"
+          },
+          "kraghen": {
+            "nameZh": "kraghen（Tobias Kragh Jensen）",
+            "nameEn": "kraghen (Tobias Kragh Jensen)"
+          },
+          "techno4k": {
+            "nameZh": "Techno4K（Munkhbold Sodbayar）",
+            "nameEn": "Techno4K (Munkhbold Sodbayar)"
+          },
+          "stewie2k": {
+            "nameZh": "Stewie2K（Jacky Yip）",
+            "nameEn": "Stewie2K (Jacky Yip)"
+          },
+          "ztr": {
+            "nameZh": "ztr（Erik Gustafsson）",
+            "nameEn": "ztr (Erik Gustafsson)"
+          },
+          "byali": {
+            "nameZh": "byali（Pawel Bielinsky）",
+            "nameEn": "byali (Pawel Bielinsky)"
+          },
+          "dd": {
+            "nameZh": "DD（Hui Wu）",
+            "nameEn": "DD (Hui Wu)"
+          },
+          "xantares": {
+            "nameZh": "XANTARES（Can Dortkardes）",
+            "nameEn": "XANTARES (Can Dortkardes)"
+          },
+          "jcobbb": {
+            "nameZh": "jcobbb（Jakub Pietruszewski）",
+            "nameEn": "jcobbb (Jakub Pietruszewski)"
+          },
+          "juanflatroo": {
+            "nameZh": "juanflatroo（Flatron Halimi）",
+            "nameEn": "juanflatroo (Flatron Halimi)"
+          },
+          "nikodk": {
+            "nameZh": "niko（Nikolaj Kristensen）",
+            "nameEn": "niko (Nikolaj Kristensen)"
+          },
+          "hext": {
+            "nameZh": "HexT（Jadan Postma）",
+            "nameEn": "HexT (Jadan Postma)"
+          },
+          "loveyy": {
+            "nameZh": "LoveYY（Bai Kunhua）",
+            "nameEn": "LoveYY (Bai Kunhua)"
+          },
+          "lucaozy": {
+            "nameZh": "Lucaozy（Lucas Neves）",
+            "nameEn": "Lucaozy (Lucas Neves)"
+          },
+          "rigon": {
+            "nameZh": "rigoN（Rigon Gashi）",
+            "nameEn": "rigoN (Rigon Gashi)"
+          },
+          "legija": {
+            "nameZh": "LEGIJA（Nikola Ninic）",
+            "nameEn": "LEGIJA (Nikola Ninic)"
+          },
+          "krystal": {
+            "nameZh": "kRYSTAL（Kevin Amend）",
+            "nameEn": "kRYSTAL (Kevin Amend)"
+          },
+          "nettik": {
+            "nameZh": "nettik（Corey Browne）",
+            "nameEn": "nettik (Corey Browne)"
+          },
+          "sonic": {
+            "nameZh": "Sonic（Aran Groesbeek）",
+            "nameEn": "Sonic (Aran Groesbeek)"
+          },
+          "rez": {
+            "nameZh": "REZ（Fredrik Sterner）",
+            "nameEn": "REZ (Fredrik Sterner)"
+          },
+          "paz": {
+            "nameZh": "paz（Ahmet Karahoca）",
+            "nameEn": "paz (Ahmet Karahoca)"
+          },
+          "marek": {
+            "nameZh": "Marek（Tzu-Chi Huang）",
+            "nameEn": "Marek (Tzu-Chi Huang)"
+          },
+          "fns": {
+            "nameZh": "FNS（Pujan Mehta）",
+            "nameEn": "FNS (Pujan Mehta)"
+          },
+          "mezii": {
+            "nameZh": "mezii（William Cameron Merriman）",
+            "nameEn": "mezii (William Cameron Merriman)"
+          },
+          "slaxz": {
+            "nameZh": "slaxz-（Fritz Dietrich）",
+            "nameEn": "slaxz- (Fritz Dietrich)"
+          },
+          "ngin": {
+            "nameZh": "ngiN（Engin Kor）",
+            "nameEn": "ngiN (Engin Kor)"
+          },
+          "fnx": {
+            "nameZh": "fnx（Lincoln Lau）",
+            "nameEn": "fnx (Lincoln Lau)"
+          },
+          "nin9": {
+            "nameZh": "nin9（Yesuntumur Gantulga）",
+            "nameEn": "nin9 (Yesuntumur Gantulga)"
+          },
+          "brollan": {
+            "nameZh": "Brollan（Ludvig Brolin）",
+            "nameEn": "Brollan (Ludvig Brolin)"
+          },
+          "siuhy": {
+            "nameZh": "siuhy（Kamil Szkaradek）",
+            "nameEn": "siuhy (Kamil Szkaradek)"
+          },
+          "kye": {
+            "nameZh": "kye（Kayke Bertolucci）",
+            "nameEn": "kye (Kayke Bertolucci)"
+          },
+          "jasonr": {
+            "nameZh": "jasonR（Jason Ruchelski）",
+            "nameEn": "jasonR (Jason Ruchelski)"
+          },
+          "yuurih": {
+            "nameZh": "yuurih（Yuri Boian）",
+            "nameEn": "yuurih (Yuri Boian)"
+          },
+          "lucky": {
+            "nameZh": "Lucky（Lucas Chastang）",
+            "nameEn": "Lucky (Lucas Chastang)"
+          },
+          "elige": {
+            "nameZh": "EliGE（Jonathan Jablonowski）",
+            "nameEn": "EliGE (Jonathan Jablonowski)"
+          },
+          "staehr": {
+            "nameZh": "Staehr（Victor Hansen）",
+            "nameEn": "Staehr (Victor Hansen)"
+          },
+          "regali": {
+            "nameZh": "regali（Iulian Harjau）",
+            "nameEn": "regali (Iulian Harjau)"
+          },
+          "kjaerbye": {
+            "nameZh": "Kjaerbye（Markus Kjærbye）",
+            "nameEn": "Kjaerbye (Markus Kjærbye)"
+          },
+          "nawwk": {
+            "nameZh": "nawwk（Tim Carl Jonasson）",
+            "nameEn": "nawwk (Tim Carl Jonasson)"
+          },
+          "yxngstxr": {
+            "nameZh": "yxngstxr（Simon Boije）",
+            "nameEn": "yxngstxr (Simon Boije)"
+          },
+          "davcost": {
+            "nameZh": "DavCost（Vadim Vasilyev）",
+            "nameEn": "DavCost (Vadim Vasilyev)"
+          },
+          "fl4mus": {
+            "nameZh": "FL4MUS（Timur Marev）",
+            "nameEn": "FL4MUS (Timur Marev)"
+          },
+          "kauez": {
+            "nameZh": "kauez（Kaue Kaschuk）",
+            "nameEn": "kauez (Kaue Kaschuk)"
+          },
+          "dexter": {
+            "nameZh": "dexter（Christopher Nong）",
+            "nameEn": "dexter (Christopher Nong)"
+          },
+          "jackasmo": {
+            "nameZh": "jackasmo（Nikita Skyba）",
+            "nameEn": "jackasmo (Nikita Skyba)"
+          },
+          "rallen": {
+            "nameZh": "rallen（Karol Rodowicz）",
+            "nameEn": "rallen (Karol Rodowicz)"
+          },
+          "jottaaa": {
+            "nameZh": "jottAAA（Samed Koklu）",
+            "nameEn": "jottAAA (Samed Koklu)"
+          },
+          "fox": {
+            "nameZh": "fox（Ricardo Pacheco）",
+            "nameEn": "fox (Ricardo Pacheco)"
+          },
+          "faven": {
+            "nameZh": "faveN（Josef Baumann）",
+            "nameEn": "faveN (Josef Baumann)"
+          },
+          "fugly": {
+            "nameZh": "FugLy（Jacob Medina）",
+            "nameEn": "FugLy (Jacob Medina)"
+          },
+          "hooxi": {
+            "nameZh": "HooXi（Rasmus Nielsen）",
+            "nameEn": "HooXi (Rasmus Nielsen)"
+          },
+          "ottond": {
+            "nameZh": "ottoNd（Otto Sihvo）",
+            "nameEn": "ottoNd (Otto Sihvo)"
+          },
+          "xccurate": {
+            "nameZh": "xccurate（Kevin Susanto）",
+            "nameEn": "xccurate (Kevin  Susanto)"
+          },
+          "havoc": {
+            "nameZh": "Havoc（Luke Paton）",
+            "nameEn": "Havoc (Luke Paton)"
+          },
+          "heavygod": {
+            "nameZh": "Heavygod（Nikita Martynenko）",
+            "nameEn": "Heavygod (Nikita Martynenko)"
+          },
+          "thomas": {
+            "nameZh": "Thomas（Thomas Jack Utting）",
+            "nameEn": "Thomas (Thomas Jack Utting)"
+          },
+          "lowel": {
+            "nameZh": "loWel（Christian Garcia Antoran）",
+            "nameEn": "loWel (Christian Garcia Antoran)"
+          },
+          "just": {
+            "nameZh": "JUST（Tiago Moura）",
+            "nameEn": "JUST (Tiago Moura)"
+          },
+          "hardzao": {
+            "nameZh": "hardzao（Wesley Lopes）",
+            "nameEn": "hardzao (Wesley Lopes)"
+          },
+          "gla1ve": {
+            "nameZh": "gla1ve（Lukas Rossander）",
+            "nameEn": "gla1ve (Lukas Rossander)"
+          },
+          "kabal": {
+            "nameZh": "kabal（Batbayar Bat-Enkh）",
+            "nameEn": "kabal (Batbayar Bat-Enkh)"
+          },
+          "attacker": {
+            "nameZh": "Attacker（Sheng Yuanzhang）",
+            "nameEn": "Attacker (Sheng Yuanzhang)"
+          },
+          "waterfallz": {
+            "nameZh": "waterfaLLZ（Nikita Matveev）",
+            "nameEn": "waterfaLLZ (Nikita Matveev)"
+          },
+          "kinqie": {
+            "nameZh": "kinqie（Semyon Lisitsyn）",
+            "nameEn": "kinqie (Semyon Lisitsyn)"
+          },
+          "sergej": {
+            "nameZh": "sergej（Jere Salo）",
+            "nameEn": "sergej (Jere Salo)"
+          },
+          "childking": {
+            "nameZh": "ChildKing（Peng Junhao）",
+            "nameEn": "ChildKing (Peng Junhao)"
+          },
+          "markeloff": {
+            "nameZh": "markeloff（Yegor Markelov）",
+            "nameEn": "markeloff (Yegor Markelov)"
+          },
+          "mzinho": {
+            "nameZh": "mzinho（Ayush Batbold）",
+            "nameEn": "mzinho (Ayush Batbold)"
+          },
+          "dima": {
+            "nameZh": "Dima（Dmitriy Bandurka）",
+            "nameEn": "Dima (Dmitriy Bandurka)"
+          },
+          "saadzin": {
+            "nameZh": "saadzin（Guilherme Pacheco）",
+            "nameEn": "saadzin (Guilherme Pacheco)"
+          },
+          "keoz": {
+            "nameZh": "Keoz（Nicolas Dgus）",
+            "nameEn": "Keoz (Nicolas Dgus)"
+          },
+          "hampus": {
+            "nameZh": "hampus（Hampus Poser）",
+            "nameEn": "hampus (Hampus Poser)"
+          },
+          "xotic": {
+            "nameZh": "XotiC（Zack Elshani）",
+            "nameEn": "XotiC (Zack Elshani)"
+          },
+          "obo": {
+            "nameZh": "oBo（Owen Schlatter）",
+            "nameEn": "oBo (Owen Schlatter)"
+          },
+          "s0tf1k": {
+            "nameZh": "S0tF1k（Dmitrii Forostianko）",
+            "nameEn": "S0tF1k (Dmitrii Forostianko)"
+          },
+          "dephh": {
+            "nameZh": "dephh（Rory Jackson）",
+            "nameEn": "dephh (Rory Jackson)"
+          },
+          "shahzam": {
+            "nameZh": "ShahZaM（Shahzeeb Khan）",
+            "nameEn": "ShahZaM (Shahzeeb Khan)"
+          },
+          "zweih": {
+            "nameZh": "zweih（Ivan Gogin）",
+            "nameEn": "zweih (Ivan Gogin)"
+          },
+          "sick": {
+            "nameZh": "SicK（Hunter Mims）",
+            "nameEn": "SicK (Hunter Mims)"
+          },
+          "hs": {
+            "nameZh": "HS（Kevin Tarn）",
+            "nameEn": "HS (Kevin Tarn)"
+          },
+          "bit": {
+            "nameZh": "BIT（Bruno Lima）",
+            "nameEn": "BIT (Bruno Lima)"
+          },
+          "apex": {
+            "nameZh": "apEX（Dan Madesclaire）",
+            "nameEn": "apEX (Dan Madesclaire)"
+          },
+          "hatz": {
+            "nameZh": "hatz（Jordan Bajic）",
+            "nameEn": "hatz (Jordan Bajic)"
+          },
+          "afro": {
+            "nameZh": "afro（Aurélien Paul Ibane Drapier）",
+            "nameEn": "afro (Aurélien Paul Ibane Drapier)"
+          },
+          "kyousuke": {
+            "nameZh": "kyousuke（Maksim Lukin）",
+            "nameEn": "kyousuke (Maksim Lukin)"
+          },
+          "naf": {
+            "nameZh": "NAF（Keith Markovic）",
+            "nameEn": "NAF (Keith Markovic)"
+          },
+          "tarik": {
+            "nameZh": "tarik（Tarik Celik）",
+            "nameEn": "tarik (Tarik Celik)"
+          },
+          "n1ssim": {
+            "nameZh": "n1ssim（Vinicius Pereira）",
+            "nameEn": "n1ssim (Vinicius Pereira)"
+          },
+          "jerry": {
+            "nameZh": "Jerry（Andrey Mekrhyakov）",
+            "nameEn": "Jerry (Andrey  Mekrhyakov)"
+          },
+          "boltz": {
+            "nameZh": "boltz（Ricardo Prass）",
+            "nameEn": "boltz (Ricardo Prass)"
+          },
+          "ariucle": {
+            "nameZh": "Ariucle（Ariunjargal Yadam）",
+            "nameEn": "Ariucle (Ariunjargal Yadam)"
+          },
+          "zont1x": {
+            "nameZh": "zont1x（Myroslav Plakhotia）",
+            "nameEn": "zont1x (Myroslav Plakhotia)"
+          },
+          "molodoy": {
+            "nameZh": "molodoy（Golubenko Danil）",
+            "nameEn": "molodoy (Golubenko Danil)"
+          },
+          "fear": {
+            "nameZh": "fEAR（Rodion Smyk）",
+            "nameEn": "fEAR (Rodion Smyk)"
+          },
+          "im": {
+            "nameZh": "iM（Mihai Ivan）",
+            "nameEn": "iM (Mihai Ivan)"
+          },
+          "nothing": {
+            "nameZh": "n0thing（Jordan Gilbert）",
+            "nameEn": "n0thing (Jordan Gilbert)"
+          },
+          "sense": {
+            "nameZh": "sense（Ådne Fredriksen）",
+            "nameEn": "sense (Ådne Fredriksen)"
+          },
+          "auman": {
+            "nameZh": "aumaN（Zhihong Liu）",
+            "nameEn": "aumaN (Zhihong Liu)"
+          },
+          "woro2k": {
+            "nameZh": "Woro2k（Volodymyr Veletniuk）",
+            "nameEn": "Woro2k (Volodymyr Veletniuk)"
+          },
+          "mixwell": {
+            "nameZh": "mixwell（Oscar Cañellas）",
+            "nameEn": "mixwell (Oscar Cañellas)"
+          },
+          "moseyuh": {
+            "nameZh": "Moseyuh（Qianhao Chen）",
+            "nameEn": "Moseyuh (Qianhao Chen)"
+          },
+          "somebody": {
+            "nameZh": "somebody（Haowen Xu）",
+            "nameEn": "somebody (Haowen Xu)"
+          },
+          "hobbit": {
+            "nameZh": "Hobbit（Abay Khassenov）",
+            "nameEn": "Hobbit (Abay Khassenov)"
+          },
+          "exit": {
+            "nameZh": "exit（Raphael Lacerda）",
+            "nameEn": "exit (Raphael Lacerda)"
+          },
+          "ropz": {
+            "nameZh": "ropz（Robin Kool）",
+            "nameEn": "ropz (Robin Kool)"
+          },
+          "nbk": {
+            "nameZh": "NBK-（Nathan Schmitt）",
+            "nameEn": "NBK- (Nathan Schmitt)"
+          },
+          "snappi": {
+            "nameZh": "Snappi（Marco Pfeiffer）",
+            "nameEn": "Snappi (Marco Pfeiffer)"
+          },
+          "maniac": {
+            "nameZh": "Maniac（Mathieu Quiquerez）",
+            "nameEn": "Maniac (Mathieu Quiquerez)"
+          },
+          "captainmo": {
+            "nameZh": "captainMo（Ke Liu）",
+            "nameEn": "captainMo (Ke Liu)"
+          },
+          "sh1ro": {
+            "nameZh": "sh1ro（Dmitrii Sokolov）",
+            "nameEn": "sh1ro (Dmitrii Sokolov)"
+          },
+          "jame": {
+            "nameZh": "Jame（Ali Dzhami）",
+            "nameEn": "Jame (Ali Dzhami)"
+          },
+          "jl": {
+            "nameZh": "jL（Justinas Lekavicius）",
+            "nameEn": "jL (Justinas Lekavicius)"
+          },
+          "floppy": {
+            "nameZh": "floppy（Ricky Kemery）",
+            "nameEn": "floppy (Ricky Kemery)"
+          },
+          "spaze": {
+            "nameZh": "spaze（Ivan Obrezhan）",
+            "nameEn": "spaze (Ivan Obrezhan)"
+          },
+          "riskyb0b": {
+            "nameZh": "riskyb0b（Maksim Churikov）",
+            "nameEn": "riskyb0b (Maksim Churikov)"
+          },
+          "sener1": {
+            "nameZh": "SENER1（Sener Mahmuti）",
+            "nameEn": "SENER1 (Sener Mahmuti)"
+          },
+          "jr": {
+            "nameZh": "jR（Dmytro Chervak）",
+            "nameEn": "jR (Dmytro Chervak)"
+          },
+          "zehn": {
+            "nameZh": "zehN（Jesse Linjala）",
+            "nameEn": "zehN (Jesse Linjala)"
+          },
+          "aizy": {
+            "nameZh": "aizy（Philip Aistrup Larsen）",
+            "nameEn": "aizy (Philip Aistrup Larsen)"
+          },
+          "jt": {
+            "nameZh": "JT（Ioannis Theodosiou）",
+            "nameEn": "JT (Ioannis Theodosiou)"
+          },
+          "jw": {
+            "nameZh": "JW（Jesper Wecksell）",
+            "nameEn": "JW (Jesper Wecksell)"
+          },
+          "waylander": {
+            "nameZh": "wayLander（Jan Peter Rahkonen）",
+            "nameEn": "wayLander (Jan Peter Rahkonen)"
+          },
+          "summer": {
+            "nameZh": "Summer（Cai Yulun）",
+            "nameEn": "Summer (Cai Yulun)"
+          },
+          "adrenkz": {
+            "nameZh": "AdreN（Dauren Kystaubayev）",
+            "nameEn": "AdreN (Dauren Kystaubayev)"
+          },
+          "peet": {
+            "nameZh": "peet（Piotr Ćwikliński）",
+            "nameEn": "peet (Piotr Ćwikliński)"
+          },
+          "westmelon": {
+            "nameZh": "westmelon（Niu Zhe）",
+            "nameEn": "westmelon (Niu Zhe)"
+          },
+          "vsm": {
+            "nameZh": "v$m（Vinícius Moreira）",
+            "nameEn": "v$m (Vinícius Moreira)"
+          },
+          "andu": {
+            "nameZh": "aNdu（Andreas Maasing）",
+            "nameEn": "aNdu (Andreas Maasing)"
+          },
+          "electronic": {
+            "nameZh": "electronic（Denis Sharipov）",
+            "nameEn": "electronic (Denis Sharipov)"
+          },
+          "nickelback": {
+            "nameZh": "NickelBack（Aleksey Trofimov）",
+            "nameEn": "NickelBack (Aleksey Trofimov)"
+          },
+          "guardian": {
+            "nameZh": "GuardiaN（Ladislav Kovács）",
+            "nameEn": "GuardiaN (Ladislav Kovács)"
+          },
+          "shara": {
+            "nameZh": "Shara（Oleksandr Hordieiev）",
+            "nameEn": "Shara (Oleksandr Hordieiev)"
+          },
+          "devoduvek": {
+            "nameZh": "devoduvek（David Dobrosavljevic）",
+            "nameEn": "devoduvek (David Dobrosavljevic)"
+          },
+          "max": {
+            "nameZh": "max（Maximiliano González）",
+            "nameEn": "max (Maximiliano González)"
+          },
+          "pimp": {
+            "nameZh": "Pimp（Jacob Winneche）",
+            "nameEn": "Pimp (Jacob Winneche)"
+          },
+          "saffee": {
+            "nameZh": "saffee（Rafael Costa）",
+            "nameEn": "saffee (Rafael Costa)"
+          },
+          "cool4st": {
+            "nameZh": "cool4st（Sodbileg Batbaatar）",
+            "nameEn": "cool4st (Sodbileg Batbaatar)"
+          },
+          "kennys": {
+            "nameZh": "kennyS（Kenny Schrub）",
+            "nameEn": "kennyS (Kenny Schrub)"
+          },
+          "skadoodle": {
+            "nameZh": "Skadoodle（Tyler Latham）",
+            "nameEn": "Skadoodle (Tyler Latham)"
+          },
+          "magixx": {
+            "nameZh": "magixx（Borislav Vorobev）",
+            "nameEn": "magixx (Borislav Vorobev)"
+          },
+          "speed4k": {
+            "nameZh": "speed4k（Anton Titov）",
+            "nameEn": "speed4k (Anton Titov)"
+          },
+          "launx": {
+            "nameZh": "lauNX（Laurentiu Iulian Tarlea）",
+            "nameEn": "lauNX (Laurentiu Iulian Tarlea)"
+          },
+          "hutji": {
+            "nameZh": "hutji（Pavel Lashkov）",
+            "nameEn": "hutji (Pavel Lashkov)"
+          },
+          "sico": {
+            "nameZh": "Sico（Simon Williams）",
+            "nameEn": "Sico (Simon Williams)"
+          },
+          "misutaaa": {
+            "nameZh": "misutaaa（Kévin Rabier）",
+            "nameEn": "misutaaa (Kévin Rabier)"
+          },
+          "cacanito": {
+            "nameZh": "CacaNito（Aleksandar Kjulukoski）",
+            "nameEn": "CacaNito (Aleksandar Kjulukoski)"
+          },
+          "xertion": {
+            "nameZh": "xertioN（Dorian Berman）",
+            "nameEn": "xertioN (Dorian Berman)"
+          },
+          "furlan": {
+            "nameZh": "Furlan（Damian Kislowski）",
+            "nameEn": "Furlan (Damian Kislowski)"
+          },
+          "boombl4": {
+            "nameZh": "Boombl4（Kirill Mikhailov）",
+            "nameEn": "Boombl4 (Kirill Mikhailov)"
+          },
+          "sjuush": {
+            "nameZh": "sjuush（Rasmus Beck）",
+            "nameEn": "sjuush (Rasmus Beck)"
+          },
+          "chr1zn": {
+            "nameZh": "Chr1zN（Christoffer Storgaard）",
+            "nameEn": "Chr1zN (Christoffer Storgaard)"
+          },
+          "fl1t": {
+            "nameZh": "FL1T（Evgenii Lebedev）",
+            "nameEn": "FL1T (Evgenii Lebedev)"
+          },
+          "edward": {
+            "nameZh": "Edward（Ioann Sukhariev）",
+            "nameEn": "Edward (Ioann Sukhariev)"
+          },
+          "angel": {
+            "nameZh": "ANGE1（Kyrylo Karasov）",
+            "nameEn": "ANGE1 (Kyrylo Karasov)"
+          },
+          "aerial": {
+            "nameZh": "Aerial（Jani Jussila）",
+            "nameEn": "Aerial (Jani Jussila)"
+          },
+          "spooke": {
+            "nameZh": "spooke（Olle Grundström）",
+            "nameEn": "spooke (Olle Grundström)"
+          },
+          "cruc1al": {
+            "nameZh": "CRUC1AL（Joey Steusel）",
+            "nameEn": "CRUC1AL (Joey Steusel)"
+          },
+          "jabbi": {
+            "nameZh": "jabbi（Jakob Nygaard）",
+            "nameEn": "jabbi (Jakob Nygaard)"
+          },
+          "roux": {
+            "nameZh": "ROUX（Undrakhbayar Zolbayar）",
+            "nameEn": "ROUX (Undrakhbayar Zolbayar)"
+          },
+          "neo": {
+            "nameZh": "NEO（Filip Kubski）",
+            "nameEn": "NEO (Filip Kubski)"
+          },
+          "mutiris": {
+            "nameZh": "MUTiRiS（Christopher Fernandes）",
+            "nameEn": "MUTiRiS (Christopher Fernandes)"
+          },
+          "hades": {
+            "nameZh": "hades（Aleksander Miskiewicz）",
+            "nameEn": "hades (Aleksander Miskiewicz)"
+          },
+          "nex": {
+            "nameZh": "nex（Johannes Maget）",
+            "nameEn": "nex (Johannes Maget)"
+          },
+          "kngv": {
+            "nameZh": "kNgV-（Vito Giuseppe Agostinelli）",
+            "nameEn": "kNgV- (Vito Giuseppe Agostinelli)"
+          },
+          "efire": {
+            "nameZh": "efire（Tugs-erdene Erdenebold）",
+            "nameEn": "efire (Tugs-erdene Erdenebold)"
+          },
+          "gxx": {
+            "nameZh": "gxx-（Genc Kolgeci）",
+            "nameEn": "gxx- (Genc Kolgeci)"
+          },
+          "acor": {
+            "nameZh": "acoR（Frederik Gyldstrand）",
+            "nameEn": "acoR (Frederik Gyldstrand)"
+          },
+          "esenthial": {
+            "nameZh": "esenthial（Dmytro Tsvir）",
+            "nameEn": "esenthial (Dmytro Tsvir)"
+          },
+          "tenzki": {
+            "nameZh": "tenzki（Jesper Mikalski）",
+            "nameEn": "tenzki (Jesper Mikalski)"
+          },
+          "osee": {
+            "nameZh": "oSee（Josh Ohm）",
+            "nameEn": "oSee (Josh Ohm)"
+          },
+          "blitz": {
+            "nameZh": "bLitz（Garidmagnai Byambasuren）",
+            "nameEn": "bLitz (Garidmagnai Byambasuren)"
+          },
+          "snow": {
+            "nameZh": "snow（João Vinicius Bueno Filho）",
+            "nameEn": "snow (João Vinicius Bueno Filho)"
+          },
+          "kensi": {
+            "nameZh": "KENSi（Aleksandr Gurkin）",
+            "nameEn": "KENSi (Aleksandr Gurkin)"
+          },
+          "try": {
+            "nameZh": "TRY（Santino Rigal）",
+            "nameEn": "TRY (Santino Rigal)"
+          },
+          "rickeh": {
+            "nameZh": "Rickeh（Ricardo Mulholland）",
+            "nameEn": "Rickeh (Ricardo Mulholland)"
+          },
+          "twist": {
+            "nameZh": "Twist（Simon Eliasson）",
+            "nameEn": "Twist (Simon Eliasson)"
+          },
+          "lake": {
+            "nameZh": "Lake（Mason Sanderson）",
+            "nameEn": "Lake (Mason Sanderson)"
+          },
+          "swisher": {
+            "nameZh": "Swisher（Michael Schmid）",
+            "nameEn": "Swisher (Michael Schmid)"
+          },
+          "twistzz": {
+            "nameZh": "Twistzz（Russel Van Dulken）",
+            "nameEn": "Twistzz (Russel Van Dulken)"
+          },
+          "magisk": {
+            "nameZh": "Magisk（Emil Hoffmann Reif）",
+            "nameEn": "Magisk (Emil Hoffmann Reif)"
+          },
+          "xsepower": {
+            "nameZh": "xsepower（Bogdan Chernikov）",
+            "nameEn": "xsepower (Bogdan Chernikov)"
+          },
+          "bntet": {
+            "nameZh": "BnTeT（Hansel Ferdinand）",
+            "nameEn": "BnTeT (Hansel Ferdinand)"
+          },
+          "t0rick": {
+            "nameZh": "t0rick（Maksim Zaikin）",
+            "nameEn": "t0rick (Maksim Zaikin)"
+          },
+          "emiliaqaq": {
+            "nameZh": "EmiliaQAQ（Tang Junjie）",
+            "nameEn": "EmiliaQAQ (Tang Junjie)"
+          },
+          "xizt": {
+            "nameZh": "Xizt（Richard Landström）",
+            "nameEn": "Xizt (Richard Landström)"
+          },
+          "dosia": {
+            "nameZh": "Dosia（Mikhail Stoliarov）",
+            "nameEn": "Dosia (Mikhail Stoliarov)"
+          },
+          "cypher": {
+            "nameZh": "Cypher（Cai Ashley Watson）",
+            "nameEn": "Cypher (Cai Ashley Watson)"
+          },
+          "z4kr": {
+            "nameZh": "z4KR（Zhang Sike）",
+            "nameEn": "z4KR (Zhang Sike)"
+          },
+          "maka": {
+            "nameZh": "Maka（Bryan Canda）",
+            "nameEn": "Maka (Bryan Canda)"
+          },
+          "rox": {
+            "nameZh": "rox（Martin Molina）",
+            "nameEn": "rox (Martin Molina)"
+          },
+          "xseven": {
+            "nameZh": "xseveN（Sami Laasanen）",
+            "nameEn": "xseveN (Sami Laasanen)"
+          },
+          "br0": {
+            "nameZh": "br0（Alexander Bro）",
+            "nameEn": "br0 (Alexander Bro)"
+          },
+          "ex3rcice": {
+            "nameZh": "Ex3rcice（Pierre Bulinge）",
+            "nameEn": "Ex3rcice (Pierre Bulinge)"
+          },
+          "zorte": {
+            "nameZh": "zorte（Aleksandr Zagodyrenko）",
+            "nameEn": "zorte (Aleksandr Zagodyrenko)"
+          },
+          "smithzz": {
+            "nameZh": "SmithZz（Edouard Dubourdeaux）",
+            "nameEn": "SmithZz (Edouard Dubourdeaux)"
+          },
+          "flusha": {
+            "nameZh": "flusha（Robin Rönnquist）",
+            "nameEn": "flusha (Robin Rönnquist)"
+          },
+          "wood7": {
+            "nameZh": "WOOD7（Adriano Cerato）",
+            "nameEn": "WOOD7 (Adriano Cerato)"
+          },
+          "rpk": {
+            "nameZh": "RpK（Cédric Guipouy）",
+            "nameEn": "RpK (Cédric Guipouy)"
+          },
+          "lekro": {
+            "nameZh": "Lekr0（Jonas Olofsson）",
+            "nameEn": "Lekr0 (Jonas Olofsson)"
+          },
+          "reck": {
+            "nameZh": "reck（Ethan Serrano）",
+            "nameEn": "reck (Ethan Serrano)"
+          },
+          "jkaem": {
+            "nameZh": "jkaem（Joakim Myrbostad）",
+            "nameEn": "jkaem (Joakim Myrbostad)"
+          },
+          "tuurtle": {
+            "nameZh": "Tuurtle（Matheus Anhaia）",
+            "nameEn": "Tuurtle (Matheus Anhaia)"
+          },
+          "gratisfaction": {
+            "nameZh": "Gratisfaction（Sean Kaiwai）",
+            "nameEn": "Gratisfaction (Sean Kaiwai)"
+          },
+          "fitch": {
+            "nameZh": "fitch（Bektiyar Bakhytov）",
+            "nameEn": "fitch (Bektiyar Bakhytov)"
+          },
+          "qikert": {
+            "nameZh": "qikert（Alexey Golubev）",
+            "nameEn": "qikert (Alexey Golubev)"
+          },
+          "threat": {
+            "nameZh": "THREAT（Björn Pers）",
+            "nameEn": "THREAT (Björn Pers)"
+          },
+          "bart4k": {
+            "nameZh": "Bart4k（Baatarkhuu Batbold）",
+            "nameEn": "Bart4k (Baatarkhuu Batbold)"
+          },
+          "dav1g": {
+            "nameZh": "dav1g（David Granado Bermudo）",
+            "nameEn": "dav1g (David Granado Bermudo)"
+          },
+          "pr": {
+            "nameZh": "PR（Oldřich Nový）",
+            "nameEn": "PR (Oldřich Nový)"
+          },
+          "dav1d": {
+            "nameZh": "dav1d（David Maldonado）",
+            "nameEn": "dav1d (David Maldonado)"
+          },
+          "luken": {
+            "nameZh": "luken（Luca Nadotti）",
+            "nameEn": "luken (Luca Nadotti)"
+          },
+          "zywoo": {
+            "nameZh": "ZywOo（Mathieu Herbaut）",
+            "nameEn": "ZywOo (Mathieu Herbaut)"
+          },
+          "nicoodoz": {
+            "nameZh": "nicoodoz（Nico Tamjidi）",
+            "nameEn": "nicoodoz (Nico Tamjidi)"
+          },
+          "pyth": {
+            "nameZh": "pyth（Jacob Mourujärvi）",
+            "nameEn": "pyth (Jacob Mourujärvi)"
+          },
+          "scream": {
+            "nameZh": "ScreaM（Adil Benrlitom）",
+            "nameEn": "ScreaM (Adil Benrlitom)"
+          },
+          "cerq": {
+            "nameZh": "CeRq（Tsvetelin Dimitrov）",
+            "nameEn": "CeRq (Tsvetelin Dimitrov)"
+          },
+          "krizzen": {
+            "nameZh": "KrizzeN（Aidyn Turlybekov）",
+            "nameEn": "KrizzeN (Aidyn Turlybekov)"
+          },
+          "k1to": {
+            "nameZh": "k1to（Nils Gruhne）",
+            "nameEn": "k1to (Nils Gruhne)"
+          },
+          "s1n": {
+            "nameZh": "s1n（Elias Stein）",
+            "nameEn": "s1n (Elias Stein)"
+          },
+          "pita": {
+            "nameZh": "pita（Faruk Pita）",
+            "nameEn": "pita (Faruk Pita)"
+          },
+          "senzu": {
+            "nameZh": "Senzu（Azbayar Munkhbold）",
+            "nameEn": "Senzu (Azbayar Munkhbold)"
+          },
+          "k0nfig": {
+            "nameZh": "k0nfig（Kristian Wienecke）",
+            "nameEn": "k0nfig (Kristian Wienecke)"
+          },
+          "hiko": {
+            "nameZh": "Hiko（Spencer Martin）",
+            "nameEn": "Hiko (Spencer Martin)"
+          },
+          "1eer": {
+            "nameZh": "1eeR（Aliaksandr Nahorny）",
+            "nameEn": "1eeR (Aliaksandr Nahorny)"
+          },
+          "neofrag": {
+            "nameZh": "NEOFRAG（Adam Zouhar）",
+            "nameEn": "NEOFRAG (Adam Zouhar)"
+          },
+          "deadfox": {
+            "nameZh": "DeadFox（Bence Borocz）",
+            "nameEn": "DeadFox (Bence Borocz)"
+          },
+          "jba": {
+            "nameZh": "JBa（Joshua John Barutt）",
+            "nameEn": "JBa (Joshua John Barutt)"
+          },
+          "frozen": {
+            "nameZh": "frozen（David Cernansky）",
+            "nameEn": "frozen (David Cernansky)"
+          },
+          "tiger": {
+            "nameZh": "Tiger（Junbin Zheng）",
+            "nameEn": "Tiger (Junbin Zheng)"
+          },
+          "alex": {
+            "nameZh": "ALEX（Alex Mcmeekin）",
+            "nameEn": "ALEX (Alex Mcmeekin)"
+          },
+          "volt": {
+            "nameZh": "volt（Sebastian Constantin Malos）",
+            "nameEn": "volt (Sebastian Constantin Malos)"
+          },
+          "device": {
+            "nameZh": "device（Nicolai Reedtz）",
+            "nameEn": "device (Nicolai Reedtz)"
+          },
+          "jota": {
+            "nameZh": "JOTA（Jhonatan Gaudencio）",
+            "nameEn": "JOTA (Jhonatan Gaudencio)"
+          },
+          "ethan": {
+            "nameZh": "Ethan（Ethan Arnold）",
+            "nameEn": "Ethan (Ethan Arnold)"
+          },
+          "b1t": {
+            "nameZh": "b1t（Valerii Vakhovskyi）",
+            "nameEn": "b1t (Valerii Vakhovskyi)"
+          },
+          "goofy": {
+            "nameZh": "Goofy（Krzysztof Górski）",
+            "nameEn": "Goofy (Krzysztof Górski)"
+          },
+          "latto": {
+            "nameZh": "latto（Bruno Rebelatto）",
+            "nameEn": "latto (Bruno Rebelatto)"
+          },
+          "devil": {
+            "nameZh": "DEVIL（Timothée Démolon）",
+            "nameEn": "DEVIL (Timothée Démolon)"
+          },
+          "cxzi": {
+            "nameZh": "Cxzi（Danny Strzelczyk）",
+            "nameEn": "Cxzi (Danny Strzelczyk)"
+          },
+          "kei": {
+            "nameZh": "KEi（Kamil Dariusz Pietkun）",
+            "nameEn": "KEi (Kamil Dariusz Pietkun)"
+          },
+          "n0rb3r7": {
+            "nameZh": "n0rb3r7（David Danielyan）",
+            "nameEn": "n0rb3r7 (David Danielyan)"
+          },
+          "stavn": {
+            "nameZh": "stavn（Martin Lund）",
+            "nameEn": "stavn (Martin Lund)"
+          },
+          "forester": {
+            "nameZh": "Forester（Igor Bezotechesky）",
+            "nameEn": "Forester (Igor Bezotechesky)"
+          },
+          "koosta": {
+            "nameZh": "koosta（Kenneth Suen）",
+            "nameEn": "koosta (Kenneth Suen)"
+          },
+          "broky": {
+            "nameZh": "broky（Helvijs Saukants）",
+            "nameEn": "broky (Helvijs Saukants)"
+          },
+          "mir": {
+            "nameZh": "mir（Nikolai Bitiukov）",
+            "nameEn": "mir (Nikolai Bitiukov)"
+          },
+          "matys": {
+            "nameZh": "MATYS（Matúš Šimko）",
+            "nameEn": "MATYS (Matúš Šimko)"
+          },
+          "s1mple": {
+            "nameZh": "s1mple（Oleksandr Kostyliev）",
+            "nameEn": "s1mple (Oleksandr Kostyliev)"
+          },
+          "dycha": {
+            "nameZh": "Dycha（Paweł Dycha）",
+            "nameEn": "Dycha (Paweł Dycha)"
+          },
+          "getright": {
+            "nameZh": "GeT_RiGhT（Christopher Alesund）",
+            "nameEn": "GeT_RiGhT (Christopher Alesund)"
+          },
+          "insani": {
+            "nameZh": "insani（Felipe Yuji Tasaka Kuratani）",
+            "nameEn": "insani (Felipe Yuji Tasaka Kuratani)"
+          },
+          "znajder": {
+            "nameZh": "znajder（Andreas Lindberg）",
+            "nameEn": "znajder (Andreas Lindberg)"
+          },
+          "art": {
+            "nameZh": "arT（Andrei Piovezan）",
+            "nameEn": "arT (Andrei Piovezan)"
+          },
+          "vice": {
+            "nameZh": "vice（Daniel Kim）",
+            "nameEn": "vice (Daniel Kim)"
+          },
+          "yam": {
+            "nameZh": "yam（Yaman Ergenekon）",
+            "nameEn": "yam (Yaman Ergenekon)"
+          },
+          "xand": {
+            "nameZh": "xand（Alexandre Zizi）",
+            "nameEn": "xand (Alexandre Zizi)"
+          },
+          "worldedit": {
+            "nameZh": "WorldEdit（Georgy Yaskin）",
+            "nameEn": "WorldEdit (Georgy Yaskin)"
+          },
+          "jdc": {
+            "nameZh": "JDC（Jon Apostolos De Castro）",
+            "nameEn": "JDC (Jon Apostolos De Castro)"
+          },
+          "chrisj": {
+            "nameZh": "chrisJ（Chris de Jong）",
+            "nameEn": "chrisJ (Chris de Jong)"
+          },
+          "tn1r": {
+            "nameZh": "tN1R（Andrei Tatarynovich）",
+            "nameEn": "tN1R (Andrei Tatarynovich)"
+          },
+          "interz": {
+            "nameZh": "interz（Iakushin Timofei）",
+            "nameEn": "interz (Iakushin Timofei)"
+          },
+          "yay": {
+            "nameZh": "yay（Jaccob Whiteaker）",
+            "nameEn": "yay (Jaccob Whiteaker)"
+          },
+          "jdm64": {
+            "nameZh": "jdm64（Joshua Marzano）",
+            "nameEn": "jdm64 (Joshua Marzano)"
+          },
+          "jackz": {
+            "nameZh": "JaCkz（Audric Jug）",
+            "nameEn": "JaCkz (Audric Jug)"
+          },
+          "khan": {
+            "nameZh": "khaN（Bexultan Ospan）",
+            "nameEn": "khaN (Bexultan Ospan)"
+          },
+          "djoko": {
+            "nameZh": "Djoko（Thomas Pavoni）",
+            "nameEn": "Djoko (Thomas Pavoni)"
+          },
+          "story": {
+            "nameZh": "story（João Vieira）",
+            "nameEn": "story (João Vieira)"
+          },
+          "biguzera": {
+            "nameZh": "biguzera（Rodrigo Bittencourt）",
+            "nameEn": "biguzera (Rodrigo Bittencourt)"
+          },
+          "reltuc": {
+            "nameZh": "reltuC（Steven Cutler）",
+            "nameEn": "reltuC (Steven Cutler)"
+          },
+          "chopper": {
+            "nameZh": "chopper（Leonid Vishnyakov）",
+            "nameEn": "chopper (Leonid Vishnyakov)"
+          },
+          "graviti": {
+            "nameZh": "Graviti（Filip Brankovic）",
+            "nameEn": "Graviti (Filip Brankovic)"
+          },
+          "dumau": {
+            "nameZh": "dumau（Eduardo Wolkmer）",
+            "nameEn": "dumau (Eduardo Wolkmer)"
+          },
+          "sterling": {
+            "nameZh": "sterling（Euan Moore）",
+            "nameEn": "sterling (Euan Moore)"
+          },
+          "kscerato": {
+            "nameZh": "KSCERATO（Kaike Cerato）",
+            "nameEn": "KSCERATO (Kaike Cerato)"
+          },
+          "jee": {
+            "nameZh": "Jee（Ji Dongkai）",
+            "nameEn": "Jee (Ji Dongkai)"
+          },
+          "dennis": {
+            "nameZh": "dennis（Dennis Edman）",
+            "nameEn": "dennis (Dennis Edman)"
+          },
+          "bodyy": {
+            "nameZh": "bodyy（Alexandre Pianaro）",
+            "nameEn": "bodyy (Alexandre Pianaro)"
+          },
+          "zero": {
+            "nameZh": "Zero（Patrik Zudel）",
+            "nameEn": "Zero (Patrik Zudel)"
+          },
+          "stadodo": {
+            "nameZh": "stadodo（Renato Goncsedalves）",
+            "nameEn": "stadodo (Renato Gonçalves)"
+          },
+          "coldzera": {
+            "nameZh": "coldzera（Marcelo David）",
+            "nameEn": "coldzera (Marcelo David)"
+          },
+          "jamyoung": {
+            "nameZh": "JamYoung（Yi Yang）",
+            "nameEn": "JamYoung (Yi Yang)"
+          },
+          "m0nesy": {
+            "nameZh": "m0NESY（Ilia Osipov）",
+            "nameEn": "m0NESY (Ilia Osipov)"
+          },
+          "zyphon": {
+            "nameZh": "Zyphon（Rasmus Nordfoss）",
+            "nameEn": "Zyphon (Rasmus Nordfoss)"
+          },
+          "demqq": {
+            "nameZh": "DemQQ（Serhii Demchenko）",
+            "nameEn": "DemQQ (Serhii Demchenko)"
+          },
+          "maikelele": {
+            "nameZh": "Maikelele（Mikail Bill）",
+            "nameEn": "Maikelele (Mikail Bill)"
+          },
+          "tonyblack": {
+            "nameZh": "tonyblack（Anton Kolesnikov）",
+            "nameEn": "tonyblack (Anton Kolesnikov)"
+          },
+          "icy": {
+            "nameZh": "ICY（Kaisar Faiznurov）",
+            "nameEn": "ICY (Kaisar Faiznurov)"
+          },
+          "controlez": {
+            "nameZh": "controlez（Unudelger Baasanjargal）",
+            "nameEn": "controlez (Unudelger Baasanjargal)"
+          },
+          "jmqa": {
+            "nameZh": "jmqa（Savelii Bragin）",
+            "nameEn": "jmqa (Savelii Bragin)"
+          },
+          "cadian": {
+            "nameZh": "cadiaN（Casper Møller）",
+            "nameEn": "cadiaN (Casper Møller)"
+          },
+          "ultimate": {
+            "nameZh": "ultimate（Roland Tomkowiak）",
+            "nameEn": "ultimate (Roland Tomkowiak)"
+          },
+          "ex6tenz": {
+            "nameZh": "Ex6TenZ（Kévin Droolans）",
+            "nameEn": "Ex6TenZ (Kévin Droolans)"
+          },
+          "malbsmd": {
+            "nameZh": "malbsMd（Mario Alberto Samayoa Diaz）",
+            "nameEn": "malbsMd (Mario Alberto Samayoa Diaz)"
+          },
+          "sk0r": {
+            "nameZh": "sk0R（Tengis Batjargal）",
+            "nameEn": "sk0R (Tengis Batjargal)"
+          },
+          "bondik": {
+            "nameZh": "bondik（Vladyslav Nechyporchuk）",
+            "nameEn": "bondik (Vladyslav Nechyporchuk)"
+          },
+          "imorr": {
+            "nameZh": "imoRR（Ömer Karatas）",
+            "nameEn": "imoRR (Ömer Karatas)"
+          },
+          "kursy": {
+            "nameZh": "Kursy（Jeremy Gast）",
+            "nameEn": "Kursy (Jeremy Gast)"
+          },
+          "erkast": {
+            "nameZh": "erkaSt（Erdenetsogt Gantulga）",
+            "nameEn": "erkaSt (Erdenetsogt Gantulga)"
+          },
+          "sl3nd": {
+            "nameZh": "sl3nd（Henrich Hevesi）",
+            "nameEn": "sl3nd (Henrich Hevesi)"
+          },
+          "nealan": {
+            "nameZh": "neaLaN（Sanzhar Iskhakov）",
+            "nameEn": "neaLaN (Sanzhar Iskhakov)"
+          },
+          "drop": {
+            "nameZh": "drop（André Wagner de Abreu）",
+            "nameEn": "drop (André Wagner de Abreu)"
+          },
+          "pronax": {
+            "nameZh": "pronax（Markus Wallsten）",
+            "nameEn": "pronax (Markus Wallsten)"
+          },
+          "destiny": {
+            "nameZh": "DeStiNy（Lucas Bullo De Lima）",
+            "nameEn": "DeStiNy (Lucas Bullo De Lima)"
+          },
+          "teses": {
+            "nameZh": "TeSeS（René Stensig Madsen）",
+            "nameEn": "TeSeS (René Stensig Madsen)"
+          },
+          "nafany": {
+            "nameZh": "nafany（Vladislav Gorshkov）",
+            "nameEn": "nafany (Vladislav Gorshkov)"
+          },
+          "balblna": {
+            "nameZh": "balblna（Grigorii Oleinik）",
+            "nameEn": "balblna (Grigorii Oleinik)"
+          },
+          "android": {
+            "nameZh": "ANDROID（Bradley Fodor）",
+            "nameEn": "ANDROID (Bradley Fodor)"
+          },
+          "shox": {
+            "nameZh": "shox（Richard Papillon）",
+            "nameEn": "shox (Richard Papillon)"
+          },
+          "olofmeister": {
+            "nameZh": "olofmeister（Olof Kajbjer）",
+            "nameEn": "olofmeister (Olof Kajbjer)"
+          },
+          "calyx": {
+            "nameZh": "Calyx（Bugra Arkın）",
+            "nameEn": "Calyx (Bugra Arkın)"
+          },
+          "mynio": {
+            "nameZh": "mynio（Wiktor Józef Kruk）",
+            "nameEn": "mynio (Wiktor Józef Kruk)"
+          },
+          "nexa": {
+            "nameZh": "nexa（Nemanja Isakovic）",
+            "nameEn": "nexa (Nemanja Isakovic)"
+          },
+          "arya": {
+            "nameZh": "arya（Arya Hekmat）",
+            "nameEn": "arya (Arya Hekmat)"
+          },
+          "starry": {
+            "nameZh": "Starry（Ye Lizhi）",
+            "nameEn": "Starry (Ye Lizhi)"
+          },
+          "allu": {
+            "nameZh": "allu（Aleksi Jalli）",
+            "nameEn": "allu (Aleksi Jalli)"
+          },
+          "xielo": {
+            "nameZh": "xiELO（Vladislav Lysov）",
+            "nameEn": "xiELO (Vladislav Lysov)"
+          },
+          "queenix": {
+            "nameZh": "Queenix（Jonas Dideriksen）",
+            "nameEn": "Queenix (Jonas Dideriksen)"
+          },
+          "jambo": {
+            "nameZh": "jambo（Dmytro Semera）",
+            "nameEn": "jambo (Dmytro Semera)"
+          },
+          "yel": {
+            "nameZh": "yel（Gustavo Knittel Moreira）",
+            "nameEn": "yel (Gustavo Knittel Moreira)"
+          },
+          "isak": {
+            "nameZh": "isak（Isak Fahlén）",
+            "nameEn": "isak (Isak Fahlén)"
+          },
+          "sgares": {
+            "nameZh": "seang@res（Sean Gares）",
+            "nameEn": "seang@res (Sean Gares)"
+          },
+          "liazz": {
+            "nameZh": "Liazz（John Tregillgas）",
+            "nameEn": "Liazz (John Tregillgas)"
+          },
+          "hazed": {
+            "nameZh": "hazed（James Cobb）",
+            "nameEn": "hazed (James Cobb)"
+          },
+          "skullz": {
+            "nameZh": "skullz（Felipe Frank Medeiros）",
+            "nameEn": "skullz (Felipe Frank Medeiros)"
+          },
+          "npl": {
+            "nameZh": "npl（Andrii Kukharskyi）",
+            "nameEn": "npl (Andrii Kukharskyi)"
+          },
+          "gade": {
+            "nameZh": "gade（Nicklas Gade）",
+            "nameEn": "gade (Nicklas Gade)"
+          },
+          "brehze": {
+            "nameZh": "Brehze（Vincent Cayonte）",
+            "nameEn": "Brehze (Vincent Cayonte)"
+          },
+          "lucas1": {
+            "nameZh": "LUCAS1（Lucas Teles Ferreira da Fonseca）",
+            "nameEn": "LUCAS1 (Lucas Teles Ferreira da Fonseca)"
+          },
+          "krasnal": {
+            "nameZh": "kRaSnaL（Szymon Mrozek）",
+            "nameEn": "kRaSnaL (Szymon Mrozek)"
+          },
+          "fallen": {
+            "nameZh": "FalleN（Gabriel Toledo）",
+            "nameEn": "FalleN (Gabriel Toledo)"
+          },
+          "es3tag": {
+            "nameZh": "es3tag（Patrick Hansen）",
+            "nameEn": "es3tag (Patrick Hansen)"
+          },
+          "draken": {
+            "nameZh": "draken（William Sundin）",
+            "nameEn": "draken (William Sundin)"
+          },
+          "almazer": {
+            "nameZh": "almazer（Almaz Asadullin）",
+            "nameEn": "almazer (Almaz Asadullin)"
+          },
+          "buzz": {
+            "nameZh": "Buzz（Christian Andersen）",
+            "nameEn": "Buzz (Christian Andersen)"
+          },
+          "spinx": {
+            "nameZh": "Spinx（Lotan Giladi）",
+            "nameEn": "Spinx (Lotan Giladi)"
+          },
+          "letn1": {
+            "nameZh": "LETN1（Nestor Tanic）",
+            "nameEn": "LETN1 (Nestor Tanic)"
+          },
+          "phzy": {
+            "nameZh": "phzy（Nils Love Smidebrant）",
+            "nameEn": "phzy (Nils Love Smidebrant)"
+          },
+          "refrezh": {
+            "nameZh": "refrezh（Ismail Ali）",
+            "nameEn": "refrezh (Ismail Ali)"
+          },
+          "happy": {
+            "nameZh": "Happy（Vincent Cervoni）",
+            "nameEn": "Happy (Vincent Cervoni)"
+          },
+          "annihilation": {
+            "nameZh": "ANNIHILATION（Tuvshintugs Nyamdorj）",
+            "nameEn": "ANNIHILATION (Tuvshintugs Nyamdorj)"
+          },
+          "ramz1kboss": {
+            "nameZh": "Ramz1kBO$$（Ramazan Bashizov）",
+            "nameEn": "Ramz1kBO$$ (Ramazan Bashizov)"
+          },
+          "xerolte": {
+            "nameZh": "xerolte（Munkhtogtokh Enkhbat）",
+            "nameEn": "xerolte (Munkhtogtokh Enkhbat)"
+          },
+          "belchonokk": {
+            "nameZh": "BELCHONOKK（Andrei Iasinskii）",
+            "nameEn": "BELCHONOKK (Andrei Iasinskii)"
+          },
+          "mou": {
+            "nameZh": "mou（Rustem Telepov）",
+            "nameEn": "mou (Rustem Telepov)"
+          },
+          "crush": {
+            "nameZh": "crush（Ihor Shevchenko）",
+            "nameEn": "crush (Ihor Shevchenko)"
+          },
+          "krimz": {
+            "nameZh": "KRIMZ（Lars Freddy Johansson）",
+            "nameEn": "KRIMZ (Lars Freddy Johansson)"
+          },
+          "zevy": {
+            "nameZh": "zevy（Romeu Rocco）",
+            "nameEn": "zevy (Romeu Rocco)"
+          },
+          "nqz": {
+            "nameZh": "NQZ（Lucas Soares Assumpção E Silva）",
+            "nameEn": "NQZ (Lucas Soares Assumpção E Silva)"
+          },
+          "styko": {
+            "nameZh": "STYKO（Martin Styk）",
+            "nameEn": "STYKO (Martin Styk)"
+          },
+          "sunpayus": {
+            "nameZh": "SunPayus（Alvaro Garcia）",
+            "nameEn": "SunPayus (Alvaro Garcia)"
+          },
+          "golden": {
+            "nameZh": "Golden（Maikil Selim）",
+            "nameEn": "Golden (Maikil Selim)"
+          },
+          "gobb": {
+            "nameZh": "gob b（Fatih Dayik）",
+            "nameEn": "gob b (Fatih Dayik)"
+          },
+          "jeorge": {
+            "nameZh": "jeorge（Jorge Endicott）",
+            "nameEn": "jeorge (Jeorge Endicott)"
+          },
+          "f1ku": {
+            "nameZh": "F1KU（Maciej Miklas）",
+            "nameEn": "F1KU (Maciej Miklas)"
+          },
+          "spiidi": {
+            "nameZh": "Spiidi（Timo Richter）",
+            "nameEn": "Spiidi (Timo Richter)"
+          },
+          "r1nkle": {
+            "nameZh": "r1nkle（Artem Moroz）",
+            "nameEn": "r1nkle (Artem Moroz)"
+          },
+          "seized": {
+            "nameZh": "seized（Denis Kostin）",
+            "nameEn": "seized (Denis Kostin)"
+          },
+          "xant3r": {
+            "nameZh": "Xant3r（Kiril Kononov）",
+            "nameEn": "Xant3r (Kirill Kononov)"
+          },
+          "stanislaw": {
+            "nameZh": "stanislaw（Peter Jarguz）",
+            "nameEn": "stanislaw (Peter Jarguz)"
+          },
+          "gruby": {
+            "nameZh": "GruBy（Dominik Swiderski）",
+            "nameEn": "GruBy (Dominik Swiderski)"
+          },
+          "norwi": {
+            "nameZh": "Norwi（Evgenii Ermolin）",
+            "nameEn": "Norwi (Evgenii Ermolin)"
+          },
+          "headtr1ck": {
+            "nameZh": "headtr1ck（Daniil Valitov）",
+            "nameEn": "headtr1ck (Daniil Valitov)"
+          },
+          "piriajr": {
+            "nameZh": "piriajr（Guilherme Barbosa）",
+            "nameEn": "piriajr (Guilherme Barbosa)"
+          },
+          "oskar": {
+            "nameZh": "oskar（Tomas Stastny）",
+            "nameEn": "oskar (Tomas Stastny)"
+          },
+          "junior": {
+            "nameZh": "junior（Paytyn Johnson）",
+            "nameEn": "junior (Paytyn Johnson)"
+          },
+          "zeus": {
+            "nameZh": "Zeus（Danylo Teslenko）",
+            "nameEn": "Zeus (Danylo Teslenko)"
+          },
+          "kaze": {
+            "nameZh": "Kaze（Khong Weng Keong）",
+            "nameEn": "Kaze (Khong Weng Keong)"
+          },
+          "arrozdoce": {
+            "nameZh": "arrozdoce（Rafael Wing）",
+            "nameEn": "arrozdoce (Rafael Wing)"
+          },
+          "adamb": {
+            "nameZh": "adamb（Adam Axngstroupm）",
+            "nameEn": "adamb (Adam Ångström)"
+          },
+          "freakazoid": {
+            "nameZh": "freakazoid（Ryan Abadir）",
+            "nameEn": "freakazoid (Ryan Abadir)"
+          },
+          "lnz": {
+            "nameZh": "LNZ（Linus Holtäng）",
+            "nameEn": "LNZ (Linus Holtäng)"
+          },
+          "coldyy1": {
+            "nameZh": "COLDYY1（Pavlo Veklenko）",
+            "nameEn": "COLDYY1 (Pavlo Veklenko)"
+          },
+          "karsa": {
+            "nameZh": "Karsa（Su Qifang）",
+            "nameEn": "Karsa (Su Qifang)"
+          },
+          "keshandr": {
+            "nameZh": "keshandr（Sergey Nikishin）",
+            "nameEn": "keshandr (Sergey Nikishin)"
+          },
+          "discodoplan": {
+            "nameZh": "disco doplan（Joakim Gidetun）",
+            "nameEn": "disco doplan (Joakim Gidetun)"
+          },
+          "ewjerkz": {
+            "nameZh": "ewjerkz（Michel Magalhacones）",
+            "nameEn": "ewjerkz (Michel Magalhães)"
+          },
+          "hooch": {
+            "nameZh": "hooch（Dmitry Bogdanov）",
+            "nameEn": "hooch (Dmitry Bogdanov)"
+          },
+          "alistair": {
+            "nameZh": "aliStair（Alistair Johnston）",
+            "nameEn": "aliStair (Alistair Johnston)"
+          },
+          "steel": {
+            "nameZh": "steel（Lucas Lopes）",
+            "nameEn": "steel (Lucas Lopes)"
+          },
+          "adams": {
+            "nameZh": "adamS（Marian Adam）",
+            "nameEn": "adamS (Marian Adam)"
+          },
+          "pasha": {
+            "nameZh": "pashaBiceps（Jarosław Jarząbkowski）",
+            "nameEn": "pashaBiceps (Jarosław Jarząbkowski)"
+          },
+          "nicx": {
+            "nameZh": "nicx（Nick Lee）",
+            "nameEn": "nicx (Nick Lee)"
+          },
+          "james": {
+            "nameZh": "James（James Quinn）",
+            "nameEn": "James (James Quinn)"
+          },
+          "dickstacy": {
+            "nameZh": "DickStacy（Oliver Tierney）",
+            "nameEn": "DickStacy (Oliver Tierney)"
+          },
+          "shroud": {
+            "nameZh": "shroud（Michael Grzesiek）",
+            "nameEn": "shroud (Michael Grzesiek)"
+          },
+          "mopoz": {
+            "nameZh": "mopoz（Alejandro Fernández-Quejo Cano）",
+            "nameEn": "mopoz (Alejandro Fernández-Quejo Cano)"
+          },
+          "kl1m": {
+            "nameZh": "kl1m（Klimentii Krivosheev）",
+            "nameEn": "kl1m (Klimentii Krivosheev)"
+          },
+          "jks": {
+            "nameZh": "jks（Justin Savage）",
+            "nameEn": "jks (Justin Savage)"
+          },
+          "krimbo": {
+            "nameZh": "Krimbo（Karim Moussa）",
+            "nameEn": "Krimbo (Karim Moussa)"
+          },
+          "zerrofix": {
+            "nameZh": "zeRRoFIX（Eduard Petrovskyi）",
+            "nameEn": "zeRRoFIX (Eduard Petrovskyi)"
+          },
+          "azr": {
+            "nameZh": "AZR（Aaron Ward）",
+            "nameEn": "AZR (Aaron Ward)"
+          },
+          "nertz": {
+            "nameZh": "NertZ（Guy Iluz）",
+            "nameEn": "NertZ (Guy Iluz)"
+          },
+          "jugi": {
+            "nameZh": "JUGi（Jakob Hansen）",
+            "nameEn": "JUGi (Jakob Hansen)"
+          },
+          "dupreeh": {
+            "nameZh": "dupreeh（Peter Rasmussen）",
+            "nameEn": "dupreeh (Peter Rasmussen)"
+          },
+          "kvem": {
+            "nameZh": "Kvem（Vladyslav Korol）",
+            "nameEn": "Kvem (Vladyslav Korol)"
+          },
+          "makazze": {
+            "nameZh": "makazze（Drin Shaqiri）",
+            "nameEn": "makazze (Drin Shaqiri)"
+          },
+          "zhoking": {
+            "nameZh": "zhokiNg（Weijie Zhong）",
+            "nameEn": "zhokiNg (Weijie Zhong)"
+          },
+          "freeman": {
+            "nameZh": "Freeman（Winghei Cheung）",
+            "nameEn": "Freeman (Winghei Cheung)"
+          },
+          "daps": {
+            "nameZh": "daps（Damian Steele）",
+            "nameEn": "daps (Damian Steele)"
+          },
+          "sinnopsyy": {
+            "nameZh": "sinnopsyy（Dionis Budeci）",
+            "nameEn": "sinnopsyy (Dionis Budeci)"
+          },
+          "hen1": {
+            "nameZh": "HEN1（Henrique Teles Ferreira da Fonseca）",
+            "nameEn": "HEN1 (Henrique Teles Ferreira da Fonseca)"
+          },
+          "hallzerk": {
+            "nameZh": "hallzerk（Haakon Fjaerli）",
+            "nameEn": "hallzerk (Haakon Fjaerli)"
+          },
+          "vexite": {
+            "nameZh": "vexite（Declan Portelli）",
+            "nameEn": "vexite (Declan Portelli)"
+          },
+          "kylar": {
+            "nameZh": "Kylar（Kacper Walukiewicz）",
+            "nameEn": "Kylar (Kacper Walukiewicz)"
+          },
+          "woxic": {
+            "nameZh": "woxic（Özgür Eker）",
+            "nameEn": "woxic (Özgür Eker)"
+          },
+          "b1ad3": {
+            "nameZh": "B1ad3（Andrey Gorodenskiy）",
+            "nameEn": "B1ad3 (Andrey Gorodenskiy)"
+          },
+          "grim": {
+            "nameZh": "Grim（Michael Wince）",
+            "nameEn": "Grim (Michael Wince)"
+          },
+          "chelo": {
+            "nameZh": "chelo（Marcelo Cespedes）",
+            "nameEn": "chelo (Marcelo Cespedes)"
+          },
+          "cobra": {
+            "nameZh": "cobra（Anarbileg Uuganbayar）",
+            "nameEn": "cobra (Anarbileg Uuganbayar)"
+          },
+          "msl": {
+            "nameZh": "MSL（Mathias Sommer Lauridsen）",
+            "nameEn": "MSL (Mathias Sommer Lauridsen)"
+          },
+          "roman": {
+            "nameZh": "roman（Ricardo Oliveira）",
+            "nameEn": "roman (Ricardo Oliveira)"
+          },
+          "farlig": {
+            "nameZh": "Farlig（Asger Chen Jensen）",
+            "nameEn": "Farlig (Asger Chen Jensen)"
+          },
+          "sixer": {
+            "nameZh": "SIXER（Christophe Xia）",
+            "nameEn": "SIXER (Christophe Xia)"
+          },
+          "flamez": {
+            "nameZh": "FlameZ（Shahar Hai Shoshan）",
+            "nameEn": "FlameZ (Shahar Hai Shoshan)"
+          },
+          "fer": {
+            "nameZh": "fer（Fernando Alvarenga）",
+            "nameEn": "fer (Fernando Alvarenga)"
+          },
+          "espiranto": {
+            "nameZh": "EspiranTo（Rokas Milasauskas）",
+            "nameEn": "EspiranTo (Rokas Milasauskas)"
+          },
+          "issaa": {
+            "nameZh": "ISSAA（Issa Murad）",
+            "nameEn": "ISSAA (Issa Murad)"
+          },
+          "tauson": {
+            "nameZh": "Tauson（Sebastian Tauson Lindelof）",
+            "nameEn": "Tauson (Sebastian Tauson Lindelof)"
+          },
+          "roej": {
+            "nameZh": "roeJ（Fredrik Jørgensen）",
+            "nameEn": "roeJ (Fredrik Jørgensen)"
+          },
+          "vini": {
+            "nameZh": "VINI（Vinicius Figueiredo）",
+            "nameEn": "VINI (Vinicius Figueiredo)"
+          },
+          "fang": {
+            "nameZh": "FaNg（Justin Coakley）",
+            "nameEn": "FaNg (Justin Coakley)"
+          },
+          "hunter": {
+            "nameZh": "huNter-（Nemanja Kovac）",
+            "nameEn": "huNter- (Nemanja Kovac)"
+          },
+          "felps": {
+            "nameZh": "felps（Joao Vasconcellos Cabral）",
+            "nameEn": "felps (Joao Vasconcellos Cabral)"
+          },
+          "sunny": {
+            "nameZh": "suNny（Miikka Kemppi）",
+            "nameEn": "suNny (Miikka Kemppi)"
+          },
+          "sanji": {
+            "nameZh": "SANJI（Sanjar Kuliev）",
+            "nameEn": "SANJI (Sanjar Kuliev)"
+          },
+          "hyper": {
+            "nameZh": "Hyper（Bartosz Wolny）",
+            "nameEn": "Hyper (Bartosz Wolny)"
+          },
+          "rain": {
+            "nameZh": "rain（Håvard Nygaard）",
+            "nameEn": "rain (Håvard Nygaard)"
+          },
+          "kyxsan": {
+            "nameZh": "kyxsan（Damjan Stoilkovski）",
+            "nameEn": "kyxsan (Damjan Stoilkovski)"
+          },
+          "davey": {
+            "nameZh": "DAVEY（David Stafford）",
+            "nameEn": "DAVEY (David Stafford)"
+          },
+          "c4llm3su3": {
+            "nameZh": "C4LLM3SU3（Qihao Su）",
+            "nameEn": "C4LLM3SU3 (Qihao Su)"
+          },
+          "svyat": {
+            "nameZh": "svyat（Sviatoslav Dovbakh）",
+            "nameEn": "svyat (Sviatoslav Dovbakh)"
+          },
+          "michu": {
+            "nameZh": "MICHU（Michal Muller）",
+            "nameEn": "MICHU (Michal Muller)"
+          },
+          "donk": {
+            "nameZh": "donk（Danil Kryshkovets）",
+            "nameEn": "donk (Danil Kryshkovets)"
+          },
+          "history": {
+            "nameZh": "History（Allan Botton）",
+            "nameEn": "History (Allan Botton)"
+          },
+          "perfecto": {
+            "nameZh": "Perfecto（Ilya Zalutskiy）",
+            "nameEn": "Perfecto (Ilya Zalutskiy)"
+          },
+          "taz": {
+            "nameZh": "TaZ（Wiktor Wojtas）",
+            "nameEn": "TaZ (Wiktor Wojtas)"
+          },
+          "taco": {
+            "nameZh": "TACO（Tacio Filho）",
+            "nameEn": "TACO (Tacio Filho)"
+          },
+          "b4rtin": {
+            "nameZh": "b4rtiN（Bruno Câmara）",
+            "nameEn": "b4rtiN (Bruno Câmara)"
+          },
+          "schilla": {
+            "nameZh": "s-chilla（Vsevolod Shchurov）",
+            "nameEn": "s-chilla (Vsevolod Shchurov)"
+          },
+          "keev": {
+            "nameZh": "keev（Kevin Bartholomäus）",
+            "nameEn": "keev (Kevin Bartholomäus)"
+          },
+          "karrigan": {
+            "nameZh": "karrigan（Finn Andersen）",
+            "nameEn": "karrigan (Finn Andersen)"
+          },
+          "fame": {
+            "nameZh": "fame（Petr Bolyshev）",
+            "nameEn": "fame (Petr Bolyshev)"
+          },
+          "mercury": {
+            "nameZh": "Mercury（Jingxiang Wang）",
+            "nameEn": "Mercury (Jingxiang Wang)"
+          },
+          "noway": {
+            "nameZh": "noway（Kaiky Santos）",
+            "nameEn": "noway (Kaiky Santos)"
+          },
+          "tabsen": {
+            "nameZh": "tabseN（Johannes Wodarz）",
+            "nameEn": "tabseN (Johannes Wodarz)"
+          },
+          "s1ren": {
+            "nameZh": "S1ren（Pavel Ogloblin）",
+            "nameEn": "S1ren (Pavel Ogloblin)"
+          },
+          "maden": {
+            "nameZh": "maden（Pavle Bošković）",
+            "nameEn": "maden (Pavle Bošković)"
+          },
+          "ablej": {
+            "nameZh": "ableJ（Rinaldo Moda Junior）",
+            "nameEn": "ableJ (Rinaldo  Moda Junior)"
+          },
+          "alex666": {
+            "nameZh": "alex666（Alexey Yarmoshchuk）",
+            "nameEn": "alex666 (Alexey Yarmoshchuk)"
+          },
+          "l00m1": {
+            "nameZh": "L00m1（Lucas Haukland）",
+            "nameEn": "L00m1 (Lucas Haukland)"
+          },
+          "torzsi": {
+            "nameZh": "torzsi（Ádám Torzsás）",
+            "nameEn": "torzsi (Ádám Torzsás)"
+          },
+          "kyojin": {
+            "nameZh": "Kyojin（Nguyen Van Jayson）",
+            "nameEn": "Kyojin (Nguyen Van Jayson)"
+          },
+          "facecrack": {
+            "nameZh": "facecrack（Dmitriy Alekseev）",
+            "nameEn": "facecrack (Dmitriy Alekseev)"
+          },
+          "kensizor": {
+            "nameZh": "kensizor（Artem Kapran）",
+            "nameEn": "kensizor (Artem Kapran)"
+          },
+          "nota": {
+            "nameZh": "nota（Emil Moskvitin）",
+            "nameEn": "nota (Emil Moskvitin)"
+          },
+          "cajunb": {
+            "nameZh": "cajunb（René Borg）",
+            "nameEn": "cajunb (René Borg)"
+          },
+          "snax": {
+            "nameZh": "Snax（Janusz Pogorzelski）",
+            "nameEn": "Snax (Janusz Pogorzelski)"
+          },
+          "malta": {
+            "nameZh": "malta（Liam Schembri）",
+            "nameEn": "malta (Liam Schembri)"
+          },
+          "fashr": {
+            "nameZh": "FASHR（Dion Derksen）",
+            "nameEn": "FASHR (Dion Derksen)"
+          },
+          "magnojez": {
+            "nameZh": "Magnojez（Kiril Rodnov）",
+            "nameEn": "Magnojez (Kirill Rodnov)"
+          },
+          "rush": {
+            "nameZh": "RUSH（William Wierzba）",
+            "nameEn": "RUSH (William Wierzba)"
+          },
+          "ins": {
+            "nameZh": "INS（Joshua Potter）",
+            "nameEn": "INS (Joshua Potter)"
+          },
+          "nifty": {
+            "nameZh": "Nifty（Noah Francis）",
+            "nameEn": "Nifty (Noah Francis)"
+          },
+          "boros": {
+            "nameZh": "BOROS（Mohammad Malhas）",
+            "nameEn": "BOROS (Mohammad Malhas)"
+          },
+          "autimatic": {
+            "nameZh": "autimatic（Timothy Ta）",
+            "nameEn": "autimatic (Timothy Ta)"
+          },
+          "mlhzin": {
+            "nameZh": "mlhzin（Mateus Marccidola）",
+            "nameEn": "mlhzin (Matheus Marçola)"
+          },
+          "krad": {
+            "nameZh": "Krad（Vladislav Kravchenko）",
+            "nameEn": "Krad (Vladislav Kravchenko)"
+          },
+          "nekiz": {
+            "nameZh": "NEKiZ（Gabriel Schenato）",
+            "nameEn": "NEKiZ (Gabriel Schenato)"
+          },
+          "travis": {
+            "nameZh": "TRAVIS（Aleksandr Timkiv）",
+            "nameEn": "TRAVIS (Aleksandr Timkiv)"
+          },
+          "xyp9x": {
+            "nameZh": "Xyp9x（Andreas Højsleth）",
+            "nameEn": "Xyp9x (Andreas Højsleth)"
+          },
+          "spunj": {
+            "nameZh": "SPUNJ（Chad Burchill）",
+            "nameEn": "SPUNJ (Chad Burchill)"
+          },
+          "degster": {
+            "nameZh": "degster（Abdulkhalik Gasanov）",
+            "nameEn": "degster (Abdulkhalik Gasanov)"
+          },
+          "kvik": {
+            "nameZh": "Kvik（Aurimas Kvakšys）",
+            "nameEn": "Kvik (Aurimas Kvakšys)"
+          }
+        }
+      },
+      "SprayColorCategory": {
+        "nameZh": "涂鸦颜色",
+        "nameEn": "Graffiti Color",
+        "values": {
+          "Tint0": {
+            "nameZh": "多色",
+            "nameEn": "Multicolor"
+          },
+          "Tint2": {
+            "nameZh": "血红",
+            "nameEn": "Blood Red"
+          },
+          "Tint1": {
+            "nameZh": "砖红",
+            "nameEn": "Brick Red"
+          },
+          "Tint4": {
+            "nameZh": "灰褐",
+            "nameEn": "Dust Brown"
+          },
+          "Tint10": {
+            "nameZh": "豆青",
+            "nameEn": "Cash Green"
+          },
+          "Tint3": {
+            "nameZh": "黄褐",
+            "nameEn": "Tiger Orange"
+          },
+          "Tint11": {
+            "nameZh": "群青",
+            "nameEn": "Wire Blue"
+          },
+          "Tint6": {
+            "nameZh": "草绿",
+            "nameEn": "Tracer Yellow"
+          },
+          "Tint5": {
+            "nameZh": "棕褐",
+            "nameEn": "Desert Amber"
+          },
+          "Tint8": {
+            "nameZh": "深绿",
+            "nameEn": "Jungle Green"
+          },
+          "Tint14": {
+            "nameZh": "纯紫",
+            "nameEn": "Violent Violet"
+          },
+          "Tint15": {
+            "nameZh": "暗紫",
+            "nameEn": "Monster Purple"
+          },
+          "Tint7": {
+            "nameZh": "军绿",
+            "nameEn": "Battle Green"
+          },
+          "Tint12": {
+            "nameZh": "黛蓝",
+            "nameEn": "Monarch Blue"
+          },
+          "Tint9": {
+            "nameZh": "暗绿",
+            "nameEn": "Frog Green"
+          },
+          "Tint13": {
+            "nameZh": "靛蓝",
+            "nameEn": "SWAT Blue"
+          },
+          "Tint18": {
+            "nameZh": "藕色",
+            "nameEn": "War Pig Pink"
+          },
+          "Tint19": {
+            "nameZh": "灰色",
+            "nameEn": "Shark White"
+          },
+          "Tint16": {
+            "nameZh": "丁香",
+            "nameEn": "Bazooka Pink"
+          },
+          "Tint17": {
+            "nameZh": "酱紫",
+            "nameEn": "Princess Pink"
+          }
+        }
+      },
+      "Rarity": {
+        "nameZh": "品质",
+        "nameEn": "Quality",
+        "values": {
+          "Rarity_Legendary_Weapon": {
+            "nameZh": "保密级",
+            "nameEn": "Classified"
+          },
+          "Rarity_Ancient_Character": {
+            "nameZh": "大师",
+            "nameEn": "Master"
+          },
+          "Rarity_Mythical_Weapon": {
+            "nameZh": "受限级",
+            "nameEn": "Restricted"
+          },
+          "Rarity_Mythical_Character": {
+            "nameZh": "卓越",
+            "nameEn": "Exceptional"
+          },
+          "Rarity_Rare_Weapon": {
+            "nameZh": "军规级",
+            "nameEn": "Mil-Spec Grade"
+          },
+          "Rarity_Rare": {
+            "nameZh": "高级",
+            "nameEn": "High Grade"
+          },
+          "Rarity_Legendary_Character": {
+            "nameZh": "非凡",
+            "nameEn": "Superior"
+          },
+          "Rarity_Uncommon_Weapon": {
+            "nameZh": "工业级",
+            "nameEn": "Industrial Grade"
+          },
+          "Rarity_Ancient_Weapon": {
+            "nameZh": "隐秘级",
+            "nameEn": "Covert"
+          },
+          "Rarity_Legendary": {
+            "nameZh": "奇异",
+            "nameEn": "Exotic"
+          },
+          "Rarity_Ancient": {
+            "nameZh": "非凡",
+            "nameEn": "Extraordinary"
+          },
+          "Rarity_Rare_Character": {
+            "nameZh": "高级",
+            "nameEn": "Distinguished"
+          },
+          "Rarity_Mythical": {
+            "nameZh": "卓越",
+            "nameEn": "Remarkable"
+          },
+          "Rarity_Common_Weapon": {
+            "nameZh": "消费级",
+            "nameEn": "Consumer Grade"
+          },
+          "Rarity_Common": {
+            "nameZh": "普通级",
+            "nameEn": "Base Grade"
+          },
+          "Rarity_Contraband": {
+            "nameZh": "违禁",
+            "nameEn": "Contraband"
+          }
+        }
+      },
+      "Type": {
+        "nameZh": "类型",
+        "nameEn": "Type",
+        "values": {
+          "CSGO_Type_SMG": {
+            "nameZh": "微型冲锋枪",
+            "nameEn": "SMG"
+          },
+          "CSGO_Type_Equipment": {
+            "nameZh": "装备",
+            "nameEn": "Equipment"
+          },
+          "CSGO_Tool_Name_TagTag": {
+            "nameZh": "标签",
+            "nameEn": "Tag"
+          },
+          "CSGO_Type_WeaponCase": {
+            "nameZh": "武器箱",
+            "nameEn": "Container"
+          },
+          "CSGO_Type_Shotgun": {
+            "nameZh": "霰弹枪",
+            "nameEn": "Shotgun"
+          },
+          "CSGO_Type_Spray": {
+            "nameZh": "涂鸦",
+            "nameEn": "Graffiti"
+          },
+          "CSGO_Tool_WeaponCase_KeyTag": {
+            "nameZh": "钥匙",
+            "nameEn": "Key"
+          },
+          "Type_CustomPlayer": {
+            "nameZh": "探员",
+            "nameEn": "Agent"
+          },
+          "CSGO_Tool_GiftTag": {
+            "nameZh": "礼物",
+            "nameEn": "Gift"
+          },
+          "CSGO_Type_MusicKit": {
+            "nameZh": "音乐盒",
+            "nameEn": "Music Kit"
+          },
+          "CSGO_Tool_Sticker": {
+            "nameZh": "印花",
+            "nameEn": "Sticker"
+          },
+          "CSGO_Type_Tool": {
+            "nameZh": "工具",
+            "nameEn": "Tool"
+          },
+          "CSGO_Type_Collectible": {
+            "nameZh": "收藏品",
+            "nameEn": "Collectible"
+          },
+          "CSGO_Type_Knife": {
+            "nameZh": "匕首",
+            "nameEn": "Knife"
+          },
+          "CSGO_Type_Rifle": {
+            "nameZh": "步枪",
+            "nameEn": "Rifle"
+          },
+          "Type_Hands": {
+            "nameZh": "手套",
+            "nameEn": "Gloves"
+          },
+          "CSGO_Type_Machinegun": {
+            "nameZh": "机枪",
+            "nameEn": "Machinegun"
+          },
+          "CSGO_Tool_Keychain": {
+            "nameZh": "挂件",
+            "nameEn": "Charm"
+          },
+          "CSGO_Type_Pistol": {
+            "nameZh": "手枪",
+            "nameEn": "Pistol"
+          },
+          "CSGO_Tool_Patch": {
+            "nameZh": "布章",
+            "nameEn": "Patch"
+          },
+          "CSGO_Type_Ticket": {
+            "nameZh": "通行证",
+            "nameEn": "Pass"
+          },
+          "CSGO_Type_SniperRifle": {
+            "nameZh": "狙击步枪",
+            "nameEn": "Sniper Rifle"
+          }
+        }
+      },
+      "ItemSet": {
+        "nameZh": "收藏品",
+        "nameEn": "Collection",
+        "values": {
+          "set_community_29": {
+            "nameZh": "“激流大行动”收藏品",
+            "nameEn": "The Operation Riptide Collection"
+          },
+          "set_norse": {
+            "nameZh": "挪威人收藏品",
+            "nameEn": "The Norse Collection"
+          },
+          "set_community_27": {
+            "nameZh": "“狂牙大行动”收藏品",
+            "nameEn": "The Operation Broken Fang Collection"
+          },
+          "set_community_28": {
+            "nameZh": "蛇噬收藏品",
+            "nameEn": "The Snakebite Collection"
+          },
+          "set_italy": {
+            "nameZh": "意大利小镇收藏品",
+            "nameEn": "The Italy Collection"
+          },
+          "set_community_21": {
+            "nameZh": "头号特训收藏品",
+            "nameEn": "The Danger Zone Collection"
+          },
+          "set_weapons_ii": {
+            "nameZh": "军火交易 2 号收藏品",
+            "nameEn": "The Arms Deal 2 Collection"
+          },
+          "set_community_22": {
+            "nameZh": "棱彩收藏品",
+            "nameEn": "The Prisma Collection"
+          },
+          "set_overpass_2024": {
+            "nameZh": "死亡游乐园2024收藏品",
+            "nameEn": "The Overpass 2024 Collection"
+          },
+          "set_inferno": {
+            "nameZh": "炼狱小镇收藏品",
+            "nameEn": "The Inferno Collection"
+          },
+          "set_community_20": {
+            "nameZh": "地平线收藏品",
+            "nameEn": "The Horizon Collection"
+          },
+          "set_community_25": {
+            "nameZh": "棱彩2号收藏品",
+            "nameEn": "The Prisma 2 Collection"
+          },
+          "set_community_26": {
+            "nameZh": "裂空武器箱收藏品",
+            "nameEn": "The Fracture Collection"
+          },
+          "set_community_23": {
+            "nameZh": "“裂网大行动”收藏品",
+            "nameEn": "The Shattered Web Collection"
+          },
+          "set_community_24": {
+            "nameZh": "反恐精英20周年收藏品",
+            "nameEn": "The CS20 Collection"
+          },
+          "set_aztec": {
+            "nameZh": "雨林遗迹收藏品",
+            "nameEn": "The Aztec Collection"
+          },
+          "set_community_8": {
+            "nameZh": "弯曲猎手收藏品",
+            "nameEn": "The Falchion Collection"
+          },
+          "set_community_7": {
+            "nameZh": "幻彩 2 号收藏品",
+            "nameEn": "The Chroma 2 Collection"
+          },
+          "set_community_9": {
+            "nameZh": "暗影收藏品",
+            "nameEn": "The Shadow Collection"
+          },
+          "set_cobblestone": {
+            "nameZh": "古堡激战收藏品",
+            "nameEn": "The Cobblestone Collection"
+          },
+          "set_op10_t": {
+            "nameZh": "浩劫收藏品",
+            "nameEn": "The Havoc Collection"
+          },
+          "set_community_4": {
+            "nameZh": "突围收藏品",
+            "nameEn": "The Breakout Collection"
+          },
+          "set_bravo_ii": {
+            "nameZh": "无畏收藏品",
+            "nameEn": "The Alpha Collection"
+          },
+          "set_office": {
+            "nameZh": "办公室收藏品",
+            "nameEn": "The Office Collection"
+          },
+          "set_community_3": {
+            "nameZh": "猎杀者收藏品",
+            "nameEn": "The Huntsman Collection"
+          },
+          "set_mirage": {
+            "nameZh": "荒漠迷城收藏品",
+            "nameEn": "The Mirage Collection"
+          },
+          "set_community_6": {
+            "nameZh": "幻彩收藏品",
+            "nameEn": "The Chroma Collection"
+          },
+          "set_bravo_i": {
+            "nameZh": "英勇收藏品",
+            "nameEn": "The Bravo Collection"
+          },
+          "set_lake": {
+            "nameZh": "湖畔激战收藏品",
+            "nameEn": "The Lake Collection"
+          },
+          "set_community_5": {
+            "nameZh": "先锋收藏品",
+            "nameEn": "The Vanguard Collection"
+          },
+          "set_vertigo_2021": {
+            "nameZh": "2021 殒命大厦收藏品",
+            "nameEn": "The 2021 Vertigo Collection"
+          },
+          "set_nuke_2": {
+            "nameZh": "2018 核子危机收藏品",
+            "nameEn": "The 2018 Nuke Collection"
+          },
+          "set_gamma_2": {
+            "nameZh": "伽玛 2 号收藏品",
+            "nameEn": "The Gamma 2 Collection"
+          },
+          "set_timed_drops_neutral": {
+            "nameZh": "寒带收藏品",
+            "nameEn": "The Boreal Collection"
+          },
+          "set_op10_ancient": {
+            "nameZh": "远古收藏品",
+            "nameEn": "The Ancient Collection"
+          },
+          "set_dust_2": {
+            "nameZh": "炙热沙城 II 收藏品",
+            "nameEn": "The Dust 2 Collection"
+          },
+          "set_chopshop": {
+            "nameZh": "解体厂收藏品",
+            "nameEn": "The Chop Shop Collection"
+          },
+          "set_assault": {
+            "nameZh": "仓库突击收藏品",
+            "nameEn": "The Assault Collection"
+          },
+          "set_weapons_iii": {
+            "nameZh": "军火交易 3 号收藏品",
+            "nameEn": "The Arms Deal 3 Collection"
+          },
+          "set_canals": {
+            "nameZh": "运河水城收藏品",
+            "nameEn": "The Canals Collection"
+          },
+          "set_dust_2_2021": {
+            "nameZh": "2021 炙热沙城 II 收藏品",
+            "nameEn": "The 2021 Dust 2 Collection"
+          },
+          "set_community_32": {
+            "nameZh": "变革收藏品",
+            "nameEn": "The Revolution Collection"
+          },
+          "set_graphic_design": {
+            "nameZh": "平面设计收藏品",
+            "nameEn": "The Graphic Design Collection"
+          },
+          "set_community_33": {
+            "nameZh": "千瓦收藏品",
+            "nameEn": "The Kilowatt Collection"
+          },
+          "set_community_30": {
+            "nameZh": "梦魇收藏品",
+            "nameEn": "The Dreams & Nightmares Collection"
+          },
+          "set_xraymachine": {
+            "nameZh": "X 射线收藏品",
+            "nameEn": "The X-Ray Collection"
+          },
+          "set_community_31": {
+            "nameZh": "反冲收藏品",
+            "nameEn": "The Recoil Collection"
+          },
+          "set_community_36": {
+            "nameZh": "创世纪收藏品",
+            "nameEn": "The Genesis Collection"
+          },
+          "set_bank": {
+            "nameZh": "金库危机收藏品",
+            "nameEn": "The Bank Collection"
+          },
+          "set_community_34": {
+            "nameZh": "画廊收藏品",
+            "nameEn": "The Gallery Collection"
+          },
+          "set_baggage": {
+            "nameZh": "行李仓库收藏品",
+            "nameEn": "The Baggage Collection"
+          },
+          "set_community_35": {
+            "nameZh": "热潮收藏品",
+            "nameEn": "The Fever Collection"
+          },
+          "set_op10_characters": {
+            "nameZh": "“狂牙大行动”探员",
+            "nameEn": "Broken Fang Agents"
+          },
+          "set_dust": {
+            "nameZh": "炙热沙城收藏品",
+            "nameEn": "The Dust Collection"
+          },
+          "set_op9_characters": {
+            "nameZh": "“裂网大行动”探员",
+            "nameEn": "Shattered Web Agents"
+          },
+          "set_kimono": {
+            "nameZh": "旭日收藏品",
+            "nameEn": "The Rising Sun Collection"
+          },
+          "set_timed_drops_cool": {
+            "nameZh": "攀升收藏品",
+            "nameEn": "The Ascent Collection"
+          },
+          "set_cache": {
+            "nameZh": "死城之谜收藏品",
+            "nameEn": "The Cache Collection"
+          },
+          "set_weapons_i": {
+            "nameZh": "军火交易收藏品",
+            "nameEn": "The Arms Deal Collection"
+          },
+          "set_mirage_2021": {
+            "nameZh": "2021 荒漠迷城收藏品",
+            "nameEn": "The 2021 Mirage Collection"
+          },
+          "set_nuke": {
+            "nameZh": "核子危机收藏品",
+            "nameEn": "The Nuke Collection"
+          },
+          "set_xpshop_wpn_01": {
+            "nameZh": "限定物品",
+            "nameEn": "Limited Edition Item"
+          },
+          "set_op11_characters": {
+            "nameZh": "“激流大行动”探员",
+            "nameEn": "Operation Riptide Agents"
+          },
+          "set_inferno_2": {
+            "nameZh": "2018 炼狱小镇收藏品",
+            "nameEn": "The 2018 Inferno Collection"
+          },
+          "set_vertigo": {
+            "nameZh": "殒命大厦收藏品",
+            "nameEn": "The Vertigo Collection"
+          },
+          "set_community_18": {
+            "nameZh": "光谱 2 号收藏品",
+            "nameEn": "The Spectrum 2 Collection"
+          },
+          "set_anubis": {
+            "nameZh": "阿努比斯收藏品",
+            "nameEn": "The Anubis Collection"
+          },
+          "set_community_19": {
+            "nameZh": "命悬一线收藏品",
+            "nameEn": "The Clutch Collection"
+          },
+          "set_community_16": {
+            "nameZh": "光谱收藏品",
+            "nameEn": "The Spectrum Collection"
+          },
+          "set_blacksite": {
+            "nameZh": "神秘小镇收藏品",
+            "nameEn": "The Blacksite Collection"
+          },
+          "set_community_17": {
+            "nameZh": "“九头蛇大行动”收藏品",
+            "nameEn": "The Operation Hydra Collection"
+          },
+          "set_realism_camo": {
+            "nameZh": "狩猎运动收藏品",
+            "nameEn": "The Sport & Field Collection"
+          },
+          "set_overpass": {
+            "nameZh": "死亡游乐园收藏品",
+            "nameEn": "The Overpass Collection"
+          },
+          "set_community_10": {
+            "nameZh": "左轮武器箱收藏品",
+            "nameEn": "The Revolver Case Collection"
+          },
+          "set_community_11": {
+            "nameZh": "野火收藏品",
+            "nameEn": "The Wildfire Collection"
+          },
+          "set_train_2021": {
+            "nameZh": "2021 列车停放站收藏品",
+            "nameEn": "The 2021 Train Collection"
+          },
+          "set_militia": {
+            "nameZh": "佣兵训练营收藏品",
+            "nameEn": "The Militia Collection"
+          },
+          "set_community_2": {
+            "nameZh": "凤凰收藏品",
+            "nameEn": "The Phoenix Collection"
+          },
+          "set_community_1": {
+            "nameZh": "冬季攻势收藏品",
+            "nameEn": "The Winter Offensive Collection"
+          },
+          "set_stmarc": {
+            "nameZh": "圣马克镇收藏品",
+            "nameEn": "The St. Marc Collection"
+          },
+          "set_community_15": {
+            "nameZh": "手套收藏品",
+            "nameEn": "The Glove Collection"
+          },
+          "set_train_2025": {
+            "nameZh": "2025 列车停放站收藏品",
+            "nameEn": "The Train 2025 Collection"
+          },
+          "set_community_12": {
+            "nameZh": "幻彩 3 号收藏品",
+            "nameEn": "The Chroma 3 Collection"
+          },
+          "set_community_13": {
+            "nameZh": "伽玛收藏品",
+            "nameEn": "The Gamma Collection"
+          },
+          "set_safehouse": {
+            "nameZh": "安全处所收藏品",
+            "nameEn": "The Safehouse Collection"
+          },
+          "set_train": {
+            "nameZh": "列车停放站收藏品",
+            "nameEn": "The Train Collection"
+          },
+          "set_esports_iii": {
+            "nameZh": "电竞 2014 夏季收藏品",
+            "nameEn": "The eSports 2014 Summer Collection"
+          },
+          "set_op10_ct": {
+            "nameZh": "控制收藏品",
+            "nameEn": "The Control Collection"
+          },
+          "set_esports_ii": {
+            "nameZh": "电竞 2013 冬季收藏品",
+            "nameEn": "The eSports 2013 Winter Collection"
+          },
+          "set_timed_drops_warm": {
+            "nameZh": "热辐射收藏品",
+            "nameEn": "The Radiant Collection"
+          },
+          "set_esports": {
+            "nameZh": "电竞 2013 收藏品",
+            "nameEn": "The eSports 2013 Collection"
+          },
+          "set_gods_and_monsters": {
+            "nameZh": "神魔收藏品",
+            "nameEn": "The Gods and Monsters Collection"
+          }
+        }
+      },
+      "PatchCategory": {
+        "nameZh": "布章类型",
+        "nameEn": "Patch Type",
+        "values": {
+          "Tournament": {
+            "nameZh": "锦标赛",
+            "nameEn": "Tournament"
+          },
+          "TeamLogo": {
+            "nameZh": "战队图标",
+            "nameEn": "Team Logo"
+          }
+        }
+      },
+      "Quality": {
+        "nameZh": "类别",
+        "nameEn": "Category",
+        "values": {
+          "normal": {
+            "nameZh": "普通",
+            "nameEn": "Normal"
+          },
+          "highlight": {
+            "nameZh": "高光时刻",
+            "nameEn": "Highlight"
+          },
+          "customized": {
+            "nameZh": "自定义",
+            "nameEn": "Customized"
+          },
+          "unusual_strange": {
+            "nameZh": "★ StatTrak™",
+            "nameEn": "★ StatTrak™"
+          },
+          "tournament": {
+            "nameZh": "纪念品",
+            "nameEn": "Souvenir"
+          },
+          "unusual": {
+            "nameZh": "★",
+            "nameEn": "★"
+          },
+          "strange": {
+            "nameZh": "StatTrak™",
+            "nameEn": "StatTrak™"
+          }
+        }
+      },
+      "Tournament": {
+        "nameZh": "锦标赛",
+        "nameEn": "Tournament",
+        "values": {
+          "Tournament9": {
+            "nameZh": "2016年 MLG 哥伦布锦标赛",
+            "nameEn": "2016 MLG Columbus"
+          },
+          "Tournament18": {
+            "nameZh": "2021年 PGL 斯德哥尔摩",
+            "nameEn": "2021 PGL Stockholm"
+          },
+          "Tournament19": {
+            "nameZh": "2022 PGL 安特卫普",
+            "nameEn": "2022 PGL Antwerp"
+          },
+          "Tournament16": {
+            "nameZh": "2019年StarLadder柏林",
+            "nameEn": "2019 StarLadder Berlin"
+          },
+          "Tournament17": {
+            "nameZh": "2020 RMR",
+            "nameEn": "2020 RMR"
+          },
+          "Tournament14": {
+            "nameZh": "2018年 FACEIT 伦敦锦标赛",
+            "nameEn": "2018 FACEIT London"
+          },
+          "Tournament25": {
+            "nameZh": "2025年 StarLadder 布达佩斯",
+            "nameEn": "StarLadder Budapest 2025"
+          },
+          "Tournament15": {
+            "nameZh": "2019 IEM 卡托维兹",
+            "nameEn": "2019 IEM Katowice"
+          },
+          "Tournament12": {
+            "nameZh": "2017年 PGL 克拉科夫锦标赛",
+            "nameEn": "2017 PGL Krakow"
+          },
+          "Tournament23": {
+            "nameZh": "2024年 完美世界 上海",
+            "nameEn": "Perfect World Shanghai 2024"
+          },
+          "Tournament13": {
+            "nameZh": "2018年 ELEAGUE 波士顿锦标赛",
+            "nameEn": "2018 ELEAGUE Boston"
+          },
+          "Tournament24": {
+            "nameZh": "2025年 BLAST.tv 奥斯汀",
+            "nameEn": "BLAST.tv Austin 2025"
+          },
+          "Tournament21": {
+            "nameZh": "2023年 BLAST.tv 巴黎锦标赛",
+            "nameEn": "BLAST.tv Paris 2023"
+          },
+          "Tournament10": {
+            "nameZh": "2016年 ESL One 科隆锦标赛",
+            "nameEn": "2016 ESL One Cologne"
+          },
+          "Tournament22": {
+            "nameZh": "2024年 PGL 哥本哈根",
+            "nameEn": "PGL Copenhagen 2024"
+          },
+          "Tournament11": {
+            "nameZh": "2017年 ELEAGUE 亚特兰大锦标赛",
+            "nameEn": "2017 ELEAGUE Atlanta"
+          },
+          "Tournament3": {
+            "nameZh": "2014年 EMS One 卡托维兹锦标赛",
+            "nameEn": "2014 EMS One Katowice"
+          },
+          "Tournament20": {
+            "nameZh": "2022年 IEM 里约锦标赛",
+            "nameEn": "IEM Rio 2022"
+          },
+          "Tournament4": {
+            "nameZh": "2014年 ESL One 科隆锦标赛",
+            "nameEn": "2014 ESL One Cologne"
+          },
+          "Tournament1": {
+            "nameZh": "2013年 DreamHack 冬季赛",
+            "nameEn": "2013 DreamHack Winter"
+          },
+          "Tournament7": {
+            "nameZh": "2015年 ESL One 科隆锦标赛",
+            "nameEn": "2015 ESL One Cologne"
+          },
+          "Tournament8": {
+            "nameZh": "2015 DreamHack 卢日-纳波卡锦标赛",
+            "nameEn": "2015 DreamHack Cluj-Napoca"
+          },
+          "Tournament5": {
+            "nameZh": "2014年 DreamHack 冬季锦标赛",
+            "nameEn": "2014 DreamHack Winter"
+          },
+          "Tournament6": {
+            "nameZh": "2015年 ESL One 卡托维兹锦标赛",
+            "nameEn": "2015 ESL One Katowice"
+          }
+        }
+      },
+      "SprayCapsule": {
+        "nameZh": "涂鸦收藏品",
+        "nameEn": "Graffiti Collection",
+        "values": {
+          "crate_sprays_illuminate1_lootlist": {
+            "nameZh": "点亮中国涂鸦箱",
+            "nameEn": "Perfect World Graffiti Box"
+          },
+          "crate_sprays_vcap1_lootlist": {
+            "nameZh": "反恐精英涂鸦箱",
+            "nameEn": "CS:GO Graffiti Box"
+          },
+          "csgo_spray_std3_drops": {
+            "nameZh": "Hello压枪系列涂鸦收藏品",
+            "nameEn": "CS:GO Graffiti #3 Collection"
+          },
+          "crate_sprays_community_1_lootlist": {
+            "nameZh": "社区涂鸦箱 1",
+            "nameEn": "Community Graffiti Box 1"
+          },
+          "csgo_spray_std2_drops_2": {
+            "nameZh": "僵尸涂鸦收藏品",
+            "nameEn": "Trolling Graffiti Collection"
+          },
+          "csgo_spray_std2_drops_1": {
+            "nameZh": "CS:GO 涂鸦 #2 收藏品",
+            "nameEn": "CS:GO Graffiti #2 Collection"
+          }
+        }
+      },
+      "SprayCategory": {
+        "nameZh": "涂鸦类型",
+        "nameEn": "Graffiti Type",
+        "values": {
+          "Tournament": {
+            "nameZh": "锦标赛",
+            "nameEn": "Tournament"
+          },
+          "TeamLogo": {
+            "nameZh": "战队标志",
+            "nameEn": "Team Logo"
+          }
+        }
+      }
+    }
+  },
+  "errorCode": 0,
+  "errorMsg": null,
+  "errorData": null,
+  "errorCodeStr": null
+}
