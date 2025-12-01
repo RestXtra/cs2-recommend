@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2市场数据 - 爬虫系统</title>
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <span>STEAM</span><span style="color: #5b9aff;">DT</span>
+            </div>
+            <div class="nav-menu">
+                <a href="homepage.html" class="nav-item">首页</a>
+                <a href="index.html" class="nav-item active">饰品市场</a>
+                <a href="#" class="nav-item">排行榜</a>
+                <a href="#" class="nav-item">库存估价</a>
+                <a href="#" class="nav-item">历史价格</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-primary" onclick="refreshData()">🔄 刷新数据</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 搜索区域 -->
+    <div class="search-section">
+        <h1 class="search-title">全球CS2市场售价实时更新</h1>
+        <p class="search-subtitle">实现全网比价，让您轻松把握最佳商品价格！</p>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="请输入商品名称" id="searchInput">
+            <button class="search-btn" onclick="searchItems()">🔍 搜索</button>
+            <button class="filter-btn" onclick="toggleFilterPanel()">🎯 筛选</button>
+        </div>
+        <div class="filter-tabs">
+            <button class="filter-tab active" onclick="filterByRecommend(true)">全部推荐</button>
+            <button class="filter-tab" onclick="filterByRecommend(false)">全部商品</button>
+            <button class="filter-tab" onclick="filterByFavorite()">⭐ 我的收藏</button>
+        </div>
+    </div>
+
+    <!-- 筛选面板 -->
+    <div id="filterPanel" class="filter-panel">
+        <div class="filter-content">
+            <div class="filter-header">
+                <h3>筛选模板</h3>
+                <button class="close-btn" onclick="toggleFilterPanel()">✕</button>
+            </div>
+
+            <!-- 右侧标签页 -->
+            <div class="filter-tabs-right">
+                <button class="filter-tab-right active" data-tab="region">区间</button>
+                <button class="filter-tab-right" data-tab="type">类型</button>
+                <button class="filter-tab-right" data-tab="exterior">外观</button>
+                <button class="filter-tab-right" data-tab="quality">品质</button>
+                <button class="filter-tab-right" data-tab="case">箱子</button>
+                <button class="filter-tab-right" data-tab="sticker">印花</button>
+            </div>
+
+            <div class="filter-body">
+                <!-- 区间筛选 -->
+                <div class="filter-tab-content active" id="tab-region">
+                    <div class="filter-section">
+                        <label>价格 <span class="select-all" onclick="selectAll('price')">全选</span></label>
+                        <div class="filter-input-group">
+                            <input type="number" placeholder="最小值" id="priceMin">
+                            <span>~</span>
+                            <input type="number" placeholder="最大值" id="priceMax">
+                        </div>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setPriceRange(0, 100)">100以下</button>
+                            <button class="filter-option" onclick="setPriceRange(100, 500)">100~500</button>
+                            <button class="filter-option" onclick="setPriceRange(500, 1000)">500~1000</button>
+                            <button class="filter-option" onclick="setPriceRange(1000, 5000)">1000~5000</button>
+                            <button class="filter-option" onclick="setPriceRange(5000, 10000)">5000~10000</button>
+                            <button class="filter-option" onclick="setPriceRange(10000, 20000)">10000~20000</button>
+                            <button class="filter-option" onclick="setPriceRange(20000, 999999)">20000以上</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <label>在售数量</label>
+                        <div class="filter-input-group">
+                            <input type="number" placeholder="最小值" id="saleMin">
+                            <span>~</span>
+                            <input type="number" placeholder="最大值" id="saleMax">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 类型筛选 -->
+                <div class="filter-tab-content" id="tab-type">
+                    <div class="filter-section">
+                        <label>匕首 <span class="select-all" onclick="selectAll('knife')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setWeaponType('蝴蝶刀')">蝴蝶刀</button>
+                            <button class="filter-option" onclick="setWeaponType('爪子刀')">爪子刀</button>
+                            <button class="filter-option" onclick="setWeaponType('M9 刺刀')">M9 刺刀</button>
+                            <button class="filter-option" onclick="setWeaponType('骷髅匕首')">骷髅匕首</button>
+                            <button class="filter-option" onclick="setWeaponType('刺刀')">刺刀</button>
+                            <button class="filter-option" onclick="setWeaponType('折叠刀')">折叠刀</button>
+                            <button class="filter-option" onclick="setWeaponType('短剑')">短剑</button>
+                            <button class="filter-option" onclick="setWeaponType('锯齿爪刀')">锯齿爪刀</button>
+                            <button class="filter-option" onclick="setWeaponType('流浪者匕首')">流浪者匕首</button>
+                            <button class="filter-option" onclick="setWeaponType('熊刀')">熊刀</button>
+                            <button class="filter-option" onclick="setWeaponType('海豹短刀')">海豹短刀</button>
+                            <button class="filter-option" onclick="setWeaponType('猎杀者匕首')">猎杀者匕首</button>
+                            <button class="filter-option" onclick="setWeaponType('系绳匕首')">系绳匕首</button>
+                            <button class="filter-option" onclick="setWeaponType('求生匕首')">求生匕首</button>
+                            <button class="filter-option" onclick="setWeaponType('弯刀')">弯刀</button>
+                            <button class="filter-option" onclick="setWeaponType('暗影双匕')">暗影双匕</button>
+                            <button class="filter-option" onclick="setWeaponType('鲍伊猎刀')">鲍伊猎刀</button>
+                            <button class="filter-option" onclick="setWeaponType('穿肠刀')">穿肠刀</button>
+                            <button class="filter-option" onclick="setWeaponType('折刀')">折刀</button>
+                            <button class="filter-option" onclick="setWeaponType('廓尔喀刀')">廓尔喀刀</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <label>手套 <span class="select-all" onclick="selectAll('gloves')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setWeaponType('运动手套')">运动手套</button>
+                            <button class="filter-option" onclick="setWeaponType('专业手套')">专业手套</button>
+                            <button class="filter-option" onclick="setWeaponType('摩托手套')">摩托手套</button>
+                            <button class="filter-option" onclick="setWeaponType('驾驶手套')">驾驶手套</button>
+                            <button class="filter-option" onclick="setWeaponType('裹手')">裹手</button>
+                            <button class="filter-option" onclick="setWeaponType('狂牙手套')">狂牙手套</button>
+                            <button class="filter-option" onclick="setWeaponType('九头蛇手套')">九头蛇手套</button>
+                            <button class="filter-option" onclick="setWeaponType('血猎手套')">血猎手套</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <label>步枪 <span class="select-all" onclick="selectAll('rifle')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setWeaponType('AK-47')">AK-47</button>
+                            <button class="filter-option" onclick="setWeaponType('AWP')">AWP</button>
+                            <button class="filter-option" onclick="setWeaponType('M4A1 消音型')">M4A1 消音型</button>
+                            <button class="filter-option" onclick="setWeaponType('M4A4')">M4A4</button>
+                            <button class="filter-option" onclick="setWeaponType('加利尔 AR')">加利尔 AR</button>
+                            <button class="filter-option" onclick="setWeaponType('法玛斯')">法玛斯</button>
+                            <button class="filter-option" onclick="setWeaponType('SSG 08')">SSG 08</button>
+                            <button class="filter-option" onclick="setWeaponType('AUG')">AUG</button>
+                            <button class="filter-option" onclick="setWeaponType('SG 553')">SG 553</button>
+                            <button class="filter-option" onclick="setWeaponType('SCAR-20')">SCAR-20</button>
+                            <button class="filter-option" onclick="setWeaponType('G3SG1')">G3SG1</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <label>手枪 <span class="select-all" onclick="selectAll('pistol')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setWeaponType('沙漠之鹰')">沙漠之鹰</button>
+                            <button class="filter-option" onclick="setWeaponType('USP 消音版')">USP 消音版</button>
+                            <button class="filter-option" onclick="setWeaponType('格洛克 18 型')">格洛克 18 型</button>
+                            <button class="filter-option" onclick="setWeaponType('Tec-9')">Tec-9</button>
+                            <button class="filter-option" onclick="setWeaponType('FN57')">FN57</button>
+                            <button class="filter-option" onclick="setWeaponType('P250')">P250</button>
+                            <button class="filter-option" onclick="setWeaponType('双持贝瑞塔')">双持贝瑞塔</button>
+                            <button class="filter-option" onclick="setWeaponType('CZ75 自动手枪')">CZ75 自动手枪</button>
+                            <button class="filter-option" onclick="setWeaponType('R8 左轮手枪')">R8 左轮手枪</button>
+                            <button class="filter-option" onclick="setWeaponType('P2000')">P2000</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <label>微型冲锋枪 <span class="select-all" onclick="selectAll('smg')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setWeaponType('MP9')">MP9</button>
+                            <button class="filter-option" onclick="setWeaponType('MAC-10')">MAC-10</button>
+                            <button class="filter-option" onclick="setWeaponType('P90')">P90</button>
+                            <button class="filter-option" onclick="setWeaponType('UMP-45')">UMP-45</button>
+                            <button class="filter-option" onclick="setWeaponType('MP7')">MP7</button>
+                            <button class="filter-option" onclick="setWeaponType('PP-野牛')">PP-野牛</button>
+                            <button class="filter-option" onclick="setWeaponType('MP5-SD')">MP5-SD</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <label>霰弹枪 <span class="select-all" onclick="selectAll('shotgun')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setWeaponType('MAG-7')">MAG-7</button>
+                            <button class="filter-option" onclick="setWeaponType('XM1014')">XM1014</button>
+                            <button class="filter-option" onclick="setWeaponType('截短霰弹枪')">截短霰弹枪</button>
+                            <button class="filter-option" onclick="setWeaponType('新星')">新星</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <label>机枪 <span class="select-all" onclick="selectAll('machinegun')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setWeaponType('内格夫')">内格夫</button>
+                            <button class="filter-option" onclick="setWeaponType('M249')">M249</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <label>其他类型 <span class="select-all" onclick="selectAll('other')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setWeaponType('涂鸦')">涂鸦</button>
+                            <button class="filter-option" onclick="setWeaponType('探员')">探员</button>
+                            <button class="filter-option" onclick="setWeaponType('挂件')">挂件</button>
+                            <button class="filter-option" onclick="setWeaponType('音乐盒')">音乐盒</button>
+                            <button class="filter-option" onclick="setWeaponType('武器箱')">武器箱</button>
+                            <button class="filter-option" onclick="setWeaponType('布章')">布章</button>
+                            <button class="filter-option" onclick="setWeaponType('印花')">印花</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 外观筛选 -->
+                <div class="filter-tab-content" id="tab-exterior">
+                    <div class="filter-section">
+                        <label>外观 <span class="select-all" onclick="selectAll('exterior')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setExterior('崭新出厂')">崭新出厂</button>
+                            <button class="filter-option" onclick="setExterior('略有磨损')">略有磨损</button>
+                            <button class="filter-option" onclick="setExterior('久经沙场')">久经沙场</button>
+                            <button class="filter-option" onclick="setExterior('破损不堪')">破损不堪</button>
+                            <button class="filter-option" onclick="setExterior('战痕累累')">战痕累累</button>
+                            <button class="filter-option" onclick="setExterior('无涂装')">无涂装</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 品质筛选 -->
+                <div class="filter-tab-content" id="tab-quality">
+                    <div class="filter-section">
+                        <label>武器稀有度 <span class="select-all" onclick="selectAll('rarity')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" style="border-color:#E4AE39" onclick="setRarity('违禁')">违禁</button>
+                            <button class="filter-option" style="border-color:#EB4B4B" onclick="setRarity('隐秘')">隐秘</button>
+                            <button class="filter-option" style="border-color:#D32CE6" onclick="setRarity('保密')">保密</button>
+                            <button class="filter-option" style="border-color:#8847FF" onclick="setRarity('受限')">受限</button>
+                            <button class="filter-option" style="border-color:#4B69FF" onclick="setRarity('军规级')">军规级</button>
+                            <button class="filter-option" style="border-color:#5E98D9" onclick="setRarity('工业级')">工业级</button>
+                            <button class="filter-option" style="border-color:#90ACCC" onclick="setRarity('消费级')">消费级</button>
+                            <button class="filter-option" style="border-color:#90ACCC" onclick="setRarity('普通')">普通</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <label>其他稀有度 <span class="select-all" onclick="selectAll('rarity2')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" style="border-color:#D32CE6" onclick="setRarity('非凡')">非凡</button>
+                            <button class="filter-option" style="border-color:#8847FF" onclick="setRarity('卓越')">卓越</button>
+                            <button class="filter-option" style="border-color:#D32CE6" onclick="setRarity('奇异')">奇异</button>
+                            <button class="filter-option" style="border-color:#4B69FF" onclick="setRarity('高级')">高级</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <label>探员稀有度 <span class="select-all" onclick="selectAll('agent_rarity')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" style="border-color:#EB4B4B" onclick="setRarity('探员:大师')">探员:大师</button>
+                            <button class="filter-option" style="border-color:#EB4B4B" onclick="setRarity('探员:非凡')">探员:非凡</button>
+                            <button class="filter-option" style="border-color:#8847FF" onclick="setRarity('探员:卓越')">探员:卓越</button>
+                            <button class="filter-option" style="border-color:#4B69FF" onclick="setRarity('探员:高级')">探员:高级</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <label>品质类型 <span class="select-all" onclick="selectAll('quality')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" style="border-color:#888888" onclick="setQuality('普通')">普通</button>
+                            <button class="filter-option" style="border-color:#CF6A32" onclick="setQuality('StatTrak™')">StatTrak™</button>
+                            <button class="filter-option" style="border-color:#FFB100" onclick="setQuality('纪念品')">纪念品</button>
+                            <button class="filter-option" style="border-color:#8650AC" onclick="setQuality('★')">★</button>
+                            <button class="filter-option" style="border-color:#8650AC" onclick="setQuality('★ StatTrak™')">★ StatTrak™</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 箱子筛选 -->
+                <div class="filter-tab-content" id="tab-case">
+                    <div class="filter-section">
+                        <label>最新武器箱 <span class="select-all" onclick="selectAll('case_new')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setCase('热潮武器箱')">热潮武器箱</button>
+                            <button class="filter-option" onclick="setCase('画廊武器箱')">画廊武器箱</button>
+                            <button class="filter-option" onclick="setCase('千瓦武器箱')">千瓦武器箱</button>
+                            <button class="filter-option" onclick="setCase('变革武器箱')">变革武器箱</button>
+                            <button class="filter-option" onclick="setCase('反冲武器箱')">反冲武器箱</button>
+                            <button class="filter-option" onclick="setCase('梦魇武器箱')">梦魇武器箱</button>
+                            <button class="filter-option" onclick="setCase('蛇噬武器箱')">蛇噬武器箱</button>
+                            <button class="filter-option" onclick="setCase('裂空武器箱')">裂空武器箱</button>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <label>大行动武器箱 <span class="select-all" onclick="selectAll('case_op')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setCase('激流大行动武器箱')">"激流大行动"武器箱</button>
+                            <button class="filter-option" onclick="setCase('狂牙大行动武器箱')">"狂牙大行动"武器箱</button>
+                            <button class="filter-option" onclick="setCase('裂网大行动武器箱')">"裂网大行动"武器箱</button>
+                            <button class="filter-option" onclick="setCase('九头蛇大行动武器箱')">"九头蛇大行动"武器箱</button>
+                            <button class="filter-option" onclick="setCase('野火大行动武器箱')">"野火大行动"武器箱</button>
+                            <button class="filter-option" onclick="setCase('先锋大行动武器箱')">"先锋大行动"武器箱</button>
+                            <button class="filter-option" onclick="setCase('突围大行动武器箱')">"突围大行动"武器箱</button>
+                            <button class="filter-option" onclick="setCase('凤凰大行动武器箱')">"凤凰大行动"武器箱</button>
+                            <button class="filter-option" onclick="setCase('英勇大行动武器箱')">"英勇大行动"武器箱</button>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <label>经典武器箱 <span class="select-all" onclick="selectAll('case_classic')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setCase('棱彩2号武器箱')">棱彩2号武器箱</button>
+                            <button class="filter-option" onclick="setCase('棱彩武器箱')">棱彩武器箱</button>
+                            <button class="filter-option" onclick="setCase('头号特训武器箱')">"头号特训"武器箱</button>
+                            <button class="filter-option" onclick="setCase('地平线武器箱')">地平线武器箱</button>
+                            <button class="filter-option" onclick="setCase('命悬一线武器箱')">命悬一线武器箱</button>
+                            <button class="filter-option" onclick="setCase('光谱 2 号武器箱')">光谱 2 号武器箱</button>
+                            <button class="filter-option" onclick="setCase('光谱武器箱')">光谱武器箱</button>
+                            <button class="filter-option" onclick="setCase('手套武器箱')">手套武器箱</button>
+                            <button class="filter-option" onclick="setCase('伽玛 2 号武器箱')">伽玛 2 号武器箱</button>
+                            <button class="filter-option" onclick="setCase('伽玛武器箱')">伽玛武器箱</button>
+                            <button class="filter-option" onclick="setCase('幻彩 3 号武器箱')">幻彩 3 号武器箱</button>
+                            <button class="filter-option" onclick="setCase('幻彩 2 号武器箱')">幻彩 2 号武器箱</button>
+                            <button class="filter-option" onclick="setCase('幻彩武器箱')">幻彩武器箱</button>
+                            <button class="filter-option" onclick="setCase('左轮武器箱')">左轮武器箱</button>
+                            <button class="filter-option" onclick="setCase('暗影武器箱')">暗影武器箱</button>
+                            <button class="filter-option" onclick="setCase('弯曲猎手武器箱')">弯曲猎手武器箱</button>
+                            <button class="filter-option" onclick="setCase('猎杀者武器箱')">猎杀者武器箱</button>
+                            <button class="filter-option" onclick="setCase('冬季攻势武器箱')">冬季攻势武器箱</button>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <label>锦标赛胶囊 <span class="select-all" onclick="selectAll('case_tournament')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setCase('2024年 完美世界 上海')">2024年 完美世界 上海</button>
+                            <button class="filter-option" onclick="setCase('2024年 PGL 哥本哈根')">2024年 PGL 哥本哈根</button>
+                            <button class="filter-option" onclick="setCase('2023年 BLAST.tv 巴黎锦标赛')">2023年 BLAST.tv 巴黎锦标赛</button>
+                            <button class="filter-option" onclick="setCase('2022年 IEM 里约锦标赛')">2022年 IEM 里约锦标赛</button>
+                            <button class="filter-option" onclick="setCase('2022 PGL 安特卫普')">2022 PGL 安特卫普</button>
+                            <button class="filter-option" onclick="setCase('2021年 PGL 斯德哥尔摩')">2021年 PGL 斯德哥尔摩</button>
+                            <button class="filter-option" onclick="setCase('2020 RMR')">2020 RMR</button>
+                            <button class="filter-option" onclick="setCase('2019年StarLadder柏林')">2019年StarLadder柏林</button>
+                            <button class="filter-option" onclick="setCase('2019 IEM 卡托维兹')">2019 IEM 卡托维兹</button>
+                            <button class="filter-option" onclick="setCase('2018年 FACEIT 伦敦锦标赛')">2018年 FACEIT 伦敦锦标赛</button>
+                            <button class="filter-option" onclick="setCase('2018年 ELEAGUE 波士顿锦标赛')">2018年 ELEAGUE 波士顿锦标赛</button>
+                            <button class="filter-option" onclick="setCase('2017年 PGL 克拉科夫锦标赛')">2017年 PGL 克拉科夫锦标赛</button>
+                            <button class="filter-option" onclick="setCase('2017年 ELEAGUE 亚特兰大锦标赛')">2017年 ELEAGUE 亚特兰大锦标赛</button>
+                            <button class="filter-option" onclick="setCase('2016年 ESL One 科隆锦标赛')">2016年 ESL One 科隆锦标赛</button>
+                            <button class="filter-option" onclick="setCase('2016年 MLG 哥伦布锦标赛')">2016年 MLG 哥伦布锦标赛</button>
+                            <button class="filter-option" onclick="setCase('2015年 ESL One 科隆锦标赛')">2015年 ESL One 科隆锦标赛</button>
+                            <button class="filter-option" onclick="setCase('2015年 ESL One 卡托维兹锦标赛')">2015年 ESL One 卡托维兹锦标赛</button>
+                            <button class="filter-option" onclick="setCase('2014年 DreamHack 冬季锦标赛')">2014年 DreamHack 冬季锦标赛</button>
+                            <button class="filter-option" onclick="setCase('2014年 ESL One 科隆锦标赛')">2014年 ESL One 科隆锦标赛</button>
+                            <button class="filter-option" onclick="setCase('2014年 EMS One 卡托维兹锦标赛')">2014年 EMS One 卡托维兹锦标赛</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 印花筛选 -->
+                <div class="filter-tab-content" id="tab-sticker">
+                    <div class="filter-section">
+                        <label>锦标赛印花 <span class="select-all" onclick="selectAll('sticker_tournament')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setSticker('2024年 完美世界 上海')">2024年 完美世界 上海</button>
+                            <button class="filter-option" onclick="setSticker('2024年 PGL 哥本哈根')">2024年 PGL 哥本哈根</button>
+                            <button class="filter-option" onclick="setSticker('2023年 BLAST.tv 巴黎锦标赛')">2023年 BLAST.tv 巴黎锦标赛</button>
+                            <button class="filter-option" onclick="setSticker('2022年 IEM 里约锦标赛')">2022年 IEM 里约锦标赛</button>
+                            <button class="filter-option" onclick="setSticker('2022 PGL 安特卫普')">2022 PGL 安特卫普</button>
+                            <button class="filter-option" onclick="setSticker('2021年 PGL 斯德哥尔摩')">2021年 PGL 斯德哥尔摩</button>
+                            <button class="filter-option" onclick="setSticker('2020 RMR')">2020 RMR</button>
+                            <button class="filter-option" onclick="setSticker('2019年StarLadder柏林')">2019年StarLadder柏林</button>
+                            <button class="filter-option" onclick="setSticker('2019 IEM 卡托维兹')">2019 IEM 卡托维兹</button>
+                            <button class="filter-option" onclick="setSticker('2018年 FACEIT 伦敦锦标赛')">2018年 FACEIT 伦敦锦标赛</button>
+                            <button class="filter-option" onclick="setSticker('2018年 ELEAGUE 波士顿锦标赛')">2018年 ELEAGUE 波士顿锦标赛</button>
+                            <button class="filter-option" onclick="setSticker('2017年 PGL 克拉科夫锦标赛')">2017年 PGL 克拉科夫锦标赛</button>
+                            <button class="filter-option" onclick="setSticker('2017年 ELEAGUE 亚特兰大锦标赛')">2017年 ELEAGUE 亚特兰大锦标赛</button>
+                            <button class="filter-option" onclick="setSticker('2016年 ESL One 科隆锦标赛')">2016年 ESL One 科隆锦标赛</button>
+                            <button class="filter-option" onclick="setSticker('2016年 MLG 哥伦布锦标赛')">2016年 MLG 哥伦布锦标赛</button>
+                            <button class="filter-option" onclick="setSticker('2015年 ESL One 科隆锦标赛')">2015年 ESL One 科隆锦标赛</button>
+                            <button class="filter-option" onclick="setSticker('2015年 ESL One 卡托维兹锦标赛')">2015年 ESL One 卡托维兹锦标赛</button>
+                            <button class="filter-option" onclick="setSticker('2015 DreamHack 卢日-纳波卡锦标赛')">2015 DreamHack 卢日-纳波卡锦标赛</button>
+                            <button class="filter-option" onclick="setSticker('2014年 DreamHack 冬季锦标赛')">2014年 DreamHack 冬季锦标赛</button>
+                            <button class="filter-option" onclick="setSticker('2014年 ESL One 科隆锦标赛')">2014年 ESL One 科隆锦标赛</button>
+                            <button class="filter-option" onclick="setSticker('2014年 EMS One 卡托维兹锦标赛')">2014年 EMS One 卡托维兹锦标赛</button>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <label>社区印花胶囊 <span class="select-all" onclick="selectAll('sticker_community')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setSticker('角色手作印花包')">角色手作印花包</button>
+                            <button class="filter-option" onclick="setSticker('元素手作印花包')">元素手作印花包</button>
+                            <button class="filter-option" onclick="setSticker('1 号印花胶囊')">1 号印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('2 号印花胶囊')">2 号印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('1 号社区印花胶囊')">1 号社区印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('2018年社区印花胶囊')">2018年社区印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('2021社区印花胶囊')">2021社区印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('间谍印花胶囊')">间谍印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('伏击印花胶囊')">伏击印花胶囊</button>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <label>特殊印花胶囊 <span class="select-all" onclick="selectAll('sticker_special')">全选</span></label>
+                        <div class="filter-options">
+                            <button class="filter-option" onclick="setSticker('动物寓言胶囊')">动物寓言胶囊</button>
+                            <button class="filter-option" onclick="setSticker('战地风云 2042 印花胶囊')">战地风云 2042 印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('狂牙大行动印花收藏品')">"狂牙大行动"印花收藏品</button>
+                            <button class="filter-option" onclick="setSticker('小鸡胶囊')">小鸡胶囊</button>
+                            <button class="filter-option" onclick="setSticker('反恐精英20周年印花胶囊')">反恐精英20周年印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('CS:GO 10周年印花胶囊')">CS:GO 10周年印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('Enfu 印花胶囊')">Enfu 印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('猛兽胶囊')">猛兽胶囊</button>
+                            <button class="filter-option" onclick="setSticker('光环胶囊')">光环胶囊</button>
+                            <button class="filter-option" onclick="setSticker('《半衰期：爱莉克斯》印花胶囊')">《半衰期：爱莉克斯》印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('点亮中国 1 号印花胶囊')">点亮中国 1 号印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('点亮中国 2 号印花胶囊')">点亮中国 2 号印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('激流大行动印花收藏品')">"激流大行动"印花收藏品</button>
+                            <button class="filter-option" onclick="setSticker('海报女郎胶囊')">海报女郎胶囊</button>
+                            <button class="filter-option" onclick="setSticker('魔性探员胶囊')">魔性探员胶囊</button>
+                            <button class="filter-option" onclick="setSticker('压枪印花收藏品')">压枪印花收藏品</button>
+                            <button class="filter-option" onclick="setSticker('激流冲浪店印花收藏品')">"激流冲浪店"印花收藏品</button>
+                            <button class="filter-option" onclick="setSticker('裂网大行动印花收藏品')">"裂网大行动"印花收藏品</button>
+                            <button class="filter-option" onclick="setSticker('段位印花胶囊')">段位印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('Slid3 胶囊')">Slid3 胶囊</button>
+                            <button class="filter-option" onclick="setSticker('作战室印花胶囊')">作战室印花胶囊</button>
+                            <button class="filter-option" onclick="setSticker('糖果脸谱胶囊')">糖果脸谱胶囊</button>
+                            <button class="filter-option" onclick="setSticker('团队定位胶囊')">团队定位胶囊</button>
+                            <button class="filter-option" onclick="setSticker('战锤40k印花胶囊')">战锤40k印花胶囊</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-footer">
+                <button class="reset-btn" onclick="resetFilters()">恢复默认</button>
+                <button class="apply-btn" onclick="applyFilters()">应用</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 统计栏 -->
+    <div class="container">
+        <div class="stats-bar">
+            <div class="stat-card">
+                <div>
+                    <div class="stat-label">总商品数</div>
+                    <div class="stat-value" id="totalItems">-</div>
+                </div>
+                <div class="stat-icon">📦</div>
+            </div>
+            <div class="stat-card">
+                <div>
+                    <div class="stat-label">推荐商品</div>
+                    <div class="stat-value" id="recommendedItems">-</div>
+                </div>
+                <div class="stat-icon">⭐</div>
+            </div>
+            <div class="stat-card">
+                <div>
+                    <div class="stat-label">今日新增</div>
+                    <div class="stat-value" id="todayItems">-</div>
+                </div>
+                <div class="stat-icon">🆕</div>
+            </div>
+            <div class="stat-card">
+                <div>
+                    <div class="stat-label">平均涨幅</div>
+                    <div class="stat-value" id="avgIncrease">-</div>
+                </div>
+                <div class="stat-icon">📈</div>
+            </div>
+        </div>
+
+        <!-- 表头 -->
+        <div class="table-header">
+            <div>饰品</div>
+            <div></div>
+            <div>Steam</div>
+            <div>BUFF</div>
+            <div>悠悠有品</div>
+            <div>CSGAME</div>
+            <div>挂刀比例</div>
+            <div>近30天价格走势</div>
+            <div>操作</div>
+        </div>
+
+        <!-- 商品列表 -->
+        <div class="item-list" id="itemList">
+            <div class="loading">加载中...</div>
+        </div>
+
+        <!-- 分页 -->
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

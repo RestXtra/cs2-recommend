@@ -1,0 +1,140 @@
+# 分布式爬虫系统配置文件
+
+# MongoDB配置
+mongodb:
+  host: localhost
+  port: 27017
+  database: csgo_market
+  collections:
+    items: csgo_items
+    stats: crawler_stats
+    logs: crawler_logs
+
+# Redis配置
+redis:
+  host: localhost
+  port: 6379
+  db: 0
+  password: null
+  # Scrapy-Redis配置
+  queue_key: csgo:start_urls
+  dupefilter_key: csgo:dupefilter
+  items_key: csgo:items
+
+# ChromeDriver配置
+chromedriver:
+  path: D:\path\chromedriver\chromedriver.exe
+  headless: true
+  window_size: [1920, 1080]
+
+# 爬虫配置
+spider:
+  name: csgo_market
+  concurrent_requests: 16
+  download_delay: 0.5
+  retry_times: 3
+  timeout: 30
+  
+  # API配置
+  api:
+    base_url: https://api.steamdt.com
+    endpoints:
+      market_page: /skin/market/v3/page
+      attributes: /user/ranking/v1/attribute/730
+      system_config: /user/system-config/v1/default-config
+    
+    # 请求头配置
+    headers:
+      access-token: 56c6dbe5-e5c7-434c-98d9-6d32e465422d
+      language: zh_CN
+      x-app-version: 1.0.0
+      x-currency: CNY
+      x-device: 1
+      x-device-id: a7c322ee-206f-4430-9178-9e1f6f87a70a
+      user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0
+
+# 机器学习配置
+ml:
+  # 筛选条件
+  filter:
+    min_buy_ratio: 1.0      # 求购竞价最小值
+    min_buy_stable: 1.0     # 求购稳定最小值
+  
+  # 模型配置
+  model:
+    type: random_forest
+    params:
+      n_estimators: 100
+      max_depth: 10
+      random_state: 42
+
+# 数据管道配置
+pipeline:
+  # 去重策略
+  deduplication:
+    enabled: true
+    method: content_hash  # content_hash 或 url_hash
+    fields: [name, exterior, price]
+  
+  # 增量更新
+  incremental:
+    enabled: true
+    update_fields: [price, sell_ratio, buy_ratio, buy_stable, trend_data]
+
+# 监控配置
+monitor:
+  # 日志配置
+  logging:
+    level: INFO
+    format: "<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level: <8}</level> | <cyan>{name}</cyan>:<cyan>{function}</cyan> - <level>{message}</level>"
+    rotation: "100 MB"
+    retention: "30 days"
+    log_dir: logs
+  
+  # 统计配置
+  stats:
+    enabled: true
+    interval: 60  # 统计间隔（秒）
+    metrics:
+      - items_scraped
+      - items_dropped
+      - response_received
+      - request_failed
+
+# API服务配置
+api_server:
+  host: 0.0.0.0
+  port: 8008
+  reload: true
+  workers: 4
+  cors_origins:
+    - http://localhost:3000
+    - http://localhost:3001
+
+# Web界面配置
+web:
+  port: 3000
+  api_url: http://localhost:8008
+
+# 任务调度配置
+scheduler:
+  # 定时任务
+  cron_jobs:
+    - name: daily_full_crawl
+      schedule: "0 2 * * *"  # 每天凌晨2点
+      enabled: true
+    
+    - name: hourly_update
+      schedule: "0 * * * *"  # 每小时
+      enabled: true
+
+# 分布式节点配置
+distributed:
+  # 节点自动扩缩容
+  auto_scaling:
+    enabled: true
+    min_nodes: 1
+    max_nodes: 5
+    scale_up_threshold: 1000  # 队列任务数超过此值时扩容
+    scale_down_threshold: 100  # 队列任务数低于此值时缩容
+

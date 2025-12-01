@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+
+# Data (keep structure, ignore content)
+data/*.json
+data/images/
+*.csv
+*.db
+
+# Images
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# ML Models
+ml/models/*.pkl
+ml/models/*.joblib
+data/models/*.pkl
+data/models/*.joblib
+
+# Scrapy
+.scrapy/
+httpcache/
+crawls/
+
+# MongoDB
+*.bson
+
+# Redis
+dump.rdb
+appendonly.aof
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ===== 敏感配置文件 =====
+# 包含 API 密钥等敏感信息，绝不提交
+.env
+
+# Temporary files
+*.tmp
+*.temp
+
