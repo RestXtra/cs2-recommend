@@ -357,28 +357,42 @@ async def query_items(query: ItemQuery):
             if query.buy_ratio_max is not None:
                 filter_query['buy_ratio']['$lte'] = query.buy_ratio_max
 
-        # 武器类型筛选（支持多选数组）
+        # 武器类型筛选（支持多选数组）- 使用精确匹配
         if query.weapon_type and len(query.weapon_type) > 0:
+            from ml.classifier import item_classifier
+            
             # 特殊处理：探员、印花、武器箱等非武器类型，查询weapon_category而不是weapon_type
             special_categories = ['探员', '印花', '武器箱', '音乐盒', '布章', '涂鸦', '挂件']
-            weapon_conditions = []
+            weapon_type_values = []
             category_conditions = []
 
             for wt in query.weapon_type:
                 if wt in special_categories:
                     category_conditions.append(wt)
                 else:
-                    weapon_conditions.append({'weapon_type': {'$regex': wt, '$options': 'i'}})
+                    # 使用映射表获取精确的数据库值
+                    if wt in item_classifier.WEAPON_TYPE_MAP:
+                        weapon_type_values.extend(item_classifier.WEAPON_TYPE_MAP[wt])
+                    else:
+                        # 如果映射表中没有，直接使用原值进行精确匹配
+                        weapon_type_values.append(wt)
 
+            # 构建查询条件
+            conditions = []
+            
+            if weapon_type_values:
+                # 使用 $in 进行精确匹配多个值
+                conditions.append({'weapon_type': {'$in': weapon_type_values}})
+            
             if category_conditions:
-                weapon_conditions.append({'weapon_category': {'$in': category_conditions}})
+                conditions.append({'weapon_category': {'$in': category_conditions}})
 
-            if len(weapon_conditions) == 1:
-                filter_query.update(weapon_conditions[0])
-            elif len(weapon_conditions) > 1:
+            if len(conditions) == 1:
+                filter_query.update(conditions[0])
+            elif len(conditions) > 1:
                 if '$or' not in filter_query:
                     filter_query['$or'] = []
-                filter_query['$or'].extend(weapon_conditions)
+                filter_query['$or'].extend(conditions)
 
         # 类别筛选（weapon_category，支持多选）
         if query.category and len(query.category) > 0:

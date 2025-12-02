@@ -46,40 +46,19 @@ except Exception:
     except Exception:
         CHINESE_FONT = 'Roboto'
 
-# 商品类别映射（用于任务创建）
+# 商品类别映射（用于任务创建）- 对应 crawl_category.py 中的 CATEGORY_CONFIG
 ITEM_CATEGORIES = {
-    '匕首': {
-        'keywords': ['匕首', '刀', '爪子刀', '蝴蝶刀', '鲍伊'],
-        'api_filter': 'knife'
-    },
-    '手套': {
-        'keywords': ['手套', '裹手', '运动手套', '专业手套'],
-        'api_filter': 'gloves'
-    },
-    '步枪': {
-        'keywords': ['AK-47', 'M4A4', 'M4A1', 'AWP', 'SG 553', 'AUG'],
-        'api_filter': 'rifle'
-    },
-    '手枪': {
-        'keywords': ['沙漠之鹰', 'USP', '格洛克', 'P250', 'CZ75'],
-        'api_filter': 'pistol'
-    },
-    '冲锋枪': {
-        'keywords': ['MAC-10', 'MP9', 'P90', 'UMP-45'],
-        'api_filter': 'smg'
-    },
-    '印花': {
-        'keywords': ['印花'],
-        'api_filter': 'sticker'
-    },
-    '武器箱': {
-        'keywords': ['武器箱', '纪念包'],
-        'api_filter': 'case'
-    },
-    '探员': {
-        'keywords': ['探员', '特工'],
-        'api_filter': 'agent'
-    }
+    '全部': '所有商品',
+    '匕首': '所有匕首和手套（带★）',
+    '手套': '所有手套',
+    '步枪': '所有步枪',
+    '手枪': '所有手枪',
+    '冲锋枪': '所有冲锋枪',
+    '霰弹枪': '所有霰弹枪',
+    '机枪': '所有机枪',
+    '印花': '印花',
+    '武器箱': '武器箱',
+    '探员': '探员'
 }
 
 KV = f'''
@@ -415,6 +394,38 @@ KV = f'''
                             size_hint_y: None
                             height: dp(26)
                             CheckBox:
+                                id: chk_shotgun
+                                size_hint_x: None
+                                width: dp(22)
+                            Label:
+                                text: '霰弹枪'
+                                font_name: '{CHINESE_FONT}'
+                                color: 0.9, 0.9, 0.9, 1
+                                halign: 'left'
+                                valign: 'middle'
+                                text_size: self.size
+
+                        BoxLayout:
+                            spacing: dp(6)
+                            size_hint_y: None
+                            height: dp(26)
+                            CheckBox:
+                                id: chk_machinegun
+                                size_hint_x: None
+                                width: dp(22)
+                            Label:
+                                text: '机枪'
+                                font_name: '{CHINESE_FONT}'
+                                color: 0.9, 0.9, 0.9, 1
+                                halign: 'left'
+                                valign: 'middle'
+                                text_size: self.size
+
+                        BoxLayout:
+                            spacing: dp(6)
+                            size_hint_y: None
+                            height: dp(26)
+                            CheckBox:
                                 id: chk_agent
                                 size_hint_x: None
                                 width: dp(22)
@@ -448,8 +459,8 @@ KV = f'''
                         size_hint_x: 0.3
                     ChineseSpinner:
                         id: task_delay_spinner
-                        text: '1.0'
-                        values: ['0.5', '1.0', '1.5', '2.0', '3.0']
+                        text: '2.5'
+                        values: ['1.5', '2.0', '2.5', '3.0', '4.0', '5.0']
                         size_hint_x: 0.7
                         height: dp(32)
 
@@ -670,7 +681,10 @@ class MonitorLayout(BoxLayout):
         try:
             total_items = self.collection.count_documents({})
             recommended_items = self.collection.count_documents({'is_recommended': True})
-            queue_size = self.redis_client.get_queue_size()
+            # 获取分类任务队列大小
+            category_queue_size = self.redis_client.client.llen('csgo:category_tasks')
+            url_queue_size = self.redis_client.get_queue_size()
+            queue_size = category_queue_size + url_queue_size
             active_nodes = sum(1 for node in self.nodes.values() if node.is_alive())
 
             self.ids.total_items.text = str(total_items)
@@ -706,6 +720,10 @@ class MonitorLayout(BoxLayout):
             categories.append('手枪')
         if self.ids.chk_smg.active:
             categories.append('冲锋枪')
+        if self.ids.chk_shotgun.active:
+            categories.append('霰弹枪')
+        if self.ids.chk_machinegun.active:
+            categories.append('机枪')
         if self.ids.chk_sticker.active:
             categories.append('印花')
         if self.ids.chk_case.active:
@@ -715,39 +733,39 @@ class MonitorLayout(BoxLayout):
         return categories or ['全部']
 
     def create_task(self):
+        """创建分类爬取任务 - 将任务加入队列"""
         categories = self._selected_categories()
         pages = self.ids.task_pages_spinner.text
         delay = self.ids.task_delay_spinner.text
-
+        
+        # 构建任务信息并存入Redis队列
         try:
+            import json
             for category in categories:
-                if category == '全部':
-                    payload = {
-                        'url': 'https://api.steamdt.com/skin/market/v3/page',
-                        'next_id': '',
-                        'category': 'all',
-                        'pages': 0 if pages == '全部' else int(pages),
-                        'delay': float(delay)
-                    }
-                else:
-                    cat_cfg = ITEM_CATEGORIES.get(category, {})
-                    payload = {
-                        'url': 'https://api.steamdt.com/skin/market/v3/page',
-                        'next_id': '',
-                        'category': category,
-                        'keywords': cat_cfg.get('keywords', []),
-                        'api_filter': cat_cfg.get('api_filter', ''),
-                        'pages': 0 if pages == '全部' else int(pages),
-                        'delay': float(delay)
-                    }
-                self.redis_client.push_start_url(json.dumps(payload))
-                self.log(f"任务已入队: {category}", "SUCCESS")
+                task_info = {
+                    'category': category,
+                    'pages': pages if pages != '全部' else None,
+                    'delay': delay
+                }
+                # 使用 Redis 列表存储任务
+                queue_key = 'csgo:category_tasks'
+                self.redis_client.client.rpush(queue_key, json.dumps(task_info))
+            
+            task_count = len(categories)
+            self.log(f"已创建 {task_count} 个任务: {', '.join(categories)}", "SUCCESS")
+            self.log(f"配置: 每类最大 {pages} 页, 延迟 {delay}s")
+            self.log("点击「启动爬虫」按钮开始抓取")
             self.update_stats()
+            
         except Exception as exc:
             self.log(f"创建任务失败: {exc}", "ERROR")
 
     def clear_queue(self):
+        """清空任务队列"""
         try:
+            # 清空分类任务队列
+            self.redis_client.client.delete('csgo:category_tasks')
+            # 也清空原来的URL队列
             self.redis_client.clear_queue()
             self.log("任务队列已清空", "SUCCESS")
             self.update_stats()
@@ -864,51 +882,86 @@ class MonitorLayout(BoxLayout):
 
     # ---------- 脚本模式 ----------
     def start_crawler(self):
-        delay = self.ids.task_delay_spinner.text
-        pages = self.ids.task_pages_spinner.text
-        self.log(f"启动爬虫脚本 (延迟{delay}s, 页数{pages})")
+        """启动爬虫 - 从任务队列读取并执行"""
+        import json
+        
+        queue_key = 'csgo:category_tasks'
+        task_count = self.redis_client.client.llen(queue_key)
+        
+        if task_count == 0:
+            self.log("任务队列为空，请先创建任务", "WARNING")
+            return
+        
+        self.log(f"开始执行队列中的 {task_count} 个任务")
         self.ids.start_btn.disabled = True
         self.ids.stop_btn.disabled = False
 
-        def run_script():
+        def run_tasks():
             try:
-                cmd = [
-                    sys.executable,
-                    'scripts/crawl_all_enhanced.py',
-                    '--delay', delay,
-                    '--continue'
-                ]
-                if pages != '全部':
-                    cmd.extend(['--pages', pages])
-                self.crawler_process = subprocess.Popen(
-                    cmd,
-                    stdout=subprocess.PIPE,
-                    stderr=subprocess.STDOUT,
-                    text=True,
-                    bufsize=1,
-                    cwd=str(project_root)
-                )
-                for line in self.crawler_process.stdout:
-                    line = line.strip()
-                    if not line:
-                        continue
-                    if ' | ' in line:
-                        parts = line.split(' | ', 2)
-                        if len(parts) >= 3:
-                            line = parts[2]
-                    Clock.schedule_once(lambda _dt, msg=line: self.log(msg), 0)
-                self.crawler_process.wait()
-                if self.crawler_process.returncode == 0:
-                    Clock.schedule_once(lambda _dt: self.log('爬虫运行完成', 'SUCCESS'), 0)
-                else:
-                    Clock.schedule_once(lambda _dt: self.log('爬虫运行失败', 'ERROR'), 0)
+                while True:
+                    # 从队列取出任务
+                    task_json = self.redis_client.client.lpop(queue_key)
+                    if not task_json:
+                        break
+                    
+                    task = json.loads(task_json)
+                    category = task.get('category', '全部')
+                    pages = task.get('pages')
+                    delay = task.get('delay', '2.5')
+                    
+                    Clock.schedule_once(lambda dt, c=category: self.log(f"开始抓取分类: {c}"), 0)
+                    
+                    # 构建命令
+                    cmd = [
+                        sys.executable,
+                        'scripts/crawl_category.py',
+                        '--category', category,
+                        '--delay', delay
+                    ]
+                    if pages:
+                        cmd.extend(['--pages', str(pages)])
+                    
+                    # 运行爬取
+                    self.crawler_process = subprocess.Popen(
+                        cmd,
+                        stdout=subprocess.PIPE,
+                        stderr=subprocess.STDOUT,
+                        text=True,
+                        bufsize=1,
+                        cwd=str(project_root)
+                    )
+                    
+                    # 读取输出
+                    for line in self.crawler_process.stdout:
+                        line = line.strip()
+                        if not line:
+                            continue
+                        # 解析日志格式
+                        if ' | ' in line:
+                            parts = line.split(' | ', 2)
+                            if len(parts) >= 3:
+                                line = parts[2]
+                        Clock.schedule_once(lambda dt, msg=line: self.log(msg), 0)
+                    
+                    self.crawler_process.wait()
+                    
+                    if self.crawler_process.returncode != 0:
+                        Clock.schedule_once(lambda dt, c=category: self.log(f'{c} 抓取失败', 'ERROR'), 0)
+                    else:
+                        Clock.schedule_once(lambda dt, c=category: self.log(f'{c} 抓取完成', 'SUCCESS'), 0)
+                    
+                    self.crawler_process = None
+                
+                Clock.schedule_once(lambda dt: self.log('所有任务执行完成!', 'SUCCESS'), 0)
+                
             except Exception as exc:
-                Clock.schedule_once(lambda _dt, err=str(exc): self.log(f'脚本出错: {err}', 'ERROR'), 0)
+                Clock.schedule_once(lambda dt, err=str(exc): self.log(f'爬取出错: {err}', 'ERROR'), 0)
             finally:
-                Clock.schedule_once(lambda _dt: self.reset_buttons(), 0)
+                Clock.schedule_once(lambda dt: self.reset_buttons(), 0)
+                Clock.schedule_once(lambda dt: self.update_stats(), 0)
                 self.crawler_process = None
 
-        threading.Thread(target=run_script, daemon=True).start()
+        threading.Thread(target=run_tasks, daemon=True).start()
 
     def stop_crawler(self):
         self.log('正在停止爬虫...', 'WARNING')

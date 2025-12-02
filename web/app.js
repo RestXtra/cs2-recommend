@@ -444,18 +444,18 @@ function toggleArrayFilter(filterKey, value, target) {
 }
 
 function selectAll(type) {
-    // 定义各类型对应的按钮选择器
+    // 定义各类型对应的武器名称
     const typeMap = {
         // 匕首
         'knife': ['蝴蝶刀', '爪子刀', 'M9 刺刀', '骷髅匕首', '刺刀', '折叠刀', '短剑', '锯齿爪刀', '流浪者匕首', '熊刀', '海豹短刀', '猎杀者匕首', '系绳匕首', '求生匕首', '弯刀', '暗影双匕', '鲍伊猎刀', '穿肠刀', '折刀', '廓尔喀刀'],
         // 手套
         'gloves': ['运动手套', '专业手套', '摩托手套', '驾驶手套', '裹手', '狂牙手套', '九头蛇手套', '血猎手套'],
         // 步枪
-        'rifle': ['AK-47', 'AWP', 'M4A1 消音型', 'M4A4', '加利尔 AR', '法玛斯', 'SG 553', 'AUG', 'SCAR-20', 'G3SG1'],
+        'rifle': ['AK-47', 'AWP', 'M4A1 消音型', 'M4A4', '加利尔 AR', '法玛斯', 'SSG 08', 'AUG', 'SG 553', 'SCAR-20', 'G3SG1'],
         // 手枪
-        'pistol': ['沙漠之鹰', 'USP 消音版', '格洛克 18 型', 'Tec-9', 'P250', 'FN57', 'CZ75', 'R8 左轮手枪', '双持贝瑞塔', 'P2000'],
+        'pistol': ['沙漠之鹰', 'USP 消音版', '格洛克 18 型', 'Tec-9', 'FN57', 'P250', '双持贝瑞塔', 'CZ75 自动手枪', 'R8 左轮手枪', 'P2000'],
         // 微冲
-        'smg': ['MP9', 'MAC-10', 'P90', 'UMP-45', 'PP-野牛', 'MP7', 'MP5-SD'],
+        'smg': ['MP9', 'MAC-10', 'P90', 'UMP-45', 'MP7', 'PP-野牛', 'MP5-SD'],
         // 霰弹枪
         'shotgun': ['MAG-7', 'XM1014', '截短霰弹枪', '新星'],
         // 机枪
@@ -481,18 +481,54 @@ function selectAll(type) {
         } else {
             btn.classList.add('active');
         }
-        // 触发按钮的点击事件来更新filter状态
-        // 这里我们直接模拟设置
     });
 
     // 更新筛选状态
+    const weaponTypeCategories = ['knife', 'gloves', 'rifle', 'pistol', 'smg', 'shotgun', 'machinegun', 'other'];
+    
     if (typeMap[type]) {
         if (allActive) {
-            // 取消全选 - 清空对应筛选
-            if (['knife', 'gloves', 'rifle', 'pistol', 'smg', 'shotgun', 'machinegun', 'other'].includes(type)) {
-                currentFilter.weaponType = null;
+            // 取消全选 - 从筛选中移除这些类型
+            if (weaponTypeCategories.includes(type)) {
+                if (currentFilter.weaponType) {
+                    currentFilter.weaponType = currentFilter.weaponType.filter(
+                        wt => !typeMap[type].includes(wt)
+                    );
+                    if (currentFilter.weaponType.length === 0) {
+                        currentFilter.weaponType = null;
+                    }
+                }
             } else if (type === 'exterior') {
-                currentFilter.exterior = null;
+                if (currentFilter.exterior) {
+                    currentFilter.exterior = currentFilter.exterior.filter(
+                        ext => !typeMap[type].includes(ext)
+                    );
+                    if (currentFilter.exterior.length === 0) {
+                        currentFilter.exterior = null;
+                    }
+                }
+            }
+        } else {
+            // 全选 - 添加所有类型到筛选中
+            if (weaponTypeCategories.includes(type)) {
+                if (!currentFilter.weaponType) {
+                    currentFilter.weaponType = [];
+                }
+                // 添加该分类下的所有武器类型
+                typeMap[type].forEach(wt => {
+                    if (!currentFilter.weaponType.includes(wt)) {
+                        currentFilter.weaponType.push(wt);
+                    }
+                });
+            } else if (type === 'exterior') {
+                if (!currentFilter.exterior) {
+                    currentFilter.exterior = [];
+                }
+                typeMap[type].forEach(ext => {
+                    if (!currentFilter.exterior.includes(ext)) {
+                        currentFilter.exterior.push(ext);
+                    }
+                });
             }
         }
     }
