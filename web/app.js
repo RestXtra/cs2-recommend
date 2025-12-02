@@ -222,9 +222,10 @@ function renderMarketItem(item) {
             </div>
             <div class="action-col">
                 <button class="action-btn ${item.is_favorited ? 'favorited' : ''}" onclick="toggleFavorite('${item.item_id}', event)">
-                    ${item.is_favorited ? '⭐ 已收藏' : '☆ 收藏'}
+                    ${item.is_favorited ? '⭐' : '☆'}
                 </button>
-                <button class="action-btn ai-btn" onclick="analyzeItem('${item.item_id}', '${item.name.replace(/'/g, "\\'")}')">🤖 AI分析</button>
+                <button class="action-btn predict-btn" onclick="predictPrice('${item.item_id}', '${item.name.replace(/'/g, "\\'")}')">📈</button>
+                <button class="action-btn ai-btn" onclick="analyzeItem('${item.item_id}', '${item.name.replace(/'/g, "\\'")}')">🤖</button>
             </div>
         </div>
     `;
@@ -763,6 +764,79 @@ function showAIModal(itemName, content) {
 
 function closeAIModal() {
     const modal = document.getElementById('aiModal');
+    if (modal) modal.remove();
+}
+
+// ==================== 价格预测功能 ====================
+
+// 显示价格预测指南
+function showPredictionGuide() {
+    showPredictionModal('价格预测功能', `
+🤖 **LSTM深度学习价格预测**
+━━━━━━━━━━━━━━━━
+
+本系统使用 **LSTM神经网络** 进行价格预测：
+
+📊 **技术原理**
+- 2层LSTM + 3层全连接网络
+- 基于前30天的收盘价进行训练
+- 自动学习价格走势规律
+
+🎯 **使用方法**
+1. 在商品列表中找到想预测的商品
+2. 点击 "📈 预测" 按钮
+3. 系统将自动分析并预测未来7天价格
+
+⚠️ **风险提示**
+- 预测结果仅供参考，不构成投资建议
+- 市场波动较大时预测准确度可能下降
+- 建议结合AI分析综合判断
+
+💡 **最佳实践**
+- 优先关注置信度高的预测
+- 结合大盘走势进行分析
+- 多看历史数据验证模型准确性
+    `);
+}
+
+// LSTM价格预测 - 跳转到预测页面
+async function predictPrice(itemId, itemName) {
+    // 跳转到预测页面，并传递商品信息
+    const encodedName = encodeURIComponent(itemName);
+    window.location.href = `prediction.html?item_id=${itemId}&item_name=${encodedName}`;
+}
+
+// 显示预测模态框
+function showPredictionModal(title, content) {
+    const existingModal = document.getElementById('predictionModal');
+    if (existingModal) existingModal.remove();
+
+    const htmlContent = parseMarkdown(content);
+
+    const modal = document.createElement('div');
+    modal.id = 'predictionModal';
+    modal.className = 'ai-modal';
+    modal.innerHTML = `
+        <div class="ai-modal-content" style="border-top: 4px solid #27ae60;">
+            <div class="ai-modal-header" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);">
+                <h3>📈 ${title}</h3>
+                <button class="ai-modal-close" onclick="closePredictionModal()">✕</button>
+            </div>
+            <div class="ai-modal-body">
+                <div class="md-content"><p>${htmlContent}</p></div>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closePredictionModal();
+    });
+}
+
+function closePredictionModal() {
+    const modal = document.getElementById('predictionModal');
     if (modal) modal.remove();
 }
 

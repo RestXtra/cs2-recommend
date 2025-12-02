@@ -28,7 +28,7 @@ CSGO/
 ├── data/                   # 数据文件
 ├── logs/                   # 日志文件
 │
-├── start.py               # 统一启动脚本
+├── run.py                 # 统一启动脚本
 ├── requirements.txt       # 依赖
 └── README.md
 ```
@@ -59,13 +59,13 @@ cp .env.example .env
 
 ```bash
 # 启动所有服务
-python start.py
+python run.py
 
 # 或单独启动
-python start.py api      # 只启动 API
-python start.py web      # 只启动 Web
-python start.py crawl    # 运行爬虫
-python start.py monitor  # 启动监控
+python -c "from scripts.start_all import start_api_server; start_api_server()"  # 只启动 API
+python -m http.server 3000 --directory web  # 只启动 Web
+python scripts/crawl_all_enhanced.py  # 运行爬虫
+python monitor/monitor.py  # 启动监控
 ```
 
 ### 4. 访问

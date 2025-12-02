@@ -73,10 +73,28 @@ body {
 
 /* 搜索区域 */
 .search-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 40px 20px;
+    background: url('images/background/back.png') center 40% / cover no-repeat;
+    background-color: #c53929;
+    padding: 60px 20px;
     text-align: center;
     color: white;
+    position: relative;
+}
+
+.search-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(197, 57, 41, 0.85);
+    z-index: 0;
+}
+
+.search-section > * {
+    position: relative;
+    z-index: 1;
 }
 
 .search-title {
@@ -91,48 +109,65 @@ body {
 }
 
 .search-box {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     display: flex;
-    gap: 10px;
+    gap: 0;
+    background: white;
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .search-input {
     flex: 1;
-    padding: 12px 20px;
+    padding: 15px 25px;
     border: none;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 25px 0 0 25px;
+    font-size: 15px;
+    background: transparent;
+    outline: none;
+    color: #333;
+}
+
+.search-input::placeholder {
+    color: #aaa;
 }
 
 .search-btn {
-    background: #5b9aff;
+    background: #4a7dff;
     color: white;
     border: none;
-    padding: 12px 30px;
-    border-radius: 5px;
+    padding: 15px 25px;
+    border-radius: 25px;
     cursor: pointer;
-    font-size: 14px;
-    transition: background 0.3s;
+    font-size: 15px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .search-btn:hover {
-    background: #4a89ee;
+    background: #3a6dee;
+    transform: scale(1.02);
 }
 
 .filter-btn {
-    background: #f5576c;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 5px;
+    background: transparent;
+    color: #4a7dff;
+    border: 2px solid #4a7dff;
+    padding: 15px 20px;
+    border-radius: 25px;
     cursor: pointer;
-    font-size: 14px;
-    transition: background 0.3s;
+    font-size: 15px;
+    transition: all 0.3s;
+    margin-left: 10px;
 }
 
 .filter-btn:hover {
-    background: #e04658;
+    background: #4a7dff;
+    color: white;
 }
 
 .filter-tabs {
@@ -642,16 +677,32 @@ body {
     color: #999;
 }
 
-/* AI分析按钮 */
+/* AI分析按钮 - 红色配色 */
 .ai-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    background: linear-gradient(135deg, #c53929 0%, #e74c3c 100%) !important;
     color: white !important;
     border: none !important;
+    box-shadow: 0 2px 8px rgba(197, 57, 41, 0.3);
 }
 
 .ai-btn:hover {
-    background: linear-gradient(135deg, #5a6fd6 0%, #6a4190 100%) !important;
+    background: linear-gradient(135deg, #a52d20 0%, #c0392b 100%) !important;
     transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(197, 57, 41, 0.4);
+}
+
+/* 价格预测按钮 - 绿色配色 */
+.predict-btn {
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%) !important;
+    color: white !important;
+    border: none !important;
+    box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
+}
+
+.predict-btn:hover {
+    background: linear-gradient(135deg, #1e8449 0%, #27ae60 100%) !important;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
 }
 
 /* AI分析模态框 */
@@ -697,7 +748,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #c53929 0%, #e74c3c 100%);
     border-radius: 16px 16px 0 0;
 }
 
@@ -753,7 +804,7 @@ body {
     color: #1a1f3a;
     margin: 20px 0 12px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #667eea;
+    border-bottom: 2px solid #c53929;
 }
 
 .md-content .md-h2 {
@@ -773,7 +824,7 @@ body {
 .md-content .md-hr {
     border: none;
     height: 1px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
+    background: linear-gradient(90deg, #c53929, #e74c3c);
     margin: 12px 0;
 }
 
@@ -785,7 +836,7 @@ body {
 
 .md-content li::before {
     content: "•";
-    color: #667eea;
+    color: #c53929;
     position: absolute;
     left: -15px;
 }

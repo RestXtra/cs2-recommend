@@ -759,6 +759,52 @@ async def ml_analyze_item(item_id: str = Query(..., description="商品ID")):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+# LSTM价格预测接口
+@app.post("/api/items/predict")
+async def predict_item_price(item_id: str = Query(..., description="商品ID"),
+                              days: int = Query(7, description="预测天数")):
+    """LSTM深度学习价格预测"""
+    try:
+        from ml.lstm_predictor import predict_item_price as lstm_predict
+
+        result = lstm_predict(item_id, days)
+
+        if not result.get('success'):
+            return Response(code=404, message=result.get('error', '预测失败'), data=None)
+
+        return Response(
+            code=0,
+            message="success",
+            data=result
+        )
+    except Exception as e:
+        logger.error(f"LSTM价格预测失败: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# LSTM模型训练接口
+@app.post("/api/items/train-model")
+async def train_prediction_model(item_id: str = Query(..., description="商品ID"),
+                                   epochs: int = Query(50, description="训练轮数")):
+    """训练LSTM价格预测模型"""
+    try:
+        from ml.lstm_predictor import train_model_for_item
+
+        result = train_model_for_item(item_id, epochs)
+
+        if not result.get('success'):
+            return Response(code=400, message=result.get('error', '训练失败'), data=None)
+
+        return Response(
+            code=0,
+            message="模型训练完成",
+            data=result
+        )
+    except Exception as e:
+        logger.error(f"模型训练失败: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @app.get("/api/homepage/latest")
 async def get_homepage_latest():
     """获取最新的首页数据"""

@@ -133,7 +133,7 @@ python -m http.server 3000
 
 ### 5. 启动监控窗口（可选）
 ```bash
-python monitor/advanced_monitor.py
+python monitor/monitor.py
 ```
 
 ### 6. 启动爬虫（可选）

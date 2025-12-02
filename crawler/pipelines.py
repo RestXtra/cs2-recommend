@@ -6,6 +6,7 @@ from pathlib import Path
 import requests
 from loguru import logger
 import sys
+from scrapy.exceptions import DropItem
 
 # 添加项目根目录到路径
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -246,7 +247,4 @@ class StatsPipeline:
             )
         
         return item
-
-
-from scrapy.exceptions import DropItem
 

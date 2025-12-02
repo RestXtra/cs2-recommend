@@ -77,7 +77,7 @@ def start_monitor():
     logger.info("启动监控窗口...")
 
     project_root = Path(__file__).parent.parent
-    monitor_script = project_root / 'monitor' / 'advanced_monitor.py'
+    monitor_script = project_root / 'monitor' / 'monitor.py'
 
     process = subprocess.Popen(
         [sys.executable, str(monitor_script)],
@@ -181,7 +181,7 @@ def main():
         logger.info("Web界面: http://localhost:3000")
         logger.info("  - 首页大盘: http://localhost:3000/homepage.html")
         logger.info("  - 饰品市场: http://localhost:3000/index.html")
-        logger.info("监控窗口: 已打开（tkinter窗口）")
+        logger.info("监控窗口: 已打开（Kivy 界面）")
         logger.info("爬虫: 后台运行中")
         logger.info("按 Ctrl+C 停止所有服务")
         logger.info("=" * 60)

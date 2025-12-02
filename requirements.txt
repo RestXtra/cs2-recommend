@@ -19,6 +19,13 @@ pandas>=2.1.3
 joblib>=1.3.2
 scipy>=1.11.0
 
+# ===== Deep Learning (LSTM价格预测) =====
+torch>=2.0.0
+swanlab>=0.3.0
+
+# ===== GUI (Kivy监控系统) =====
+kivy>=2.2.0
+
 # ===== Utilities =====
 requests>=2.31.0
 loguru>=0.7.2
