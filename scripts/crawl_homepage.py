@@ -99,11 +99,11 @@ class HomepageCrawler:
             return None
     
     def get_chart_data_v1(self, kline_type=1, max_pages=None):
-        """使用 v1 API 获取K线数据（支持分页，尽可能多地抓取）
+        """使用 v1 API 获取K线数据
 
         Args:
             kline_type: 1=时K, 2=日K
-            max_pages: 最多加载几页数据，None=无限制，直到没有更多数据
+            max_pages: 最多加载几页数据，None=无限制（仅对时K有效，日K只需一次请求）
 
         Returns:
             转换后的K线数据列表，格式: [{time, open, high, low, close}, ...]
@@ -113,12 +113,17 @@ class HomepageCrawler:
         timestamp = int(time.time() * 1000)
         page = 0
 
+        # 日K数据一次请求即可获取全部，不需要分页
+        if kline_type == 2:
+            max_pages = 1
+
         while True:
             page += 1
 
             # 如果设置了最大页数限制
             if max_pages and page > max_pages:
-                logger.info(f"    已达到最大页数限制: {max_pages}")
+                if kline_type != 2:  # 日K不打印此信息
+                    logger.info(f"    已达到最大页数限制: {max_pages}")
                 break
 
             # 构建 URL
